@@ -2,7 +2,7 @@
 import React from 'react';
 import { Users, CreditCard, TrendingUp, Check } from 'lucide-react';
 
-const FeatureSection = ({ icon, title, description, badge, items, colorClass, glowClass }: {
+const FeatureSection = ({ icon, title, description, badge, items, colorClass, glowClass, reverse = false }: {
     icon: React.ReactNode,
     title: string,
     description?: string,
@@ -12,35 +12,39 @@ const FeatureSection = ({ icon, title, description, badge, items, colorClass, gl
     glowClass: string,
     reverse?: boolean
 }) => (
-    <section className="py-24 bg-slate-950 border-b border-white/5 last:border-0">
+    <section className={`py-24 ${reverse ? 'bg-slate-950 border-y border-white/5' : 'bg-slate-950'}`}>
         <div className="max-w-[1440px] mx-auto px-4 sm:px-8 md:px-12 lg:px-20">
-            <div className="max-w-4xl mx-auto text-center flex flex-col items-center">
-                <div className={`w-16 h-16 rounded-2xl flex items-center justify-center mb-8 transition-all ${colorClass} ${glowClass} animate-float shadow-2xl`}>
-                    {icon}
+            <div className={`flex flex-col ${reverse ? 'md:flex-row-reverse' : 'md:flex-row'} items-center gap-16 md:gap-24`}>
+                <div className="flex-1 text-center md:text-left">
+                    <div className={`w-16 h-16 rounded-xl flex items-center justify-center mb-8 mx-auto md:mx-0 transition-all ${colorClass} ${glowClass} animate-float shadow-xl`}>
+                        {icon}
+                    </div>
+                    {badge && (
+                        <div className={`inline-block px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-widest mb-4 bg-white/5 border border-white/10 text-brand-blue`}>
+                            {badge}
+                        </div>
+                    )}
+                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-white mb-6 leading-tight tracking-tight">{title}</h2>
+                    {description && (
+                        <p className="text-brand-gray text-lg md:text-xl leading-relaxed font-light max-w-xl mx-auto md:mx-0 mb-8">
+                            {description}
+                        </p>
+                    )}
+                    {items && (
+                        <ul className="space-y-4 text-left max-w-xl mx-auto md:mx-0">
+                            {items.map((item, idx) => (
+                                <li key={idx} className="flex items-start gap-4 text-brand-gray text-base md:text-lg font-light group">
+                                    <div className="w-6 h-6 rounded-full bg-brand-blue/10 flex items-center justify-center flex-shrink-0 mt-0.5 border border-brand-blue/20 group-hover:border-brand-blue/40 transition-colors">
+                                        <Check className="w-3.5 h-3.5 text-brand-blue" />
+                                    </div>
+                                    <span className="group-hover:text-white transition-colors">{item}</span>
+                                </li>
+                            ))}
+                        </ul>
+                    )}
                 </div>
-                {badge && (
-                    <div className="inline-block px-4 py-1.5 rounded-full text-[10px] font-black uppercase tracking-[0.2em] mb-6 bg-white/5 border border-white/10 text-brand-blue">
-                        {badge}
-                    </div>
-                )}
-                <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-white mb-8 leading-tight tracking-tighter max-w-3xl">{title}</h2>
-                {description && (
-                    <p className="text-brand-gray text-lg md:text-xl leading-relaxed font-light max-w-2xl mb-12">
-                        {description}
-                    </p>
-                )}
-                {items && (
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6 text-left w-full max-w-3xl">
-                        {items.map((item, idx) => (
-                            <div key={idx} className="flex items-start gap-4 text-brand-gray text-base md:text-lg font-light group">
-                                <div className="w-6 h-6 rounded-full bg-brand-blue/10 flex items-center justify-center flex-shrink-0 mt-0.5 border border-brand-blue/20 group-hover:border-brand-blue/40 transition-colors">
-                                    <Check className="w-3.5 h-3.5 text-brand-blue" />
-                                </div>
-                                <span className="group-hover:text-white transition-colors">{item}</span>
-                            </div>
-                        ))}
-                    </div>
-                )}
+                {/* Image Placeholder Removed but keeping spacing/alignment */}
+                <div className="flex-1 hidden md:block"></div>
             </div>
         </div>
     </section>
