@@ -1,0 +1,30 @@
+#!/usr/bin/expect -f
+
+set timeout 300
+set password "Creative23SSHcp@"
+set user "u176367625"
+set host "46.202.186.144"
+set port "65002"
+set target "domains/creativeprintjp.com/public_html/saibamaiscpgestao"
+
+# Ensure target directory exists
+spawn ssh -p $port $user@$host "mkdir -p $target"
+expect {
+    "password:" {
+        send "$password\r"
+        exp_continue
+    }
+    eof
+}
+
+# Upload files
+spawn scp -P $port -r dist/. $user@$host:$target/
+expect {
+    "password:" {
+        send "$password\r"
+        exp_continue
+    }
+    eof
+}
+
+puts "\nDeploy Finalizado com Sucesso!"
