@@ -171,11 +171,13 @@ export const Pricing = () => {
                         <div className="absolute inset-x-0 bottom-0 h-1 bg-brand-blue transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
                     </a>
                 </div>
+            </div>
 
-                {/* 2. OFERTA LANÇAMENTO */}
-                <div className="w-[92%] mx-auto md:w-full mb-32 border border-brand-blue/30 rounded-[2rem] md:rounded-[3.5rem] bg-slate-900 overflow-hidden relative group">
+            {/* 2. OFERTA LANÇAMENTO */}
+            <div className="max-w-[1440px] mx-auto relative z-10 px-0 mb-32">
+                <div className="w-[92%] mx-auto md:w-full border-2 border-brand-blue/30 rounded-[2rem] md:rounded-[4rem] bg-slate-900 overflow-hidden relative group">
                     <div className="absolute inset-0 bg-brand-blue/5 opacity-20 group-hover:opacity-40 transition-opacity"></div>
-                    <div className="p-8 md:p-16 relative z-10 text-center">
+                    <div className="py-16 md:py-24 px-6 md:px-16 relative z-10 text-center">
                         <Badge variant="blue" className="mb-8 uppercase tracking-[0.3em] font-black text-[10px] py-1 px-5">OFERTA LANÇAMENTO</Badge>
                         <h3 className="text-4xl md:text-6xl font-black text-white mb-6 tracking-tighter leading-none max-w-3xl mx-auto">
                             Ganhe 2 Totens NFC com QR Code impressos em 3D ao contratar hoje
@@ -230,49 +232,49 @@ export const Pricing = () => {
                         </div>
                     </div>
                 </div>
+            </div>
 
-                {/* 3. COMO CONTRATAR EM 3 PASSOS */}
-                <div className="mb-32">
-                    <div className="text-center mb-20">
-                        <Badge variant="outline" className="mb-6 uppercase tracking-[0.3em] font-black text-[10px] py-1 px-4 text-brand-blue border-brand-blue/30">COMEÇAR É SIMPLES</Badge>
-                        <h2 className="text-4xl md:text-6xl font-black text-white mb-6 tracking-tighter leading-[0.9]">
-                            Como contratar em 3 passos
-                        </h2>
-                        <p className="text-brand-gray text-lg md:text-xl font-light max-w-2xl mx-auto">
-                            Sem burocracia e sem formulários complexos.
-                        </p>
-                    </div>
-
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-[92%] md:max-w-5xl mx-auto">
-                        <StepCardMinimal
-                            icon={<MessageCircle className="w-10 h-10" />}
-                            step="PASSO 1"
-                            title="Atendimento pelo WhatsApp"
-                            desc="Fale direto, sem complicação e sem formulários."
-                        />
-                        <StepCardMinimal
-                            icon={<Zap className="w-10 h-10" />}
-                            step="PASSO 2"
-                            title="Escolha do plano ideal"
-                            desc="Entendemos sua necessidade e definimos juntos a melhor opção para o seu negócio."
-                        />
-                        <StepCardMinimal
-                            icon={<Rocket className="w-10 h-10" />}
-                            step="PASSO 3"
-                            title="Pagamento e acesso imediato"
-                            desc="Pagamento simples e sistema liberado para uso imediatamente."
-                        />
-                    </div>
+            {/* 3. COMO CONTRATAR EM 3 PASSOS */}
+            <div className="max-w-[1440px] mx-auto px-6 mb-32">
+                <div className="text-center mb-20">
+                    <Badge variant="outline" className="mb-6 uppercase tracking-[0.3em] font-black text-[10px] py-1 px-4 text-brand-blue border-brand-blue/30">COMEÇAR É SIMPLES</Badge>
+                    <h2 className="text-4xl md:text-6xl font-black text-white mb-6 tracking-tighter leading-[0.9]">
+                        Como contratar em 3 passos
+                    </h2>
+                    <p className="text-brand-gray text-lg md:text-xl font-light max-w-2xl mx-auto">
+                        Sem burocracia e sem formulários complexos.
+                    </p>
                 </div>
 
-                {/* Final CTA */}
-                <div className="text-center">
-                    <a href="https://wa.me/MESSAGE_URL?text=Olá! Quero começar agora com o CP Gestão pelo WhatsApp. Pode me orientar sobre o próximo passo?" className="relative bg-white hover:bg-slate-100 text-slate-950 font-black text-xs h-12 px-10 rounded-lg inline-flex items-center justify-center gap-3 transition-all shadow-[0_0_25px_rgba(56,182,255,0.35)] hover:scale-105 active:scale-95 uppercase tracking-wider group overflow-hidden">
-                        <MessageCircle className="w-4 h-4 text-brand-blue" />
-                        <span className="relative z-10">Começar agora pelo WhatsApp</span>
-                        <div className="absolute inset-x-0 bottom-0 h-1 bg-brand-blue transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
-                    </a>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-[92%] md:max-w-5xl mx-auto">
+                    <StepCardMinimal
+                        icon={<MessageCircle className="w-10 h-10" />}
+                        step="PASSO 1"
+                        title="Atendimento pelo WhatsApp"
+                        desc="Fale direto, sem complicação e sem formulários."
+                    />
+                    <StepCardMinimal
+                        icon={<Zap className="w-10 h-10" />}
+                        step="PASSO 2"
+                        title="Escolha do plano ideal"
+                        desc="Entendemos sua necessidade e definimos juntos a melhor opção para o seu negócio."
+                    />
+                    <StepCardMinimal
+                        icon={<Rocket className="w-10 h-10" />}
+                        step="PASSO 3"
+                        title="Pagamento e acesso imediato"
+                        desc="Pagamento simples e sistema liberado para uso imediatamente."
+                    />
                 </div>
+            </div>
+
+            {/* Final CTA */}
+            <div className="text-center pb-12">
+                <a href="https://wa.me/MESSAGE_URL?text=Olá! Quero começar agora com o CP Gestão pelo WhatsApp. Pode me orientar sobre o próximo passo?" className="relative bg-white hover:bg-slate-100 text-slate-950 font-black text-xs h-12 px-10 rounded-lg inline-flex items-center justify-center gap-3 transition-all shadow-[0_0_25px_rgba(56,182,255,0.35)] hover:scale-105 active:scale-95 uppercase tracking-wider group overflow-hidden">
+                    <MessageCircle className="w-4 h-4 text-brand-blue" />
+                    <span className="relative z-10">Começar agora pelo WhatsApp</span>
+                    <div className="absolute inset-x-0 bottom-0 h-1 bg-brand-blue transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+                </a>
             </div>
         </section>
     );
