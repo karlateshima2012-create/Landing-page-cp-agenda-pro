@@ -72,7 +72,7 @@ export const FeaturesShowcase = () => (
             icon={<Users className="w-8 h-8" />}
             badge="CRM COMPLETO"
             title="Tenha o controle total dos seus clientes na palma da mão"
-            imageUrl="/crm-feature.webp"
+            imageUrl="/crm-feature.png"
             items={[
                 "Cadastre clientes com nome, telefone, endereço e histórico",
                 "Saiba a data da última compra de cada um",
