@@ -1,6 +1,6 @@
-
-import React from 'react';
+import React, { useState } from 'react';
 import { Badge } from '../Badge';
+import { ChevronDown, ChevronUp } from 'lucide-react';
 
 export interface FAQItem {
     id: number;
@@ -71,33 +71,51 @@ export const FAQS: FAQItem[] = [
     }
 ];
 
-export const FAQSection = () => (
-    <section id="faq" className="pt-32 pb-0 bg-transparent relative w-full transition-all duration-700">
-        <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-slate-950 via-slate-950/80 to-transparent z-20 pointer-events-none"></div>
+export const FAQSection = () => {
+    const [openId, setOpenId] = useState<number | null>(null);
 
-        <div className="max-w-6xl mx-auto relative z-10 px-6 pb-24">
+    return (
+        <section id="faq" className="pt-32 pb-0 bg-transparent relative w-full transition-all duration-700">
+            <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-slate-950 via-slate-950/80 to-transparent z-20 pointer-events-none"></div>
 
-            <div className="text-center mb-16">
-                <Badge icon variant="outline" className="uppercase tracking-[0.3em] font-black text-[10px] py-1 px-4 mb-4">FAQ</Badge>
-                <h2 className="text-4xl md:text-5xl font-black text-white tracking-tighter">Dúvidas Comuns</h2>
-            </div>
+            <div className="max-w-6xl mx-auto relative z-10 px-6 pb-24">
 
-            <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
-                {FAQS.map(faq => (
-                    <div key={faq.id} className="bg-slate-950/40 border border-white/10 rounded-xl p-8 shadow-[0_20px_40px_-15px_rgba(0,0,0,0.5)] transition-all hover:border-brand-blue/40 group backdrop-blur-md">
-                        <h4 className="text-xl font-black text-white mb-6 flex items-start gap-4 leading-tight">
-                            <div className="w-8 h-8 rounded-lg bg-brand-blue/20 text-brand-blue flex items-center justify-center text-sm font-black group-hover:bg-brand-blue group-hover:text-white transition-all flex-shrink-0 border border-brand-blue/30 mt-0.5">Q</div>
-                            {faq.question}
-                        </h4>
-                        <div className="flex gap-4">
-                            <div className="w-8 h-8 rounded-lg bg-slate-950 text-brand-gray/40 flex items-center justify-center text-sm font-black flex-shrink-0 border border-white/5 group-hover:border-brand-yellow/40 group-hover:text-brand-yellow transition-all mt-1">A</div>
-                            <p className="text-brand-gray/80 text-[17px] leading-relaxed font-light drop-shadow-sm whitespace-pre-line">
-                                {faq.answer}
-                            </p>
+                <div className="text-center mb-16">
+                    <Badge icon variant="outline" className="uppercase tracking-[0.3em] font-black text-[10px] py-1 px-4 mb-4">FAQ</Badge>
+                    <h2 className="text-4xl md:text-5xl font-black text-white tracking-tighter">Dúvidas Comuns</h2>
+                </div>
+
+                <div className="grid md:grid-cols-2 gap-4 lg:gap-8">
+                    {FAQS.map(faq => (
+                        <div
+                            key={faq.id}
+                            className="bg-slate-950/40 border border-white/10 rounded-xl overflow-hidden transition-all hover:border-brand-blue/40 group backdrop-blur-md"
+                        >
+                            <button
+                                onClick={() => setOpenId(openId === faq.id ? null : faq.id)}
+                                className="w-full text-left p-6 md:p-8 flex items-start justify-between gap-4"
+                            >
+                                <h4 className="text-lg md:text-xl font-black text-white leading-tight flex items-start gap-4">
+                                    <div className="w-8 h-8 rounded-lg bg-brand-blue/20 text-brand-blue flex items-center justify-center text-sm font-black group-hover:bg-brand-blue group-hover:text-white transition-all flex-shrink-0 border border-brand-blue/30 mt-0.5">Q</div>
+                                    {faq.question}
+                                </h4>
+                                <div className="md:hidden text-white/40 mt-1">
+                                    {openId === faq.id ? <ChevronUp className="w-5 h-5" /> : <ChevronDown className="w-5 h-5" />}
+                                </div>
+                            </button>
+
+                            <div className={`px-6 md:px-8 pb-8 transition-all duration-300 ${openId === faq.id ? 'block' : 'hidden md:block'}`}>
+                                <div className="flex gap-4">
+                                    <div className="w-8 h-8 rounded-lg bg-slate-950 text-brand-gray/40 flex items-center justify-center text-sm font-black flex-shrink-0 border border-white/5 group-hover:border-brand-yellow/40 group-hover:text-brand-yellow transition-all mt-1">A</div>
+                                    <p className="text-brand-gray/80 text-[16px] md:text-[17px] leading-relaxed font-light drop-shadow-sm whitespace-pre-line">
+                                        {faq.answer}
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                ))}
+                    ))}
+                </div>
             </div>
-        </div>
-    </section>
-);
+        </section>
+    );
+};
