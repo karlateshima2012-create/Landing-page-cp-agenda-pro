@@ -75,7 +75,7 @@ export const FAQSection = () => {
     const [openId, setOpenId] = useState<number | null>(null);
 
     return (
-        <section id="faq" className="pt-32 pb-0 bg-transparent relative w-full transition-all duration-700">
+        <section id="faq" className="py-20 md:py-32 bg-transparent relative w-full transition-all duration-700">
             <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-slate-950 via-slate-950/80 to-transparent z-20 pointer-events-none"></div>
 
             <div className="max-w-6xl mx-auto relative z-10 px-4 md:px-8 lg:px-12 pb-24">
