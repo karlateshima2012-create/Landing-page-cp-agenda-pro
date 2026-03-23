@@ -6,7 +6,10 @@ export const Pricing = () => {
     const [proPeriod, setProPeriod] = React.useState<'semestral' | 'anual'>('anual');
     const [elitePeriod, setElitePeriod] = React.useState<'semestral' | 'anual'>('anual');
 
-    const whatsappUrl = "https://wa.me/8109011886491?text=Olá! Gostaria de saber mais sobre os planos do CP Gestão.";
+    const whatsappUrl = "https://wa.me/8109011886491?text=";
+    const proUrl = `${whatsappUrl}${encodeURIComponent("Olá! Gostaria de saber mais sobre o Plano PRO.")}`;
+    const eliteUrl = `${whatsappUrl}${encodeURIComponent("Olá! Gostaria de saber mais sobre o Plano ELITE.")}`;
+    const generalUrl = `${whatsappUrl}${encodeURIComponent("Olá! Gostaria de saber mais sobre os planos do CP Gestão.")}`;
 
     return (
         <section id="pricing" className="py-24 bg-slate-950 relative overflow-hidden">
@@ -85,7 +88,7 @@ export const Pricing = () => {
                             </div>
                         </div>
 
-                        <a href={whatsappUrl} className="relative w-full h-12 bg-brand-blue text-slate-950 font-black rounded-xl flex items-center justify-center gap-2 hover:scale-[1.03] transition-all text-[10px] uppercase tracking-widest active:scale-95 shadow-lg shadow-brand-blue/20 group/btn overflow-hidden">
+                        <a href={proUrl} className="relative w-full h-12 bg-brand-blue text-slate-950 font-black rounded-xl flex items-center justify-center gap-2 hover:scale-[1.03] transition-all text-[10px] uppercase tracking-widest active:scale-95 shadow-lg shadow-brand-blue/20 group/btn overflow-hidden">
                             <span className="relative z-10">Quero começar agora</span>
                             <div className="absolute inset-x-0 bottom-0 h-1 bg-white transform scale-x-0 group-hover/btn:scale-x-100 transition-transform duration-300"></div>
                         </a>
@@ -152,7 +155,7 @@ export const Pricing = () => {
                             </div>
                         </div>
 
-                        <a href={whatsappUrl} className="relative w-full h-14 bg-brand-yellow text-slate-950 font-black rounded-xl flex items-center justify-center gap-2 hover:scale-[1.03] transition-all shadow-xl active:scale-95 text-[10px] uppercase tracking-widest leading-none group/btn overflow-hidden">
+                        <a href={eliteUrl} className="relative w-full h-14 bg-brand-yellow text-slate-950 font-black rounded-xl flex items-center justify-center gap-2 hover:scale-[1.03] transition-all shadow-xl active:scale-95 text-[10px] uppercase tracking-widest leading-none group/btn overflow-hidden">
                             <span className="relative z-10">Quero começar agora</span>
                             <div className="absolute inset-x-0 bottom-0 h-1 bg-white transform scale-x-0 group-hover/btn:scale-x-100 transition-transform duration-300"></div>
                         </a>
@@ -166,7 +169,7 @@ export const Pricing = () => {
                         Agende uma conversa rápida para conhecer o sistema, entender como ele se adapta ao seu negócio e tirar todas as suas dúvidas. Sem compromisso.
                     </p>
 
-                    <a href={whatsappUrl} className="relative inline-flex items-center justify-center bg-white text-slate-950 font-black py-4 px-8 rounded-xl text-[10px] uppercase tracking-widest hover:scale-105 active:scale-95 transition-all shadow-xl leading-none group overflow-hidden">
+                    <a href={generalUrl} className="relative inline-flex items-center justify-center bg-white text-slate-950 font-black py-4 px-8 rounded-xl text-[10px] uppercase tracking-widest hover:scale-105 active:scale-95 transition-all shadow-xl leading-none group overflow-hidden">
                         <span className="relative z-10">QUERO CONHECER ANTES DE DECIDIR</span>
                         <div className="absolute inset-x-0 bottom-0 h-1 bg-brand-blue transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
                     </a>
@@ -202,7 +205,7 @@ export const Pricing = () => {
                             />
                         </div>
 
-                        <a href={whatsappUrl} className="relative inline-flex items-center gap-4 bg-white text-slate-950 font-black py-4 px-8 rounded-xl text-xs uppercase tracking-widest hover:scale-105 active:scale-95 transition-all shadow-xl leading-none group/btn overflow-hidden">
+                        <a href={generalUrl} className="relative inline-flex items-center gap-4 bg-white text-slate-950 font-black py-4 px-8 rounded-xl text-xs uppercase tracking-widest hover:scale-105 active:scale-95 transition-all shadow-xl leading-none group/btn overflow-hidden">
                             <span className="relative z-10">Quero garantir meu bônus</span>
                             <div className="absolute inset-x-0 bottom-0 h-1 bg-brand-blue transform scale-x-0 group-hover/btn:scale-x-100 transition-transform duration-300"></div>
                         </a>
