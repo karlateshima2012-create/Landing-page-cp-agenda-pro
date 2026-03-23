@@ -18,20 +18,15 @@ export default function App() {
       <Navbar />
       <Hero />
 
-      {/* Main Content Wrapper for Internal Margin */}
-      <main className="max-w-[1440px] mx-auto px-4 sm:px-8 md:px-12 lg:px-20">
-        <div className="relative z-20">
-          <QuickFeatures />
-        </div>
-      </main>
+      <div className="relative z-20">
+        <QuickFeatures />
+      </div>
 
       <div className="bg-slate-950">
         <FeaturesShowcase />
       </div>
 
-      <main className="max-w-[1440px] mx-auto px-4 sm:px-8 md:px-12 lg:px-20">
-        <TargetAudience />
-      </main>
+      <TargetAudience />
 
       <Pricing />
 
