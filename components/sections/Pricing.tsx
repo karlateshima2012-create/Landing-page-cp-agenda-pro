@@ -162,7 +162,8 @@ export const Pricing = () => {
                 {/* Consultative Supporting Text (No separate headline) */}
                 <div className="max-w-4xl mx-auto mb-32 text-center px-4">
                     <p className="text-brand-gray text-lg font-light leading-relaxed mb-8 max-w-2xl mx-auto">
-                        Ainda tem dúvidas? <span className="text-white font-bold">Conheça antes de decidir.</span> Marque uma conversa rápida comigo: eu te mostro o sistema, entendo seu negócio e respondo dúvidas sem compromisso.
+                        Ainda tem dúvidas? <span className="text-white font-bold">Conheça antes de decidir.</span><br />
+                        Agende uma conversa rápida para conhecer o sistema, entender como ele se adapta ao seu negócio e tirar todas as suas dúvidas. Sem compromisso.
                     </p>
 
                     <a href={whatsappUrl} className="relative inline-flex items-center gap-4 bg-white text-slate-950 font-black py-4 px-8 rounded-xl text-[10px] uppercase tracking-widest hover:scale-105 active:scale-95 transition-all shadow-xl leading-none group overflow-hidden">
