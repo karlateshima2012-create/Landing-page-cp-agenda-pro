@@ -82,7 +82,7 @@ export const Pricing = () => {
                                     </button>
                                 </div>
                                 {proPeriod === 'anual' && (
-                                    <div className="bg-brand-pink/10 text-brand-pink text-[9px] font-black uppercase py-1.5 px-3 rounded-full text-center border border-brand-pink/20">
+                                    <div className="bg-brand-pink/10 text-brand-pink text-[10px] font-black uppercase py-1.5 px-3 rounded-full text-center border border-brand-pink/20">
                                         Economize ¥4.200 no período
                                     </div>
                                 )}
@@ -149,7 +149,7 @@ export const Pricing = () => {
                                     </button>
                                 </div>
                                 {elitePeriod === 'anual' && (
-                                    <div className="bg-brand-pink/10 text-brand-pink text-[9px] font-black uppercase py-1.5 px-3 rounded-full text-center border border-brand-pink/20">
+                                    <div className="bg-brand-pink/10 text-brand-pink text-[10px] font-black uppercase py-1.5 px-3 rounded-full text-center border border-brand-pink/20">
                                         Economize ¥7.800 no período
                                     </div>
                                 )}
