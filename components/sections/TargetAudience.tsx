@@ -18,7 +18,7 @@ export const TargetAudience = () => {
                             <h2 className="text-2xl md:text-4xl font-black text-white mt-4 mb-6 tracking-tighter leading-[1]">
                                 O que é <span className="text-brand-blue text-glow-blue">CP Gestão?</span>
                             </h2>
-                            <p className="text-lg md:text-xl text-brand-gray font-light leading-relaxed">
+                            <p className="text-base text-brand-gray/80 font-light leading-relaxed">
                                 CP Gestão é o sistema que transforma clientes ocasionais em clientes fiéis. É um CRM completo com programa de fidelidade integrado, feito para empreendedores que querem organizar sua base de clientes, aumentar a recorrência de vendas e crescer com previsibilidade.
                             </p>
                         </div>
@@ -27,7 +27,7 @@ export const TargetAudience = () => {
                             <h2 className="text-2xl md:text-4xl font-black text-white mb-6 tracking-tighter leading-[1.1]">
                                 O que ele faz pela <span className="text-brand-pink text-glow-pink">sua empresa?</span>
                             </h2>
-                            <div className="space-y-6 text-lg md:text-xl text-brand-gray font-light leading-relaxed">
+                            <div className="space-y-6 text-base text-brand-gray/80 font-light leading-relaxed">
                                 <p>
                                     O CP Gestão transforma a forma como você se relaciona com quem já comprou de você. Com CRM completo e programa de fidelidade integrado, você deixa de depender da memória ou de planilhas desconectadas e passa a ter um sistema que trabalha por você. Ele cadastra, organiza, pontua, lembra, avisa e mostra os resultados em tempo real.
                                 </p>
