@@ -28,9 +28,9 @@ export const Footer = () => {
                     </div>
                     <button
                         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-                        className="flex items-center gap-3 text-white/30 hover:text-brand-blue transition-all group pt-2"
+                        className="flex items-center gap-3 text-brand-blue/60 hover:text-brand-blue transition-all group pt-2"
                     >
-                        <div className="w-8 h-8 rounded-lg border border-white/10 flex items-center justify-center group-hover:border-brand-blue/40 group-hover:bg-brand-blue/10 transition-all">
+                        <div className="w-8 h-8 rounded-lg border border-brand-blue/30 flex items-center justify-center group-hover:border-brand-blue/40 group-hover:bg-brand-blue/10 transition-all">
                             <ArrowUp className="w-4 h-4" />
                         </div>
                         <span className="text-[9px] uppercase tracking-[0.2em] font-black">Voltar ao Topo</span>
