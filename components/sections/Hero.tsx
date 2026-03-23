@@ -15,7 +15,7 @@ export const Hero = () => (
             </h1>
 
             <p className="text-lg md:text-xl text-brand-gray font-light leading-relaxed max-w-3xl mx-auto mb-12">
-                Organize seus dados, <span className="text-white font-bold">fidelize quem compra</span> e garanta um <span className="text-white font-bold">crescimento previsível</span> com um CRM completo e inteligente.
+                Com o <span className="text-white font-bold">CP Gestão</span>, você <span className="text-white font-bold">organiza</span> seus dados, <span className="text-white font-bold">fideliza</span> quem compra e garante um <span className="text-white font-bold">crescimento previsível</span> com um CRM completo e inteligente.
             </p>
 
             <div className="flex justify-center items-center">
