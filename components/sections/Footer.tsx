@@ -8,10 +8,10 @@ export const Footer = () => {
     const [isLegalOpen, setIsLegalOpen] = useState(false);
 
     return (
-        <footer className="bg-slate-900/50 pt-10 pb-8 px-6 relative">
-            <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 mb-10">
+        <footer className="bg-slate-900/50 pt-6 pb-6 px-6 relative">
+            <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 mb-6">
                 <div className="md:col-span-3 space-y-4">
-                    <Logo className="scale-[0.5] md:scale-75 origin-left" />
+                    <Logo className="scale-[0.55] md:scale-[0.65] origin-left" />
                     <p className="text-brand-gray text-[13px] max-w-md leading-relaxed font-light opacity-60">
                         Revolucionando a gestão e fidelização no Japão com tecnologia NFC, CRM avançado e soluções inteligentes para empreendedores.
                     </p>
@@ -55,7 +55,7 @@ export const Footer = () => {
                 </div>
             </div>
 
-            <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 pt-10 border-t border-white/5 text-slate-500 text-[9px] uppercase font-black tracking-[0.3em]">
+            <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 pt-6 border-t border-white/5 text-slate-500 text-[9px] uppercase font-black tracking-[0.3em]">
                 <p>© {new Date().getFullYear()} Creative Print. Todos os direitos reservados.</p>
             </div>
 
