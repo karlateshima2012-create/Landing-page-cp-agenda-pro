@@ -11,7 +11,7 @@ export const Footer = () => {
         <footer className="bg-slate-900/50 pt-4 pb-4 px-6 relative">
             <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 mb-4">
                 <div className="md:col-span-3 space-y-4">
-                    <div className="flex justify-between items-end md:items-start md:flex-col w-full md:w-auto pt-2 md:pt-0">
+                    <div className="flex justify-between items-end md:items-start md:flex-col w-full md:w-auto pt-2 md:pt-0 pr-6 md:pr-0">
                         <div className="space-y-4">
                             <Logo className="scale-[0.55] md:scale-[0.65] origin-left" />
                             <div className="flex justify-between w-[200px]">
@@ -29,7 +29,7 @@ export const Footer = () => {
 
                         <button
                             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-                            className="flex items-center gap-3 text-brand-blue/60 hover:text-brand-blue transition-all group pt-2 mr-2 md:mr-0"
+                            className="flex items-center gap-3 text-brand-blue/60 hover:text-brand-blue transition-all group pt-2"
                         >
                             <div className="w-12 h-12 md:w-8 md:h-8 rounded-xl md:rounded-lg border border-brand-blue/30 flex items-center justify-center group-hover:border-brand-blue/40 group-hover:bg-brand-blue/10 transition-all">
                                 <ArrowUp className="w-5 h-5 md:w-4 md:h-4" />
