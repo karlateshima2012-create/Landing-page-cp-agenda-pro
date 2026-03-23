@@ -19,9 +19,9 @@ export const QuickFeatures = () => (
     <section className="relative py-12 px-6 z-20">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
             <QuickCard
-                badge="Mobilidade"
-                title="ACESSO EM TEMPO REAL"
-                description="Seu negócio no bolso, 24 horas por dia. Acompanhe tudo em tempo real do celular ou computador. Sem instalação, sem dor de cabeça."
+                badge="CRM COMPLETO"
+                title="Tenha o controle total da sua empresa"
+                description="Cadastre seus clientes, acompanhe a data da última compra, receba lembretes estratégicos, descubra o valor que cada um já gastou, identifique os clientes recorrentes e tenha uma base organizada para decisões estratégicas."
                 colorClass="text-brand-blue bg-brand-blue"
             />
             <QuickCard
