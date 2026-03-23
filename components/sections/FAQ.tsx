@@ -69,7 +69,7 @@ export const FAQSection = () => {
                     <h2 className="text-4xl md:text-5xl font-black text-white tracking-tighter">Dúvidas Comuns</h2>
                 </div>
 
-                <div className="max-w-3xl mx-auto space-y-4">
+                <div className="max-w-3xl mx-auto space-y-2">
                     {FAQS.map(faq => (
                         <div
                             key={faq.id}
@@ -77,7 +77,7 @@ export const FAQSection = () => {
                         >
                             <button
                                 onClick={() => setOpenId(openId === faq.id ? null : faq.id)}
-                                className="w-full text-left p-6 md:p-8 flex items-center justify-between gap-4"
+                                className="w-full text-left p-5 md:p-6 flex items-center justify-between gap-4"
                             >
                                 <h4 className="text-lg md:text-xl font-bold text-white leading-tight">
                                     {faq.question}
@@ -87,7 +87,7 @@ export const FAQSection = () => {
                                 </div>
                             </button>
 
-                            <div className={`px-6 md:px-8 transition-all duration-300 ${openId === faq.id ? 'max-h-[500px] pb-8 opacity-100' : 'max-h-0 opacity-0 pointer-events-none'}`}>
+                            <div className={`px-5 md:px-6 transition-all duration-300 ${openId === faq.id ? 'max-h-[500px] pb-6 opacity-100' : 'max-h-0 opacity-0 pointer-events-none'}`}>
                                 <div className="pt-4 border-t border-white/5">
                                     <p className="text-brand-gray/80 text-base md:text-lg leading-relaxed font-light whitespace-pre-line">
                                         {faq.answer}
