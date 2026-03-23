@@ -78,7 +78,7 @@ export const FeaturesShowcase = () => (
                 "Saiba a data da última compra de cada um",
                 "Receba lembretes estratégicos para acionar clientes",
                 "Descubra quanto cada cliente já gastou (valor vitalício)",
-                "Identifique seus clientes TOP (os que mais compram)",
+                "Identifique seus clientes que mais compram",
                 "Base organizada para campanhas de marketing certeiras"
             ]}
         />
