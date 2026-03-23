@@ -252,7 +252,7 @@ export const Pricing = () => {
                         icon={<MessageCircle className="w-10 h-10" />}
                         step="PASSO 1"
                         title="Atendimento pelo WhatsApp"
-                        desc="Fale direto, sem complicação e sem formulários."
+                        desc="Fale diretamente pelo whatsapp, sem complicação e sem formulários."
                     />
                     <StepCardMinimal
                         icon={<Zap className="w-10 h-10" />}
@@ -301,8 +301,8 @@ const FeatureTile = ({ title, sub, highlight = false }: { title: string, sub: st
 const StepCardMinimal = ({ icon, step, title, desc }: { icon: React.ReactNode, step: string, title: string, desc: string }) => (
     <div className="relative p-10 rounded-[3rem] bg-slate-900 border border-white/5 group hover:border-brand-blue/30 transition-all flex flex-col items-center text-center">
         <div className="text-brand-blue mb-8 group-hover:scale-110 transition-transform">{icon}</div>
-        <span className="text-[10px] font-black tracking-[0.3em] text-white/20 mb-2 uppercase">{step}</span>
-        <h4 className="text-lg font-black text-white mb-6 uppercase tracking-tight">{title}</h4>
-        <p className="text-brand-gray/60 text-sm font-light leading-relaxed">{desc}</p>
+        <span className="text-[11px] font-black tracking-[0.3em] text-white/30 mb-3 uppercase">{step}</span>
+        <h4 className="text-2xl font-black text-white mb-6 uppercase tracking-tight leading-none">{title}</h4>
+        <p className="text-brand-gray/80 text-base font-light leading-relaxed">{desc}</p>
     </div>
 );
