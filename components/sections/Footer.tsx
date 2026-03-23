@@ -31,6 +31,14 @@ export const Footer = () => {
                         <li><a href="#solucoes" className="hover:text-brand-pink transition-colors">Soluções</a></li>
                         <li><a href="#pricing" className="hover:text-brand-yellow transition-colors">Investimento</a></li>
                         <li><a href="#faq" className="hover:text-white transition-colors">Dúvidas</a></li>
+                        <li>
+                            <button
+                                onClick={() => setIsLegalOpen(true)}
+                                className="hover:text-white transition-colors text-left"
+                            >
+                                Termos e Políticas
+                            </button>
+                        </li>
                         <li className="pt-6">
                             <button
                                 onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
@@ -48,14 +56,6 @@ export const Footer = () => {
 
             <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 pt-10 border-t border-white/5 text-slate-500 text-[9px] uppercase font-black tracking-[0.3em]">
                 <p>© {new Date().getFullYear()} Creative Print. Todos os direitos reservados.</p>
-                <div className="flex gap-8">
-                    <button
-                        onClick={() => setIsLegalOpen(true)}
-                        className="text-white hover:text-brand-blue transition-colors cursor-pointer font-black"
-                    >
-                        Termos e Políticas
-                    </button>
-                </div>
             </div>
 
             <LegalModal
