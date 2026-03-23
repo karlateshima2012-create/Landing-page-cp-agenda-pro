@@ -223,7 +223,7 @@ export const Pricing = () => {
                                     <h4 className="text-white font-black text-xs uppercase tracking-widest mb-4">
                                         TRANSPARÊNCIA NO CONTRATO
                                     </h4>
-                                    <p className="text-brand-gray/60 text-[13px] font-medium leading-relaxed">
+                                    <p className="text-base text-brand-gray/80 font-light leading-relaxed">
                                         Os planos operam em períodos de 6 ou 12 meses. Cancelamento livre a qualquer momento, com acesso ativo até o final do período contratado.
                                     </p>
                                 </div>
