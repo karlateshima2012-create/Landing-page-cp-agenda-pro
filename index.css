@@ -115,6 +115,7 @@ html {
 .gradient-text {
     background: linear-gradient(90deg, #38b6ff 0%, #E5157A 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -133,11 +134,39 @@ html {
 .perspective-1000 {
     perspective: 1000px;
 }
+
 @keyframes brightPulse {
-    0%, 100% { opacity: 0.1; transform: scale(1); }
-    50% { opacity: 0.6; transform: scale(1.15); }
+
+    0%,
+    100% {
+        opacity: 0.1;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.6;
+        transform: scale(1.15);
+    }
 }
 
 .animate-pulse-bright {
     animation: brightPulse 8s ease-in-out infinite;
+}
+
+@keyframes whatsappPulse {
+
+    0%,
+    100% {
+        box-shadow: 0 0 15px rgba(37, 211, 102, 0.5);
+        transform: scale(1);
+    }
+
+    50% {
+        box-shadow: 0 0 35px rgba(37, 211, 102, 0.8);
+        transform: scale(1.05);
+    }
+}
+
+.animate-whatsapp-pulse {
+    animation: whatsappPulse 3s ease-in-out infinite;
 }

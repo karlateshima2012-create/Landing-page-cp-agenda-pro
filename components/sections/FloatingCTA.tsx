@@ -21,7 +21,7 @@ export const FloatingCTA = () => {
                 href="https://wa.me/8109011886491?text=Olá! Gostaria de saber mais sobre o CP Gestão."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-16 h-16 bg-[#25D366] rounded-full flex items-center justify-center shadow-[0_0_20px_rgba(37,211,102,0.4)] hover:shadow-[0_0_30px_rgba(37,211,102,0.6)] hover:scale-110 active:scale-95 transition-all group"
+                className="w-16 h-16 bg-[#25D366] rounded-full flex items-center justify-center animate-whatsapp-pulse hover:animate-none transition-all group"
                 aria-label="WhatsApp"
             >
                 <svg className="w-8 h-8 text-white fill-current" viewBox="0 0 24 24">
