@@ -22,11 +22,16 @@ export const FinalCTA = () => (
                     Sua gestão profissional hoje significa escala e liberdade amanhã. O futuro do seu negócio começa aqui.
                 </p>
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-                    <button className="relative w-full sm:w-auto px-12 h-14 bg-white text-slate-950 font-black rounded-xl text-xs uppercase tracking-widest hover:scale-105 active:scale-95 transition-all shadow-xl flex items-center justify-center gap-3 group/p overflow-hidden">
+                    <a
+                        href="https://wa.me/8109011886491?text=Olá! Gostaria de saber mais sobre o CP Gestão."
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="relative w-full sm:w-auto px-12 h-14 bg-white text-slate-950 font-black rounded-xl text-xs uppercase tracking-widest hover:scale-105 active:scale-95 transition-all shadow-xl flex items-center justify-center gap-3 group/p overflow-hidden"
+                    >
                         <span className="relative z-10">QUERO VER NA PRÁTICA</span>
                         <span className="relative z-10 group-hover/p:translate-x-1 transition-transform">→</span>
                         <div className="absolute inset-x-0 bottom-0 h-1 bg-brand-blue transform scale-x-0 group-hover/p:scale-x-100 transition-transform duration-300"></div>
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>

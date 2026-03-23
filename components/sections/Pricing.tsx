@@ -6,7 +6,7 @@ export const Pricing = () => {
     const [proPeriod, setProPeriod] = React.useState<'semestral' | 'anual'>('anual');
     const [elitePeriod, setElitePeriod] = React.useState<'semestral' | 'anual'>('anual');
 
-    const whatsappUrl = "https://wa.me/MESSAGE_URL?text=Olá! Cheguei pelo site e quero contratar o CP Gestão. Pode me explicar os planos?";
+    const whatsappUrl = "https://wa.me/8109011886491?text=Olá! Gostaria de saber mais sobre os planos do CP Gestão.";
 
     return (
         <section id="pricing" className="py-20 md:py-32 bg-slate-950 relative overflow-hidden">

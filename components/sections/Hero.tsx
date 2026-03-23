@@ -20,7 +20,7 @@ export const Hero = () => (
 
             <div className="flex justify-center items-center">
                 <a
-                    href="https://wa.me/MESSAGE_URL?text=Olá! Vim pelo site e gostaria de conhecer mais sobre como o CP Gestão pode ajudar minha empresa a crescer no Japão."
+                    href="https://wa.me/8109011886491?text=Olá! Gostaria de saber mais sobre o CP Gestão."
                     target="_blank"
                     rel="noopener noreferrer"
                     className="relative bg-white hover:bg-slate-100 text-slate-950 font-black text-xs h-12 px-10 rounded-lg flex items-center justify-center gap-3 transition-all shadow-[0_0_25px_rgba(56,182,255,0.35)] hover:scale-105 active:scale-95 uppercase tracking-wider group overflow-hidden"

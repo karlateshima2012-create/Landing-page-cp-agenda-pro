@@ -57,7 +57,7 @@ export const TargetAudience = () => {
                             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-12 bg-brand-blue/40 blur-[40px] rounded-full animate-pulse opacity-20"></div>
 
                             <a
-                                href="https://wa.me/MESSAGE_URL"
+                                href="https://wa.me/8109011886491?text=Olá! Gostaria de saber mais sobre o CP Gestão."
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="inline-flex items-center justify-center relative h-14 px-12 bg-white text-slate-950 font-black rounded-xl text-[10px] uppercase tracking-wider hover:scale-105 active:scale-95 transition-all shadow-[0_15px_30px_-5px_rgba(255,255,255,0.25)] hover:shadow-brand-blue/40 group overflow-hidden"
