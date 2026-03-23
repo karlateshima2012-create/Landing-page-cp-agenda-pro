@@ -17,7 +17,7 @@ export const FinalCTA = () => (
                     Chega de adiar o <br /><span className="text-brand-pink drop-shadow-[0_0_20px_rgba(229,21,122,0.7)]">seu crescimento.</span>
                 </h2>
                 <p className="text-lg md:text-xl text-brand-gray font-light leading-relaxed max-w-3xl mx-auto mb-12">
-                    Sua gestão profissional hoje significa <span className="text-white font-bold">escala</span> e <span className="text-white font-bold">liberdade</span> amanhã. O futuro do seu negócio começa aqui.
+                    Sua gestão profissional hoje significa <span className="text-white font-bold">escala e liberdade</span> amanhã. O futuro do seu negócio começa aqui.
                 </p>
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
                     <a
