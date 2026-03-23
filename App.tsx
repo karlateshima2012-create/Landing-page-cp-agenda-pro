@@ -22,11 +22,11 @@ export default function App() {
         <QuickFeatures />
       </div>
 
+      <TargetAudience />
+
       <div className="bg-slate-950">
         <FeaturesShowcase />
       </div>
-
-      <TargetAudience />
 
       <Pricing />
 
