@@ -52,7 +52,7 @@ export const Footer = () => {
                 </div>
             </div>
 
-            <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 pt-4 border-t border-white/5 text-slate-500 text-[9px] uppercase font-black tracking-[0.3em]">
+            <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 pt-4 border-t border-white/5 text-slate-500 text-[9px] font-black tracking-[0.2em]">
                 <p>© {new Date().getFullYear()} Creative Print. Todos os direitos reservados.</p>
             </div>
 
