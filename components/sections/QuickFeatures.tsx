@@ -33,7 +33,7 @@ export const QuickFeatures = () => (
             <QuickCard
                 badge="Estratégia"
                 title="DASHBOARD ESTRATÉGICO"
-                description="Enxergue o futuro do seu negócio em números. Acompanhe métricas de crescimento e retenção em um painel simples e intuitivo."
+                description="Acompanhe vendas, retenção, ticket médio e valor vitalício dos clientes em um painel simples e atualizado em tempo real. Visualize o desempenho do seu negócio de forma clara, identifique oportunidades de crescimento e tome decisões estratégicas com base em dados."
                 colorClass="text-brand-yellow bg-brand-yellow"
             />
         </div>
