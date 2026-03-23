@@ -14,14 +14,12 @@ export const TargetAudience = () => {
                     <div className="absolute inset-0 opacity-[0.05] bg-grid pointer-events-none"></div>
 
                     <div className="relative z-10 max-w-4xl mx-auto">
-                        {/* Section 1: O que é? */}
                         <div className="text-center mb-20">
-                            <Badge variant="outline" className="border-brand-blue/40 text-brand-blue bg-brand-blue/10 uppercase tracking-[0.3em] font-black text-[10px] py-1 px-4 mb-6 shadow-[0_0_15px_rgba(56,182,255,0.2)]">CONHEÇA O SISTEMA</Badge>
                             <h2 className="text-3xl md:text-5xl font-black text-white mt-4 mb-8 tracking-tighter leading-[1]">
                                 O que é <span className="text-brand-blue text-glow-blue">CP Gestão?</span>
                             </h2>
                             <p className="text-lg md:text-xl text-brand-gray font-light leading-relaxed">
-                                Imagine ter todos os seus clientes organizados, saber quem comprou quando, quanto gastou e quando precisa ser acionado. Imagine um sistema que calcula pontos automaticamente, premia os mais fiéis e ainda te mostra exatamente onde está perdendo oportunidade de venda. É isso que o CP Gestão faz.
+                                CP Gestão é o sistema que transforma clientes ocasionais em clientes fiéis. É um CRM completo com programa de fidelidade integrado, feito para empreendedores que querem organizar sua base de clientes, aumentar a recorrência de vendas e crescer com previsibilidade.
                             </p>
                         </div>
 
@@ -35,7 +33,7 @@ export const TargetAudience = () => {
                             </h2>
                             <div className="space-y-6 text-lg md:text-xl text-brand-gray font-light leading-relaxed">
                                 <p>
-                                    Ele transforma a forma como você se relaciona com quem já comprou de você. Com CRM completo e programa de fidelidade integrado, você deixa de depender da memória ou de planilhas desconectadas e passa a ter um sistema que trabalha por você. Ele cadastra, organiza, pontua, lembra, avisa e mostra os resultados em tempo real.
+                                    O CP Gestão transforma a forma como você se relaciona com quem já comprou de você. Com CRM completo e programa de fidelidade integrado, você deixa de depender da memória ou de planilhas desconectadas e passa a ter um sistema que trabalha por você. Ele cadastra, organiza, pontua, lembra, avisa e mostra os resultados em tempo real.
                                 </p>
                                 <p>
                                     Seu cliente ganha pontos a cada compra e volta para resgatar prêmios. Você ganha mais vendas, mais previsibilidade e mais tempo para focar no que realmente importa.
