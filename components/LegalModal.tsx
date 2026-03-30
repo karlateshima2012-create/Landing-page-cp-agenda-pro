@@ -41,7 +41,7 @@ export const LegalModal: React.FC<LegalModalProps> = ({ isOpen, onClose }) => {
                         <div className="space-y-6 text-sm">
                             <div>
                                 <h4 className="text-white font-bold mb-2">1. Objeto</h4>
-                                <p>A CONTRATADA (**Creative Print**) disponibiliza ao CONTRATANTE acesso ao sistema **CP Agenda Pro**, incluindo funcionalidades de agendamento online 24h, gestão de profissionais, notificações automáticas e integração com NFC/QR Code.</p>
+                                <p>A CONTRATADA (Creative Print) disponibiliza ao CONTRATANTE acesso ao sistema CP Agenda Pro, incluindo funcionalidades de agendamento online 24h, gestão de profissionais, notificações automáticas e integração com NFC/QR Code.</p>
                             </div>
 
                             <div>
@@ -56,7 +56,7 @@ export const LegalModal: React.FC<LegalModalProps> = ({ isOpen, onClose }) => {
 
                             <div>
                                 <h4 className="text-white font-bold mb-2">3. Forma de Pagamento e Valores</h4>
-                                <p>O pagamento será realizado via cartão de crédito através da plataforma **Stripe**. A cobrança será **mensal e automática**, conforme o plano escolhido.</p>
+                                <p>O pagamento será realizado via cartão de crédito através da plataforma Stripe. A cobrança será mensal e automática, conforme o plano escolhido.</p>
                                 <p className="mt-2 text-brand-blue font-bold">Valores Vigentes:</p>
                                 <ul className="list-disc pl-5 space-y-1">
                                     <li><strong>Plano 6 Meses</strong>: ¥1.490/mês (semestral)</li>
