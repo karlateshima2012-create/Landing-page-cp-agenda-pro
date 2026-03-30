@@ -2,7 +2,7 @@
 import React from 'react';
 import { Users, CreditCard, TrendingUp, Check } from 'lucide-react';
 
-const FeatureSection = ({ icon, title, description, badge, items, colorClass, glowClass, imageUrl, reverse = false }: {
+const FeatureSection = ({ icon, title, description, badge, items, colorClass, glowClass, imageUrl, cardBg, reverse = false }: {
     icon: React.ReactNode,
     title: string,
     description?: string,
@@ -11,6 +11,7 @@ const FeatureSection = ({ icon, title, description, badge, items, colorClass, gl
     colorClass: string,
     glowClass: string,
     imageUrl?: string,
+    cardBg?: string,
     reverse?: boolean
 }) => (
     <section className={`py-12 md:py-16 ${reverse ? 'bg-slate-900 border-y border-white/5' : 'bg-slate-950'}`}>
@@ -48,11 +49,11 @@ const FeatureSection = ({ icon, title, description, badge, items, colorClass, gl
                     <div className="hidden md:block flex-1 w-full perspective-1000">
                         <div className="relative group transition-transform duration-500 hover:rotate-y-6">
                             <div className={`absolute inset-0 ${reverse ? 'bg-brand-pink' : 'bg-brand-blue'} blur-[80px] opacity-10 group-hover:opacity-20 transition-opacity`}></div>
-                            <div className="relative bg-slate-900/60 border border-white/10 p-2 rounded-[2rem] backdrop-blur-3xl shadow-2xl overflow-hidden aspect-[4/3]">
+                            <div className={`relative ${cardBg || 'bg-slate-900/60'} border border-white/10 p-0 rounded-[2rem] shadow-2xl overflow-hidden aspect-[4/3]`}>
                                 <img
                                     src={imageUrl}
                                     alt={title}
-                                    className="w-full h-full object-cover rounded-[1.8rem] opacity-100 group-hover:scale-105 transition-all duration-700"
+                                    className="w-full h-full object-contain rounded-[2rem] opacity-100 group-hover:scale-105 transition-all duration-700"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/40 to-transparent pointer-events-none"></div>
                             </div>
@@ -70,16 +71,17 @@ export const FeaturesShowcase = () => (
             colorClass="bg-brand-blue text-white"
             glowClass="btn-glow-blue"
             icon={<Users className="w-8 h-8" />}
-            badge="CRM COMPLETO"
-            title="Tenha o controle total dos seus clientes na palma da mão"
-            imageUrl="/crm-feature.jpg"
+            badge="AGENDAMENTO ONLINE"
+            title="Sua agenda aberta 24h por dia, sem precisar atender o telefone"
+            cardBg="bg-[#0C0E1A]"
+            imageUrl="https://midias.creativeprintjp.com/wp-content/uploads/2026/03/Gemini_Generated_Image_1oj8xx1oj8xx1oj8.png"
             items={[
-                "Cadastre clientes com nome, telefone, endereço e histórico",
-                "Saiba a data da última compra de cada um",
-                "Receba lembretes estratégicos para acionar clientes",
-                "Descubra quanto cada cliente já gastou (valor vitalício)",
-                "Identifique seus clientes que mais compram",
-                "Base organizada para campanhas de marketing certeiras"
+                "Link exclusivo para seus clientes agendarem horários",
+                "Visualização em tempo real das vagas disponíveis",
+                "Confirmação e gestão total de reservas pelo gestor",
+                "Acesso fácil por qualquer smartphone ou tablet",
+                "Histórico completo de atendimentos por cliente",
+                "Fim das mensagens fora de hora pedindo horário"
             ]}
         />
         <FeatureSection
@@ -87,32 +89,34 @@ export const FeaturesShowcase = () => (
             colorClass="bg-brand-pink text-white"
             glowClass="btn-glow-pink"
             icon={<CreditCard className="w-8 h-8" />}
-            badge="SISTEMA DE FIDELIDADE"
-            title="Transforme clientes comuns em fãs que voltam sempre"
-            imageUrl="/loyalty-feature.jpg"
+            badge="GESTÃO ÚNICA"
+            title="Um profissional, um sistema, produtividade infinita"
+            cardBg="bg-[#0E1123]"
+            imageUrl="https://midias.creativeprintjp.com/wp-content/uploads/2026/03/Design-sem-nome-1.png"
             items={[
-                "Clientes acumulam pontos a cada compra realizada",
-                "Pontos viram prêmios e descontos (você define as regras)",
-                "Estímulo automático para recompra",
-                "Cliente acompanha seus pontos pelo celular",
-                "Aumento do ticket médio naturalmente",
-                "Diferencial competitivo: você fideliza enquanto concorrente só vende"
+                "Gestão simplificada para 1 profissional (Agenda Única)",
+                "Cadastro ilimitado de serviços e procedimentos",
+                "Definição de tempos específicos para cada serviço",
+                "Interface limpa e intuitiva para o dia a dia",
+                "Organização total da sua rotina de trabalho",
+                "Profissionalismo que encanta o seu cliente"
             ]}
         />
         <FeatureSection
             colorClass="bg-brand-yellow text-slate-950"
             glowClass="btn-glow-yellow"
             icon={<TrendingUp className="w-8 h-8" />}
-            badge="RELATÓRIOS E DECISÕES"
-            title="Enxergue seu negócio com clareza e tome decisões estratégicas"
-            imageUrl="/reports-feature.jpg"
+            badge="CONTROLE TOTAL"
+            title="Domine seus horários com flexibilidade total"
+            cardBg="bg-[#0F1A2E]"
+            imageUrl="https://midias.creativeprintjp.com/wp-content/uploads/2026/03/Design-sem-nome.png"
             items={[
-                "Saiba exatamente quantos clientes estão cadastrados",
-                "Veja quantos estão ativos e quantos precisam ser reativados",
-                "Descubra o ticket médio por cliente",
-                "Relatórios de vendas por período",
-                "Dados para definir promoções estratégicas",
-                "Métricas de crescimento e retenção em tempo real"
+                "Notificações de novas reservas para o gestor",
+                "Bloqueio de horários para compromissos pessoais",
+                "Pausas e intervalos personalizados e fáceis de configurar",
+                "Visualização clara da sua ocupação diária e semanal",
+                "Gestão de feriados e horários especiais",
+                "Controle absoluto sobre o seu tempo e descanso"
             ]}
         />
     </div>

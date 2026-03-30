@@ -19,21 +19,21 @@ export const QuickFeatures = () => (
     <section className="relative py-12 px-6 md:px-16 lg:px-24 z-20">
         <div className="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
             <QuickCard
-                badge="CRM COMPLETO"
-                title="TENHA O CONTROLE TOTAL DA SUA EMPRESA"
-                description="Cadastre seus clientes, acompanhe a data da última compra, receba lembretes estratégicos, descubra o valor que cada um já gastou, identifique os clientes recorrentes e tenha uma base organizada para decisões estratégicas."
+                badge="Agendamento"
+                title="SISTEMA ONLINE 24 HORAS"
+                description="Seu negócio nunca fecha. Permita que seus clientes consultem horários e reservem serviços sozinhos, direto pelo celular, a qualquer hora do dia ou da noite."
                 colorClass="text-brand-blue bg-brand-blue"
             />
             <QuickCard
-                badge="Retenção"
-                title="PROGRAMA DE FIDELIDADE"
-                description="Seu cliente acumula pontos a cada compra e troca por prêmios que você escolhe. Crie níveis de fidelidade, defina metas e deixe o sistema gerenciar toda a pontuação automaticamente. Quanto mais ele compra, mais benefícios ganha e mais motivos tem para voltar."
+                badge="Produtividade"
+                title="GESTÃO TOTAL DO SEU TEMPO"
+                description="Gestão de profissional com agenda única, cadastro ilimitado de serviços e total controle sobre seus bloqueios de horários e pausas personalizadas."
                 colorClass="text-brand-pink bg-brand-pink"
             />
             <QuickCard
-                badge="Estratégia"
-                title="DASHBOARD ESTRATÉGICO"
-                description="Acompanhe vendas, retenção, ticket médio e valor vitalício dos clientes em um painel simples e atualizado em tempo real. Visualize o desempenho do seu negócio de forma clara, identifique oportunidades de crescimento e tome decisões estratégicas com base em dados."
+                badge="Eficiência"
+                title="NOTIFICAÇÕES AUTOMÁTICAS"
+                description="Notificações imediatas de novos agendamentos para confirmar cada reserva e manter o controle total da agenda com praticidade."
                 colorClass="text-brand-yellow bg-brand-yellow"
             />
         </div>

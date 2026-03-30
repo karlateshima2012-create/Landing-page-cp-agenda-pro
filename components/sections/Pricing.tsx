@@ -7,10 +7,10 @@ export const Pricing = () => {
     const [elitePeriod, setElitePeriod] = React.useState<'semestral' | 'anual'>('anual');
 
     const whatsappUrl = "https://wa.me/8109011886491?text=";
-    const proUrl = `${whatsappUrl}${encodeURIComponent("Olá! Gostaria de saber mais sobre o Plano PRO.")}`;
-    const eliteUrl = `${whatsappUrl}${encodeURIComponent("Olá! Gostaria de saber mais sobre o Plano ELITE.")}`;
-    const consultUrl = `${whatsappUrl}${encodeURIComponent("Olá! Gostaria de conhecer mais o sistema antes de decidir.")}`;
-    const generalUrl = `${whatsappUrl}${encodeURIComponent("Olá! Gostaria de saber mais sobre os planos do CP Gestão.")}`;
+    const proUrl = `${whatsappUrl}${encodeURIComponent("Olá! Gostaria de saber mais sobre o Plano de 6 Meses da CP Agenda Pro.")}`;
+    const eliteUrl = `${whatsappUrl}${encodeURIComponent("Olá! Gostaria de saber mais sobre o Plano de 12 Meses da CP Agenda Pro.")}`;
+    const consultUrl = `${whatsappUrl}${encodeURIComponent("Olá! Gostaria de conhecer mais o sistema de agendamento antes de decidir.")}`;
+    const generalUrl = `${whatsappUrl}${encodeURIComponent("Olá! Gostaria de saber mais sobre os planos da CP Agenda Pro.")}`;
 
     return (
         <section id="pricing" className="py-24 bg-slate-950 relative overflow-hidden">
@@ -21,7 +21,7 @@ export const Pricing = () => {
             <div className="max-w-[1440px] mx-auto px-6 md:px-24 w-full">
                 {/* 1. Pricing Plans Header */}
                 <div className="text-center mb-12 px-4">
-                    <Badge variant="outline" className="mb-6 uppercase tracking-[0.3em] font-black text-[10px] py-1 px-4 text-brand-yellow border-brand-yellow/50">INVESTIMENTO</Badge>
+                    <Badge variant="outline" className="mb-6 uppercase tracking-[0.3em] font-black text-[10px] py-1 px-4 text-brand-yellow border-brand-yellow/50">PLANOS</Badge>
                     <h2 className="text-4xl md:text-6xl font-black text-white mb-6 tracking-tighter leading-[1.1]">
                         Escolha o seu plano
                     </h2>
@@ -31,23 +31,24 @@ export const Pricing = () => {
                 </div>
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto mb-16 items-stretch px-0">
-                    {/* PLANO PRO */}
+                    {/* PLANO 6 MESES */}
                     <div className="w-full relative p-8 md:p-10 rounded-[2rem] md:rounded-[2.5rem] border-2 bg-slate-900/60 border-slate-800 hover:border-brand-blue/40 transition-all duration-500 backdrop-blur-xl flex flex-col group overflow-hidden">
                         <div className="absolute -top-10 -left-10 w-24 h-24 bg-brand-blue/10 rounded-full blur-[40px]"></div>
 
-                        <div className="mb-8">
-                            <h3 className="text-3xl font-black text-white mb-1 uppercase tracking-tight font-black">PLANO PRO</h3>
-                            <p className="text-brand-blue text-xs uppercase font-black tracking-widest opacity-80">Ideal para controle total</p>
+                        <div className="mb-8 mt-4">
+                            <h3 className="text-3xl font-black text-white mb-1 uppercase tracking-tight font-black">PLANO 6 MESES</h3>
+                            <p className="text-brand-blue text-xs uppercase font-black tracking-widest opacity-80">ACESSO RÁPIDO E ESSENCIAL</p>
                         </div>
 
                         <ul className="space-y-3 mb-10 flex-grow">
-                            <SmallCheckBullet text="Gestão 360º de Clientes (CRM)" />
-                            <SmallCheckBullet text="Sistema de Fidelidade Completo" />
-                            <SmallCheckBullet text="Gamificação por Pontuação" />
-                            <SmallCheckBullet text="Aprovação de pontuação Manual" />
-                            <SmallCheckBullet text="Relatórios & Métricas" />
-                            <SmallCheckBullet text="Capacidade até 4.000 contatos" />
-                            <SmallCheckBullet text="Packs de Contatos Extras disponíveis" />
+                            <SmallCheckBullet text="Painel de Agendamento Online 24h" />
+                            <SmallCheckBullet text="Gestão de 1 Profissional (Agenda Única)" />
+                            <SmallCheckBullet text="Cadastro Ilimitado de Serviços" />
+                            <SmallCheckBullet text="Notificações Automáticas de Novas Reservas" />
+                            <SmallCheckBullet text="Bloqueio de Horários e Pausas" />
+                            <SmallCheckBullet text="Customização Total da Página de Agendamentos" />
+                            <SmallCheckBullet text="Confirmação via Sistema Integrado" />
+                            <SmallCheckBullet text="Suporte Premium Incluso" />
                         </ul>
 
                         <div className="bg-slate-950/40 border border-white/5 rounded-2xl p-6 mb-8 relative overflow-hidden">
@@ -55,66 +56,63 @@ export const Pricing = () => {
                                 <div className="space-y-1">
                                     <div className="flex items-baseline gap-1">
                                         <span className="text-white text-5xl font-black transition-all">
-                                            {proPeriod === 'anual' ? '¥37.800' : '¥21.000'}
+                                            ¥8.940
                                         </span>
-                                        <span className="text-brand-blue text-xs uppercase font-bold tracking-widest">/ {proPeriod === 'anual' ? 'anual' : 'semestral'}</span>
+                                        <span className="text-brand-blue text-[10px] uppercase font-bold tracking-widest ml-2">PAGAMENTO TOTAL (SEMESTRAL)</span>
                                     </div>
                                     <div className="flex items-center gap-2">
                                         <span className="text-brand-blue font-bold text-base">
-                                            ¥{proPeriod === 'anual' ? '3.150' : '3.500'}/mês
+                                            ¥1.490/mês
                                         </span>
-                                        <span className="text-brand-gray text-[11px] uppercase opacity-60">valor mensal estimado</span>
+                                        <span className="text-brand-gray text-[11px] uppercase opacity-60">média calculada</span>
                                     </div>
                                 </div>
 
                                 <div className="grid grid-cols-2 gap-2 pt-2 border-t border-white/5">
                                     <button
-                                        onClick={() => setProPeriod('semestral')}
-                                        className={`py-2 px-3 rounded-lg text-[10px] font-black uppercase tracking-widest transition-all border ${proPeriod === 'semestral' ? 'bg-brand-blue text-slate-900 border-brand-blue shadow-lg shadow-brand-blue/20' : 'bg-transparent text-white/40 border-white/10 hover:border-white/20'}`}
+                                        className="py-2 px-3 rounded-lg text-[10px] font-black uppercase tracking-widest transition-all border bg-brand-blue text-slate-900 border-brand-blue shadow-lg shadow-brand-blue/20"
                                     >
                                         Ver Plano Semestral
                                     </button>
                                     <button
-                                        onClick={() => setProPeriod('anual')}
-                                        className={`py-2 px-3 rounded-lg text-[10px] font-black uppercase tracking-widest transition-all border ${proPeriod === 'anual' ? 'bg-brand-blue text-slate-900 border-brand-blue shadow-lg shadow-brand-blue/20' : 'bg-transparent text-white/40 border-white/10 hover:border-white/20'}`}
+                                        className="py-2 px-3 rounded-lg text-[10px] font-black uppercase tracking-widest transition-all border bg-brand-blue text-slate-900 border-brand-blue shadow-lg shadow-brand-blue/20"
                                     >
-                                        Ver Plano Anual
+                                        Ver Plano Semestral
                                     </button>
                                 </div>
-                                {proPeriod === 'anual' && (
-                                    <div className="bg-brand-pink/10 text-brand-pink text-[10px] font-black uppercase py-1.5 px-3 rounded-full text-center border border-brand-pink/20">
-                                        Economize ¥4.200 no período
-                                    </div>
-                                )}
+                                <div className="bg-brand-blue/10 text-brand-blue text-[10px] font-black uppercase py-1.5 px-3 rounded-full text-center border border-brand-blue/20">
+                                    ACESSO TOTAL + SUPORTE INCLUÍDO
+                                </div>
                             </div>
                         </div>
 
                         <a href={proUrl} className="relative w-full h-12 bg-brand-blue text-slate-950 font-black rounded-xl flex items-center justify-center gap-2 hover:scale-[1.03] transition-all text-[10px] uppercase tracking-widest active:scale-95 shadow-lg shadow-brand-blue/20 group/btn overflow-hidden">
-                            <span className="relative z-10">COMEÇAR COM PLANO PRO</span>
+                            <span className="relative z-10">COMEÇAR COM PLANO 6 MESES</span>
                             <div className="absolute inset-x-0 bottom-0 h-1 bg-white transform scale-x-0 group-hover/btn:scale-x-100 transition-transform duration-300"></div>
                         </a>
                     </div>
 
-                    {/* PLANO ELITE */}
+                    {/* PLANO 12 MESES */}
                     <div className="w-full relative p-8 md:p-10 rounded-[2rem] md:rounded-[2.5rem] border-2 bg-slate-900 border-brand-yellow/30 backdrop-blur-3xl flex flex-col shadow-[0_0_50px_rgba(255,242,0,0.1)] transition-all duration-500 overflow-visible">
                         <div className="absolute -top-10 -right-10 w-24 h-24 bg-brand-yellow/10 rounded-full blur-[40px]"></div>
                         <div className="absolute -top-5 left-12 z-20">
                             <Badge variant="outline" className="bg-slate-950 text-brand-yellow font-black px-6 py-1.5 shadow-2xl text-[9px] uppercase border-2 border-brand-yellow">RECOMENDADO</Badge>
                         </div>
 
-                        <div className="mb-8">
-                            <h3 className="text-3xl font-black text-white mb-1 uppercase tracking-tight font-black">PLANO ELITE</h3>
-                            <p className="text-brand-yellow text-xs uppercase font-black tracking-widest">Automação total e escala</p>
+                        <div className="mb-8 mt-4">
+                            <h3 className="text-3xl font-black text-white mb-1 uppercase tracking-tight font-black">PLANO 12 MESES</h3>
+                            <p className="text-brand-yellow text-xs uppercase font-black tracking-widest">FOCO TOTAL NO CRESCIMENTO (BRASILEIROS NO JAPÃO)</p>
                         </div>
 
                         <ul className="space-y-3 mb-10 flex-grow">
-                            <SmallCheckBullet text="Gestão 360º de Clientes (CRM)" color="yellow" />
-                            <SmallCheckBullet text="Sistema de Fidelidade Completo" color="yellow" />
-                            <SmallCheckBullet text="Gamificação por Pontuação" color="yellow" />
-                            <SmallCheckBullet text="Aprovação de pontuação 100% automática" color="yellow" />
-                            <SmallCheckBullet text="Relatórios & Métricas" color="yellow" />
-                            <SmallCheckBullet text="Capacidade até 6.000 contatos" color="yellow" />
-                            <SmallCheckBullet text="Packs de Contatos Extras disponíveis" color="yellow" />
+                            <SmallCheckBullet text="Painel de Agendamento Online 24h" color="yellow" />
+                            <SmallCheckBullet text="Gestão de 1 Profissional (Agenda Única)" color="yellow" />
+                            <SmallCheckBullet text="Cadastro Ilimitado de Serviços" color="yellow" />
+                            <SmallCheckBullet text="Notificações Automáticas de Novas Reservas" color="yellow" />
+                            <SmallCheckBullet text="Bloqueio de Horários e Pausas" color="yellow" />
+                            <SmallCheckBullet text="Customização Total da Página de Agendamentos" color="yellow" />
+                            <SmallCheckBullet text="Confirmação via Sistema Integrado" color="yellow" />
+                            <SmallCheckBullet text="Suporte Premium Incluso" color="yellow" />
                         </ul>
 
                         <div className="bg-slate-950/40 border border-white/5 rounded-2xl p-6 mb-8 relative overflow-hidden">
@@ -122,42 +120,38 @@ export const Pricing = () => {
                                 <div className="space-y-1">
                                     <div className="flex items-baseline gap-1">
                                         <span className="text-white text-5xl font-black transition-all">
-                                            {elitePeriod === 'anual' ? '¥70.200' : '¥39.000'}
+                                            ¥11.760
                                         </span>
-                                        <span className="text-brand-yellow text-xs uppercase font-bold tracking-widest">/ {elitePeriod === 'anual' ? 'anual' : 'semestral'}</span>
+                                        <span className="text-brand-yellow text-[10px] uppercase font-bold tracking-widest ml-2">PAGAMENTO TOTAL (ANUAL)</span>
                                     </div>
                                     <div className="flex items-center gap-2">
                                         <span className="text-brand-yellow font-bold text-base">
-                                            ¥{elitePeriod === 'anual' ? '5.850' : '6.500'}/mês
+                                            ¥980/mês
                                         </span>
-                                        <span className="text-brand-gray text-[11px] uppercase opacity-60">valor mensal estimado</span>
+                                        <span className="text-brand-gray text-[11px] uppercase opacity-60">média calculada</span>
                                     </div>
                                 </div>
 
                                 <div className="grid grid-cols-2 gap-2 pt-2 border-t border-white/5">
                                     <button
-                                        onClick={() => setElitePeriod('semestral')}
-                                        className={`py-2 px-3 rounded-lg text-[10px] font-black uppercase tracking-widest transition-all border ${elitePeriod === 'semestral' ? 'bg-brand-yellow text-slate-900 border-brand-yellow shadow-lg shadow-brand-yellow/20' : 'bg-transparent text-white/40 border-white/10 hover:border-white/20'}`}
+                                        className="py-2 px-3 rounded-lg text-[10px] font-black uppercase tracking-widest transition-all border bg-brand-yellow text-slate-900 border-brand-yellow shadow-lg shadow-brand-yellow/20"
                                     >
-                                        Ver Plano Semestral
+                                        Ver Plano Anual
                                     </button>
                                     <button
-                                        onClick={() => setElitePeriod('anual')}
-                                        className={`py-2 px-3 rounded-lg text-[10px] font-black uppercase tracking-widest transition-all border ${elitePeriod === 'anual' ? 'bg-brand-yellow text-slate-900 border-brand-yellow shadow-lg shadow-brand-yellow/20' : 'bg-transparent text-white/40 border-white/10 hover:border-white/20'}`}
+                                        className="py-2 px-3 rounded-lg text-[10px] font-black uppercase tracking-widest transition-all border bg-brand-yellow text-slate-900 border-brand-yellow shadow-lg shadow-brand-yellow/20"
                                     >
                                         Ver Plano Anual
                                     </button>
                                 </div>
-                                {elitePeriod === 'anual' && (
-                                    <div className="bg-brand-pink/10 text-brand-pink text-[10px] font-black uppercase py-1.5 px-3 rounded-full text-center border border-brand-pink/20">
-                                        Economize ¥7.800 no período
-                                    </div>
-                                )}
+                                <div className="bg-brand-pink/10 text-brand-pink text-[10px] font-black uppercase py-1.5 px-3 rounded-full text-center border border-brand-pink/20">
+                                    ECONOMIA DE ¥6.120 (35% OFF) NO PERÍODO
+                                </div>
                             </div>
                         </div>
 
                         <a href={eliteUrl} className="relative w-full h-14 bg-brand-yellow text-slate-950 font-black rounded-xl flex items-center justify-center gap-2 hover:scale-[1.03] transition-all shadow-xl active:scale-95 text-[10px] uppercase tracking-widest leading-none group/btn overflow-hidden">
-                            <span className="relative z-10">COMEÇAR COM PLANO ELITE</span>
+                            <span className="relative z-10">COMEÇAR COM PLANO 12 MESES</span>
                             <div className="absolute inset-x-0 bottom-0 h-1 bg-white transform scale-x-0 group-hover/btn:scale-x-100 transition-transform duration-300"></div>
                         </a>
                     </div>
@@ -183,25 +177,25 @@ export const Pricing = () => {
                     <div className="absolute inset-0 bg-brand-blue/5 opacity-20 group-hover:opacity-40 transition-opacity"></div>
                     <div className="py-16 md:py-24 px-8 md:px-16 lg:px-24 relative z-10 text-center">
                         <Badge variant="blue" className="mb-8 uppercase tracking-[0.3em] font-black text-[10px] py-1 px-5">OFERTA LANÇAMENTO</Badge>
-                        <h3 className="text-4xl md:text-6xl font-black text-white mb-6 tracking-tighter leading-none max-w-3xl mx-auto">
-                            Ganhe 2 Totens NFC com QR Code impressos em 3D ao contratar hoje
+                        <h3 className="text-4xl md:text-5xl font-black text-white mb-6 tracking-tighter leading-none max-w-3xl mx-auto">
+                            Ganhe 20 Tags NFC exclusivas ao contratar seu plano hoje
                         </h3>
                         <p className="text-brand-gray text-lg font-light mb-12 max-w-2xl mx-auto">
-                            Sua estrutura completa, configurada por nós e pronta para uso imediato. Sem custo adicional.
+                            Inovação e praticidade: tags tipo chaveiro que levam seu cliente <span className="text-white font-bold">direto para sua página de agendamento</span> apenas encostando o celular.
                         </p>
 
                         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-14 max-w-3xl mx-auto">
                             <FeatureTile
-                                title="Exclusividade impressa em 3D"
-                                sub="Totens físicos com acabamento premium."
+                                title="CHAVEIROS NFC"
+                                sub="Tags compactas e ultra-práticas para uso diário."
                             />
                             <FeatureTile
-                                title="Chegam funcionando"
-                                sub="Configuração do sistema de pontos inclusa."
+                                title="TOQUE MÁGICO"
+                                sub="Basta encostar o celular para abrir seu agendamento."
                             />
                             <FeatureTile
-                                title="CUSTO ZERO"
-                                sub="Presente exclusivo para quem contrata hoje."
+                                title="20 UNIDADES"
+                                sub="Kit completo para você e seus melhores clientes."
                                 highlight
                             />
                         </div>
@@ -242,7 +236,7 @@ export const Pricing = () => {
             <div className="max-w-[1440px] mx-auto px-6 md:px-16 lg:px-24 mb-16">
                 <div className="text-center mb-20">
                     <Badge variant="outline" className="mb-6 uppercase tracking-[0.3em] font-black text-[10px] py-1 px-4 text-brand-blue border-brand-blue/30">COMEÇAR É SIMPLES</Badge>
-                    <h2 className="text-4xl md:text-6xl font-black text-white mb-6 tracking-tighter leading-[0.9]">
+                    <h2 className="text-4xl md:text-5xl font-black text-white mb-6 tracking-tighter leading-[0.9]">
                         Como contratar em 3 passos
                     </h2>
                     <p className="text-brand-gray text-lg md:text-xl font-light max-w-2xl mx-auto">
@@ -274,7 +268,7 @@ export const Pricing = () => {
 
             {/* Final CTA */}
             <div className="text-center pb-12">
-                <a href="https://wa.me/MESSAGE_URL?text=Olá! Quero começar agora com o CP Gestão pelo WhatsApp. Pode me orientar sobre o próximo passo?" className="relative bg-white hover:bg-slate-100 text-slate-950 font-black text-xs h-12 px-10 rounded-lg inline-flex items-center justify-center transition-all shadow-[0_0_25px_rgba(56,182,255,0.35)] hover:scale-105 active:scale-95 uppercase tracking-wider group overflow-hidden">
+                <a href={generalUrl} className="relative bg-white hover:bg-slate-100 text-slate-950 font-black text-xs h-12 px-10 rounded-lg inline-flex items-center justify-center transition-all shadow-[0_0_25px_rgba(56,182,255,0.35)] hover:scale-105 active:scale-95 uppercase tracking-wider group overflow-hidden">
                     <span className="relative z-10">Começar agora pelo WhatsApp</span>
                     <div className="absolute inset-x-0 bottom-0 h-1 bg-brand-blue transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
                 </a>

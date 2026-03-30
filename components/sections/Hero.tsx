@@ -11,21 +11,21 @@ export const Hero = () => (
 
 
             <h1 className="text-4xl md:text-6xl font-black text-white mb-8 leading-[1.1] tracking-tighter max-w-4xl mx-auto">
-                Pare de deixar dinheiro na mesa: conheça seus clientes e <span className="bg-gradient-to-r from-brand-blue to-brand-pink bg-clip-text text-transparent">faça a sua empresa crescer.</span>
+                Agenda online 24h: transforme o seu tempo em <span className="bg-gradient-to-r from-brand-blue to-brand-pink bg-clip-text text-transparent">faturamento automático.</span>
             </h1>
 
             <p className="text-lg md:text-xl text-brand-gray font-light leading-relaxed max-w-3xl mx-auto mb-12">
-                Com o <span className="text-white font-bold">CP Gestão</span>, você organiza seus dados, fideliza quem compra e garante um <span className="text-white font-bold">crescimento previsível</span> com um CRM completo e inteligente.
+                Com o <span className="text-white font-bold">CP Agenda Pro</span>, você centraliza seus atendimentos, recebe notificações imediatas de novas reservas e profissionaliza a <span className="text-white font-bold">gestão da sua agenda</span> com facilidade.
             </p>
 
             <div className="flex justify-center items-center">
                 <a
-                    href="https://wa.me/8109011886491?text=Olá! Gostaria de saber mais sobre o CP Gestão."
+                    href="https://wa.me/8109011886491?text=Olá! Gostaria de começar agora com o CP Agenda Pro."
                     target="_blank"
                     rel="noopener noreferrer"
                     className="relative bg-white hover:bg-slate-100 text-slate-950 font-black text-xs h-12 px-10 rounded-lg flex items-center justify-center gap-3 transition-all shadow-[0_0_25px_rgba(56,182,255,0.35)] hover:scale-105 active:scale-95 uppercase tracking-wider group overflow-hidden"
                 >
-                    <span className="relative z-10">Começar a Crescer Agora</span>
+                    <span className="relative z-10">QUERO COMEÇAR AGORA</span>
                     <div className="absolute inset-x-0 bottom-0 h-1 bg-brand-blue transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
                 </a>
             </div>

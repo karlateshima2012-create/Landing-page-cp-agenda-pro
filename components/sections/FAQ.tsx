@@ -11,48 +11,38 @@ export interface FAQItem {
 export const FAQS: FAQItem[] = [
     {
         id: 1,
-        question: "O que é o CP Gestão e como ele funciona?",
-        answer: "O CP Gestão é um sistema completo de CRM e fidelidade.\nVocê cadastra seus clientes, acompanha histórico, registra compras e cria um programa de pontos que incentiva o cliente a voltar mais vezes."
+        question: "O que é o CP Agenda Pro?",
+        answer: "O CP Agenda Pro é um sistema de agendamento online inteligente.\nEle permite que seus clientes marquem horários sozinhos via link exclusivo, notifica o gestor sobre novas reservas e organiza sua rotina de profissional único com total praticidade."
     },
     {
         id: 2,
-        question: "Preciso baixar algum aplicativo?",
-        answer: "Não. O sistema funciona direto no navegador do celular, tablet ou computador.\nÉ simples, rápido e não ocupa espaço no aparelho."
+        question: "Meus clientes precisam baixar algum aplicativo?",
+        answer: "Não! O agendamento é feito diretamente pelo navegador do celular do cliente.\nÉ rápido, intuitivo e funciona sem ocupar espaço no aparelho."
     },
     {
         id: 3,
-        question: "Como o sistema ajuda a aumentar minhas vendas?",
-        answer: "Com o controle dos clientes e o sistema de pontos, você cria um motivo real para o cliente voltar.\nAlém disso, você passa a ter dados para tomar decisões e aumentar a frequência de compra."
+        question: "Consigo bloquear dias, folgas e feriados?",
+        answer: "Sim. Você tem total liberdade para bloquear dias específicos, folgas ou feriados de forma simples.\nSua agenda online só mostrará os horários em que você realmente estiver disponível para atender."
     },
     {
         id: 4,
-        question: "O que eu consigo controlar dentro do sistema?",
-        answer: "Você consegue:\n\n• Cadastrar clientes\n• Registrar histórico de compras\n• Ver quanto cada cliente já gastou\n• Criar e gerenciar pontos e recompensas\n• Receber lembretes estratégicos\n• Acompanhar relatórios do seu negócio"
+        question: "Como os avisos funcionam?",
+        answer: "O sistema envia notificações imediatas de novos agendamentos diretamente para o gestor da agenda.\nIsso permite que você confirme cada reserva e mantenha sua produtividade no máximo."
+    },
+    {
+        id: 5,
+        question: "Posso cadastrar quantos serviços eu quiser?",
+        answer: "Com certeza. O cadastro de serviços é ilimitado.\nVocê pode definir nomes, durações diferentes e valores para cada procedimento que oferece."
     },
     {
         id: 6,
-        question: "Como funciona o programa de pontos?",
-        answer: "A cada compra, o cliente acumula pontos e pode trocar por recompensas.\nIsso aumenta a chance dele voltar e comprar novamente."
+        question: "O sistema funciona 24 horas?",
+        answer: "Sim. Mesmo quando você está descansando ou atendendo um cliente, sua agenda está 'aberta' online.\nNovos agendamentos podem ser feitos a qualquer momento."
     },
     {
-        id: 8,
-        question: "O sistema tem relatórios?",
-        answer: "Sim. Você acompanha:\n\n• Clientes cadastrados\n• Frequência de retorno\n• Crescimento do negócio\n• Ranking dos melhores clientes\n\nTudo de forma simples e organizada."
-    },
-    {
-        id: 9,
-        question: "Como funciona o pagamento?",
-        answer: "Após conhecer mais sobre o sistema, você escolhe o plano (6 ou 12 meses) e recebe o link de pagamento seguro."
-    },
-    {
-        id: 10,
-        question: "Posso cancelar quando quiser?",
-        answer: "Sim. Você pode solicitar o cancelamento a qualquer momento.\nO sistema continua ativo até o final do período contratado."
-    },
-    {
-        id: 11,
-        question: "Preciso entender de tecnologia para usar?",
-        answer: "Não. O sistema foi feito para ser simples e fácil de usar no dia a dia."
+        id: 7,
+        question: "Como funciona a gestão de profissional único?",
+        answer: "O sistema é otimizado para profissionais independentes.\nEle garante que não ocorram choques de horários e centraliza todas as informações em uma agenda única e poderosa."
     }
 ];
 

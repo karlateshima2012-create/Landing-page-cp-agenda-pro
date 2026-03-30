@@ -16,23 +16,23 @@ export const TargetAudience = () => {
                     <div className="relative z-10 max-w-4xl mx-auto">
                         <div className="text-center mb-12">
                             <h2 className="text-2xl md:text-4xl font-black text-white mt-4 mb-6 tracking-tighter leading-[1]">
-                                O que é <span className="text-brand-blue text-glow-blue">CP Gestão?</span>
+                                O que é <span className="text-brand-blue text-glow-blue">CP Agenda Pro?</span>
                             </h2>
                             <p className="text-lg text-brand-gray/80 font-light leading-relaxed">
-                                CP Gestão é o sistema que transforma clientes ocasionais em clientes fiéis. É um CRM completo com programa de fidelidade integrado, feito para empreendedores que querem organizar sua base de clientes, aumentar a recorrência de vendas e crescer com previsibilidade.
+                                CP Agenda Pro é o sistema que transforma a forma como você organiza seus horários. Um painel de agendamento online 24h completo, feito para profissionais que buscam gestão única, praticidade para os clientes e o fim dos horários esquecidos.
                             </p>
                         </div>
 
                         <div className="text-center mb-12">
                             <h2 className="text-2xl md:text-4xl font-black text-white mb-6 tracking-tighter leading-[1.1]">
-                                O que ele faz pela <span className="text-brand-pink text-glow-pink">sua empresa?</span>
+                                O que ele faz pelo <span className="text-brand-pink text-glow-pink">seu negócio?</span>
                             </h2>
                             <div className="space-y-6 text-lg text-brand-gray/80 font-light leading-relaxed">
                                 <p>
-                                    O CP Gestão transforma a forma como você se relaciona com quem já comprou de você. Com CRM completo e programa de fidelidade integrado, você deixa de depender da memória ou de planilhas desconectadas e passa a ter um sistema que trabalha por você. Ele cadastra, organiza, pontua, lembra, avisa e mostra os resultados em tempo real.
+                                    O CP Agenda Pro coloca o seu negócio no piloto automático. Você deixa de perder tempo respondendo mensagens a todo momento e passa a ter um sistema que trabalha 24h por você. Com o painel online, seus clientes agendam sozinhos e você ganha a liberdade necessária para cuidar e administrar sua empresa com foco total.
                                 </p>
                                 <p>
-                                    Seu cliente ganha pontos a cada compra e volta para resgatar prêmios. Você ganha mais vendas, mais previsibilidade e mais tempo para focar no que realmente importa.
+                                    Gestão simplificada com agenda única, cadastro ilimitado de serviços e total controle sobre seus horários. Profissionalismo que gera mais tempo para o que realmente importa: a estratégia do seu negócio.
                                 </p>
                             </div>
                         </div>
@@ -41,22 +41,22 @@ export const TargetAudience = () => {
                         <div className="mt-12 text-center relative border-t border-white/10 pt-12">
                             <div className="mb-10">
                                 <p className="text-brand-blue font-black text-2xl md:text-4xl tracking-tight mb-2 drop-shadow-[0_0_15px_rgba(56,182,255,0.4)]">
-                                    Quem não controla, perde cliente.
+                                    Quem não organiza, perde tempo.
                                 </p>
                                 <p className="text-white font-black text-2xl md:text-4xl tracking-tight">
-                                    Quem fideliza, cresce.
+                                    Quem automatiza, lota a agenda.
                                 </p>
                             </div>
 
                             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-12 bg-brand-blue/40 blur-[40px] rounded-full animate-pulse opacity-20"></div>
 
                             <a
-                                href="https://wa.me/8109011886491?text=Olá! Gostaria de saber mais sobre o CP Gestão."
+                                href="https://wa.me/8109011886491?text=Olá! Gostaria de saber mais sobre o CP Agenda Pro."
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="inline-flex items-center justify-center relative h-14 px-12 bg-white text-slate-950 font-black rounded-xl text-[10px] uppercase tracking-wider hover:scale-105 active:scale-95 transition-all shadow-[0_15px_30px_-5px_rgba(255,255,255,0.25)] hover:shadow-brand-blue/40 group overflow-hidden"
                             >
-                                <span className="relative z-10">Começar a fidelizar agora</span>
+                                <span className="relative z-10">COMEÇAR A AUTOMATIZAR AGORA</span>
                                 <div className="absolute inset-x-0 bottom-0 h-1 bg-brand-blue transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
                             </a>
                         </div>

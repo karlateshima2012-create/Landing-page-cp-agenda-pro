@@ -1,37 +1,33 @@
-
 import React from 'react';
 import { Starfield } from '../Starfield';
 
 export const FinalCTA = () => (
-    <section className="bg-transparent relative text-center w-full px-0">
-        <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-slate-950 via-slate-950/80 to-transparent z-20 pointer-events-none"></div>
+    <section className="relative min-h-[60vh] flex flex-col items-center justify-center pt-40 pb-40 px-4 md:px-8 lg:px-12 overflow-hidden bg-slate-950 animate-fade-in text-center">
+        <Starfield />
 
-        <div className="w-full relative z-30 bg-slate-950/95 py-16 md:py-24 px-6 backdrop-blur-3xl shadow-[0_0_80px_-20px_rgba(56,182,255,0.15)] overflow-hidden transition-all duration-500">
-            <Starfield />
-            {/* Internal Card Glow */}
+        <div className="w-[90%] md:w-full max-w-5xl mx-auto relative z-10">
+            <h2 className="text-4xl md:text-6xl font-black text-white mb-8 leading-[1.1] tracking-tighter max-w-4xl mx-auto">
+                Chega de perder tempo com mensagens <br /><span className="bg-gradient-to-r from-brand-blue to-brand-pink bg-clip-text text-transparent">indo e voltando pra marcar horário.</span>
+            </h2>
 
-            <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-brand-blue/5 to-transparent pointer-events-none opacity-40"></div>
+            <p className="text-lg md:text-xl text-brand-gray font-light leading-relaxed max-w-3xl mx-auto mb-12">
+                Automatize seus agendamentos e foque no que <span className="text-white font-bold">realmente faz sua empresa crescer.</span>
+            </p>
 
-            <div className="relative z-10">
-                <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-white mb-6 leading-[1.1] tracking-tighter">
-                    Chega de adiar o <br /><span className="text-brand-pink drop-shadow-[0_0_20px_rgba(229,21,122,0.7)]">seu crescimento.</span>
-                </h2>
-                <p className="text-lg md:text-xl text-brand-gray font-light leading-relaxed max-w-3xl mx-auto mb-12">
-                    Sua gestão profissional hoje significa <span className="text-white font-bold">escala e liberdade</span> amanhã. O futuro do seu negócio começa aqui.
-                </p>
-                <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-                    <a
-                        href={`https://wa.me/8109011886491?text=${encodeURIComponent("Olá! Gostaria de escalar meu negócio com o CP Gestão. Pode me orientar sobre o próximo passo?")}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="relative w-full sm:w-auto px-12 h-14 bg-white text-slate-950 font-black rounded-xl text-xs uppercase tracking-widest hover:scale-105 active:scale-95 transition-all shadow-xl flex items-center justify-center gap-3 group/p overflow-hidden"
-                    >
-                        <span className="relative z-10">QUERO ESCALAR MEU NEGÓCIO</span>
-                        <span className="relative z-10 group-hover/p:translate-x-1 transition-transform">→</span>
-                        <div className="absolute inset-x-0 bottom-0 h-1 bg-brand-blue transform scale-x-0 group-hover/p:scale-x-100 transition-transform duration-300"></div>
-                    </a>
-                </div>
+            <div className="flex justify-center items-center">
+                <a
+                    href="https://wa.me/8109011886491?text=Olá! Gostaria de ativar minha agenda com o CP Agenda Pro."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="relative bg-white hover:bg-slate-100 text-slate-950 font-black text-xs h-12 px-10 rounded-lg flex items-center justify-center gap-3 transition-all shadow-[0_0_25px_rgba(56,182,255,0.35)] hover:scale-105 active:scale-95 uppercase tracking-wider group overflow-hidden"
+                >
+                    <span className="relative z-10">ATIVAR AGENDA</span>
+                    <div className="absolute inset-x-0 bottom-0 h-1 bg-brand-blue transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+                </a>
             </div>
         </div>
+
+        {/* Global Atmosphere (Total dark with subtle transition) */}
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-950 -z-10"></div>
     </section>
 );
