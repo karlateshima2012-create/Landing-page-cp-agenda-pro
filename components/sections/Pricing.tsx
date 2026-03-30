@@ -3,9 +3,6 @@ import { Badge } from '../Badge';
 import { MessageCircle, Check, Box, ShieldCheck, Zap, ArrowRight, Settings, Smartphone, Rocket } from 'lucide-react';
 
 export const Pricing = () => {
-    const [proPeriod, setProPeriod] = React.useState<'semestral' | 'anual'>('anual');
-    const [elitePeriod, setElitePeriod] = React.useState<'semestral' | 'anual'>('anual');
-
     const whatsappUrl = "https://wa.me/8109011886491?text=";
     const proUrl = `${whatsappUrl}${encodeURIComponent("Olá! Gostaria de saber mais sobre o Plano de 6 Meses da CP Agenda Pro.")}`;
     const eliteUrl = `${whatsappUrl}${encodeURIComponent("Olá! Gostaria de saber mais sobre o Plano de 12 Meses da CP Agenda Pro.")}`;
@@ -56,30 +53,17 @@ export const Pricing = () => {
                                 <div className="space-y-1">
                                     <div className="flex items-baseline gap-1">
                                         <span className="text-white text-5xl font-black transition-all">
-                                            ¥8.940
+                                            ¥1.490
                                         </span>
-                                        <span className="text-brand-blue text-[10px] uppercase font-bold tracking-widest ml-2">PAGAMENTO TOTAL (SEMESTRAL)</span>
+                                        <span className="text-brand-blue text-[10px] uppercase font-bold tracking-widest ml-2">POR MÊS</span>
                                     </div>
                                     <div className="flex items-center gap-2">
-                                        <span className="text-brand-blue font-bold text-base">
-                                            ¥1.490/mês
+                                        <span className="text-brand-gray text-[11px] uppercase opacity-70 tracking-wider">
+                                            Cobrança mensal automática durante 6 meses
                                         </span>
-                                        <span className="text-brand-gray text-[11px] uppercase opacity-60">média calculada</span>
                                     </div>
                                 </div>
 
-                                <div className="grid grid-cols-2 gap-2 pt-2 border-t border-white/5">
-                                    <button
-                                        className="py-2 px-3 rounded-lg text-[10px] font-black uppercase tracking-widest transition-all border bg-brand-blue text-slate-900 border-brand-blue shadow-lg shadow-brand-blue/20"
-                                    >
-                                        Ver Plano Semestral
-                                    </button>
-                                    <button
-                                        className="py-2 px-3 rounded-lg text-[10px] font-black uppercase tracking-widest transition-all border bg-brand-blue text-slate-900 border-brand-blue shadow-lg shadow-brand-blue/20"
-                                    >
-                                        Ver Plano Semestral
-                                    </button>
-                                </div>
                                 <div className="bg-brand-blue/10 text-brand-blue text-[10px] font-black uppercase py-1.5 px-3 rounded-full text-center border border-brand-blue/20">
                                     ACESSO TOTAL + SUPORTE INCLUÍDO
                                 </div>
@@ -120,30 +104,17 @@ export const Pricing = () => {
                                 <div className="space-y-1">
                                     <div className="flex items-baseline gap-1">
                                         <span className="text-white text-5xl font-black transition-all">
-                                            ¥11.760
+                                            ¥980
                                         </span>
-                                        <span className="text-brand-yellow text-[10px] uppercase font-bold tracking-widest ml-2">PAGAMENTO TOTAL (ANUAL)</span>
+                                        <span className="text-brand-yellow text-[10px] uppercase font-bold tracking-widest ml-2">POR MÊS</span>
                                     </div>
                                     <div className="flex items-center gap-2">
-                                        <span className="text-brand-yellow font-bold text-base">
-                                            ¥980/mês
+                                        <span className="text-brand-gray text-[11px] uppercase opacity-70 tracking-wider">
+                                            Cobrança mensal automática durante 12 meses
                                         </span>
-                                        <span className="text-brand-gray text-[11px] uppercase opacity-60">média calculada</span>
                                     </div>
                                 </div>
 
-                                <div className="grid grid-cols-2 gap-2 pt-2 border-t border-white/5">
-                                    <button
-                                        className="py-2 px-3 rounded-lg text-[10px] font-black uppercase tracking-widest transition-all border bg-brand-yellow text-slate-900 border-brand-yellow shadow-lg shadow-brand-yellow/20"
-                                    >
-                                        Ver Plano Anual
-                                    </button>
-                                    <button
-                                        className="py-2 px-3 rounded-lg text-[10px] font-black uppercase tracking-widest transition-all border bg-brand-yellow text-slate-900 border-brand-yellow shadow-lg shadow-brand-yellow/20"
-                                    >
-                                        Ver Plano Anual
-                                    </button>
-                                </div>
                                 <div className="bg-brand-pink/10 text-brand-pink text-[10px] font-black uppercase py-1.5 px-3 rounded-full text-center border border-brand-pink/20">
                                     ECONOMIA DE ¥6.120 (35% OFF) NO PERÍODO
                                 </div>
@@ -214,11 +185,11 @@ export const Pricing = () => {
                                 </div>
 
                                 <div className="max-w-xl">
-                                    <h4 className="text-white font-black text-xs uppercase tracking-widest mb-4">
-                                        TRANSPARÊNCIA NO CONTRATO
+                                    <h4 className="text-white font-black text-xs uppercase tracking-widest mb-2">
+                                        Cancelamento livre a qualquer momento
                                     </h4>
                                     <p className="text-base text-brand-gray/80 font-light leading-relaxed">
-                                        Os planos operam em períodos de 6 ou 12 meses. Cancelamento livre a qualquer momento, com acesso ativo até o final do período contratado.
+                                        Sem taxa de instalação &bull; Ativação imediata
                                     </p>
                                 </div>
                             </div>
