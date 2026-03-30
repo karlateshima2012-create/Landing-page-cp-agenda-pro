@@ -128,6 +128,29 @@ export const Pricing = () => {
                     </div>
                 </div>
 
+                <div className="max-w-5xl mx-auto mb-12 relative">
+                    <div className="absolute inset-0 bg-brand-blue/5 blur-3xl rounded-full -z-10 opacity-30"></div>
+                    <div className="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-20 p-8 rounded-3xl relative">
+                        <div className="flex-grow space-y-6 text-center md:text-left">
+                            <div>
+                                <h4 className="text-brand-blue font-black text-[10px] uppercase tracking-[0.2em] mb-3">
+                                    PROFISSIONALISMO & SEGURANÇA
+                                </h4>
+                                <h4 className="text-white font-black text-xs uppercase tracking-widest mb-1">
+                                    Cancelamento livre a qualquer momento
+                                </h4>
+                                <p className="text-sm text-brand-gray/80 font-light leading-relaxed">
+                                    Implementação profissional inclusa &bull; Sem taxa de instalação &bull; Ativação imediata
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="flex-shrink-0 relative">
+                            <ShieldCheck className="w-12 h-12 text-brand-blue/40" strokeWidth={1.5} />
+                        </div>
+                    </div>
+                </div>
+
                 {/* Consultative Supporting Text (No separate headline) */}
                 <div className="max-w-4xl mx-auto mb-16 text-center px-4">
                     <p className="text-brand-gray text-lg font-light leading-relaxed mb-8 max-w-2xl mx-auto">
@@ -176,29 +199,7 @@ export const Pricing = () => {
                             <div className="absolute inset-x-0 bottom-0 h-1 bg-brand-blue transform scale-x-0 group-hover/btn:scale-x-100 transition-transform duration-300"></div>
                         </a>
 
-                        <div className="mt-12 pt-10 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-10 text-left">
-                            <div className="flex-grow space-y-10">
-                                <div>
-                                    <h4 className="text-brand-blue font-black text-[10px] uppercase tracking-[0.2em] mb-2">
-                                        IMPLEMENTAÇÃO PROFISSIONAL INCLUSA EM TODOS OS PLANOS
-                                    </h4>
-                                </div>
 
-                                <div className="max-w-xl">
-                                    <h4 className="text-white font-black text-xs uppercase tracking-widest mb-2">
-                                        Cancelamento livre a qualquer momento
-                                    </h4>
-                                    <p className="text-base text-brand-gray/80 font-light leading-relaxed">
-                                        Sem taxa de instalação &bull; Ativação imediata
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div className="flex-shrink-0 relative">
-                                <div className="absolute inset-0 bg-brand-blue/20 blur-3xl rounded-full"></div>
-                                <ShieldCheck className="w-24 h-24 text-white/5 group-hover:text-brand-blue/20 transition-all duration-700 relative z-10" />
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
