@@ -127,25 +127,26 @@ export const Pricing = () => {
                     </div>
                 </div>
 
-                <div className="max-w-5xl mx-auto mb-12 relative">
-                    <div className="absolute inset-0 bg-brand-blue/5 blur-3xl rounded-full -z-10 opacity-30"></div>
-                    <div className="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-20 p-8 rounded-3xl relative">
-                        <div className="flex-grow space-y-6 text-center md:text-left">
+                <div className="max-w-5xl mx-auto mb-16 relative">
+                    <div className="flex flex-col md:flex-row items-center justify-between gap-10 md:gap-20 p-10 rounded-4xl relative">
+                        <div className="flex-grow space-y-4 text-center md:text-left">
                             <div>
-                                <h4 className="text-brand-blue font-black text-[10px] uppercase tracking-[0.2em] mb-3">
+                                <h4 className="text-brand-blue font-black text-xs uppercase tracking-[0.3em] mb-4">
                                     PROFISSIONALISMO & SEGURANÇA
                                 </h4>
-                                <h4 className="text-white font-black text-xs uppercase tracking-widest mb-1">
+                                <h4 className="text-white font-black text-2xl md:text-3xl uppercase tracking-tighter mb-2">
                                     Cancelamento livre a qualquer momento
                                 </h4>
-                                <p className="text-sm text-brand-gray/80 font-light leading-relaxed">
+                                <p className="text-lg md:text-xl text-brand-gray/80 font-light leading-relaxed">
                                     Implementação profissional inclusa &bull; Sem taxa de instalação &bull; Ativação imediata
                                 </p>
                             </div>
                         </div>
 
-                        <div className="flex-shrink-0 relative">
-                            <ShieldCheck className="w-12 h-12 text-brand-blue/40" strokeWidth={1.5} />
+                        <div className="flex-shrink-0 relative group">
+                            {/* Brilho Azul Claro atrás do ícone */}
+                            <div className="absolute inset-0 bg-brand-blue/20 blur-[50px] rounded-full scale-150 -z-10 group-hover:bg-brand-blue/30 transition-all duration-700"></div>
+                            <ShieldCheck className="w-20 h-20 md:w-24 md:h-24 text-brand-blue/60 relative z-10" strokeWidth={1} />
                         </div>
                     </div>
                 </div>
