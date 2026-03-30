@@ -129,19 +129,19 @@ export const Pricing = () => {
 
                 <div className="max-w-5xl mx-auto mb-16 relative">
                     <div className="flex flex-col md:flex-row items-center justify-between gap-10 md:gap-20 p-10 rounded-4xl relative">
-                        <div className="flex-grow space-y-4 text-center md:text-left">
+                        <div className="flex-grow space-y-3 text-center md:text-left">
                             <div>
                                 <h4 className="text-brand-blue font-black text-xs uppercase tracking-[0.3em] mb-4">
                                     PROFISSIONALISMO & SEGURANÇA
                                 </h4>
-                                <h4 className="text-white font-black text-2xl md:text-3xl tracking-tighter mb-2">
-                                    Cancelamento disponível a qualquer momento*
+                                <h4 className="text-white font-black text-lg tracking-widest mb-1">
+                                    Cancelamento disponível a qualquer momento
                                 </h4>
-                                <p className="text-lg md:text-xl text-brand-gray/80 font-light leading-relaxed mb-4">
+                                <p className="text-lg text-brand-gray/80 font-light leading-relaxed mb-3">
                                     Implementação profissional inclusa &bull; Sem taxa de instalação &bull; Ativação imediata
                                 </p>
-                                <p className="text-xs text-brand-gray/60 font-light italic">
-                                    *Planos com duração mínima de 6 ou 12 meses. O cancelamento encerra o acesso ao sistema.
+                                <p className="text-[10px] text-brand-gray/60 font-light italic">
+                                    Planos com duração mínima de 6 ou 12 meses. O cancelamento encerra o acesso ao sistema.
                                 </p>
                             </div>
                         </div>
