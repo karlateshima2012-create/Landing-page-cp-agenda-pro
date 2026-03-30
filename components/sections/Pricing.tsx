@@ -134,7 +134,7 @@ export const Pricing = () => {
                                 <h4 className="text-brand-blue font-black text-xs uppercase tracking-[0.3em] mb-4">
                                     PROFISSIONALISMO & SEGURANÇA
                                 </h4>
-                                <h4 className="text-white font-black text-2xl md:text-3xl uppercase tracking-tighter mb-2">
+                                <h4 className="text-white font-black text-2xl md:text-3xl tracking-tighter mb-2">
                                     Cancelamento livre a qualquer momento
                                 </h4>
                                 <p className="text-lg md:text-xl text-brand-gray/80 font-light leading-relaxed">
