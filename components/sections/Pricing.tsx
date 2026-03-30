@@ -6,7 +6,6 @@ export const Pricing = () => {
     const whatsappUrl = "https://wa.me/8109011886491?text=";
     const proUrl = `${whatsappUrl}${encodeURIComponent("Olá! Gostaria de saber mais sobre o Plano de 6 Meses da CP Agenda Pro.")}`;
     const eliteUrl = `${whatsappUrl}${encodeURIComponent("Olá! Gostaria de saber mais sobre o Plano de 12 Meses da CP Agenda Pro.")}`;
-    const consultUrl = `${whatsappUrl}${encodeURIComponent("Olá! Gostaria de conhecer mais o sistema de agendamento antes de decidir.")}`;
     const generalUrl = `${whatsappUrl}${encodeURIComponent("Olá! Gostaria de saber mais sobre os planos da CP Agenda Pro.")}`;
 
     return (
@@ -151,18 +150,7 @@ export const Pricing = () => {
                     </div>
                 </div>
 
-                {/* Consultative Supporting Text (No separate headline) */}
-                <div className="max-w-4xl mx-auto mb-16 text-center px-4">
-                    <p className="text-brand-gray text-lg font-light leading-relaxed mb-8 max-w-2xl mx-auto">
-                        Ainda tem dúvidas? <span className="text-white font-bold">Conheça antes de decidir.</span><br />
-                        Agende uma conversa rápida para conhecer o sistema, entender como ele se adapta ao seu negócio e tirar todas as suas dúvidas. Sem compromisso.
-                    </p>
 
-                    <a href={consultUrl} className="relative inline-flex items-center justify-center bg-white text-slate-950 font-black py-4 px-8 rounded-xl text-[10px] uppercase tracking-widest hover:scale-105 active:scale-95 transition-all shadow-xl leading-none group overflow-hidden">
-                        <span className="relative z-10">QUERO CONHECER ANTES DE DECIDIR</span>
-                        <div className="absolute inset-x-0 bottom-0 h-1 bg-brand-blue transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
-                    </a>
-                </div>
             </div>
 
             {/* 2. OFERTA LANÇAMENTO */}
