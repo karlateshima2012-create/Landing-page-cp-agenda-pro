@@ -31,5 +31,5 @@ jobs:
           password: ${{ secrets.HOSTINGER_SSH_PASSWORD }}
           port: 65002
           source: "dist/*"
-          target: "domains/creativeprintjp.com/public_html/saibamaiscpgestao"
+          target: "domains/creativeprintjp.com/public_html/saibamaiscpagendapro"
           strip_components: 1
