@@ -134,13 +134,13 @@ export const Pricing = () => {
                                 <h4 className="text-brand-blue font-black text-xs uppercase tracking-[0.3em] mb-4">
                                     PROFISSIONALISMO & SEGURANÇA
                                 </h4>
-                                <h4 className="text-white font-black text-lg tracking-widest mb-1">
+                                <h4 className="text-white font-black text-lg mb-1">
                                     Cancelamento disponível a qualquer momento
                                 </h4>
                                 <p className="text-lg text-brand-gray/80 font-light leading-relaxed mb-3">
                                     Implementação profissional inclusa &bull; Sem taxa de instalação &bull; Ativação imediata
                                 </p>
-                                <p className="text-[10px] text-brand-gray/60 font-light italic">
+                                <p className="text-xs text-brand-gray/60 font-light">
                                     Planos com duração mínima de 6 ou 12 meses. O cancelamento encerra o acesso ao sistema.
                                 </p>
                             </div>
