@@ -147,9 +147,10 @@ export const Pricing = () => {
                         </div>
 
                         <div className="flex-shrink-0 relative group">
-                            {/* Brilho Azul Claro atrás do ícone */}
-                            <div className="absolute inset-0 bg-brand-blue/20 blur-[50px] rounded-full scale-150 -z-10 group-hover:bg-brand-blue/30 transition-all duration-700"></div>
-                            <ShieldCheck className="w-20 h-20 md:w-24 md:h-24 text-brand-blue/60 relative z-10" strokeWidth={1} />
+                            {/* Efeito de Luz Neon Sutil */}
+                            <div className="absolute inset-0 bg-brand-blue/30 blur-[40px] rounded-full scale-150 -z-10 animate-pulse"></div>
+                            <div className="absolute inset-0 bg-brand-blue/10 blur-[80px] rounded-full scale-[2.5] -z-20"></div>
+                            <ShieldCheck className="w-20 h-20 md:w-24 md:h-24 text-brand-blue relative z-10" strokeWidth={1} />
                         </div>
                     </div>
                 </div>
