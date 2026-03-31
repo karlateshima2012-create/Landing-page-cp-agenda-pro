@@ -97,19 +97,19 @@ export const Pricing = () => {
                     <div className="flex flex-col md:flex-row items-center justify-between gap-10 md:gap-20 p-10 rounded-4xl relative">
                         <div className="flex-grow space-y-3 text-center md:text-left">
                             <div>
-                                <h4 className="text-brand-blue font-black text-xs uppercase tracking-[0.3em] mb-4">
+                                <h4 className="font-black text-[11px] lg:text-xs uppercase tracking-[0.4em] text-brand-blue mb-4">
                                     PROFISSIONALISMO & SEGURANÇA
                                 </h4>
-                                <p className="text-sm md:text-base text-white/90 font-black leading-relaxed mb-1">
+                                <p className="font-black text-2xl lg:text-3xl text-white leading-tight mb-4">
                                     Implementação profissional inclusa • Sem taxa de instalação
                                 </p>
-                                <p className="text-sm md:text-base text-brand-gray font-light opacity-80 mb-1">
+                                <p className="font-light text-base lg:text-lg text-brand-gray/80 mb-1">
                                     Cobrança mensal automática no cartão, com total segurança via Stripe
                                 </p>
-                                <p className="text-sm md:text-base text-brand-gray font-light opacity-80 mb-6">
+                                <p className="font-light text-base lg:text-lg text-brand-gray/80 mb-8">
                                     Plano com permanência mínima de 12 meses
                                 </p>
-                                <p className="text-xs md:text-sm text-brand-gray/60 font-light leading-none">
+                                <p className="font-light text-sm lg:text-base text-brand-gray/60">
                                     O cancelamento encerra o acesso ao sistema
                                 </p>
                             </div>
