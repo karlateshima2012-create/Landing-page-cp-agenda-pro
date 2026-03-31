@@ -104,19 +104,19 @@ export const Pricing = () => {
                     <div className="flex flex-col md:flex-row items-center justify-between gap-10 md:gap-20 p-10 rounded-4xl relative">
                         <div className="flex-grow space-y-3 text-center md:text-left">
                             <div>
-                                <h4 className="text-white font-black text-lg mb-4">
+                                <h4 className="text-brand-blue font-black text-xs uppercase tracking-[0.3em] mb-4">
                                     PROFISSIONALISMO & SEGURANÇA
                                 </h4>
-                                <p className="text-lg text-brand-gray/80 font-light leading-relaxed mb-1">
+                                <p className="text-sm md:text-base text-white/90 font-black leading-relaxed mb-1">
                                     Implementação profissional inclusa • Sem taxa de instalação
                                 </p>
-                                <p className="text-sm text-brand-blue font-bold mb-1">
+                                <p className="text-sm md:text-base text-brand-gray font-light opacity-80 mb-1">
                                     Cobrança mensal automática via cartão (Stripe)
                                 </p>
-                                <p className="text-sm text-white/60 font-medium mb-6">
+                                <p className="text-sm md:text-base text-brand-gray font-light opacity-80 mb-6">
                                     Plano com permanência mínima de 12 meses
                                 </p>
-                                <p className="text-[10px] text-brand-gray/40 font-light uppercase tracking-widest">
+                                <p className="text-[10px] text-brand-gray/40 font-light uppercase tracking-widest leading-none">
                                     O cancelamento encerra o acesso ao sistema
                                 </p>
                             </div>
