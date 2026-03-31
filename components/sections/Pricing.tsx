@@ -104,9 +104,6 @@ export const Pricing = () => {
                     <div className="flex flex-col md:flex-row items-center justify-between gap-10 md:gap-20 p-10 rounded-4xl relative">
                         <div className="flex-grow space-y-3 text-center md:text-left">
                             <div>
-                                <h4 className="text-brand-blue font-black text-xs uppercase tracking-[0.3em] mb-4">
-                                    PROFISSIONALISMO & SEGURANÇA
-                                </h4>
                                 <h4 className="text-white font-black text-lg mb-4">
                                     PROFISSIONALISMO & SEGURANÇA
                                 </h4>
