@@ -70,17 +70,21 @@ export const Pricing = () => {
                             </div>
                         </div>
 
+                        <a href={eliteUrl} className="relative w-full h-16 bg-brand-yellow text-slate-950 font-black rounded-2xl flex items-center justify-center gap-2 hover:bg-brand-yellow/90 hover:scale-[1.02] active:scale-[0.98] transition-all shadow-xl text-[11px] uppercase tracking-[0.1em] group/btn overflow-hidden mb-8">
+                            <span className="relative z-10">QUERO COMEÇAR MEU AGENDAMENTO</span>
+                        </a>
+
                         {/* Accordion Features */}
-                        <div className="mb-8">
+                        <div className="mt-auto pt-8 border-t border-white/10">
                             <button 
                                 onClick={() => setIsFeaturesOpen(!isFeaturesOpen)}
-                                className="w-full flex items-center justify-between p-4 bg-white/5 rounded-xl border border-white/10 hover:bg-white/10 transition-all group"
+                                className="w-full flex items-center justify-between hover:opacity-80 transition-all group"
                             >
-                                <span className="text-white font-black text-[11px] uppercase tracking-widest">PRINCIPAIS RECURSOS</span>
+                                <span className="text-white font-black text-[11px] uppercase tracking-widest leading-none">PRINCIPAIS RECURSOS</span>
                                 <ArrowRight className={`w-4 h-4 text-brand-yellow transition-transform duration-300 ${isFeaturesOpen ? 'rotate-90' : ''}`} />
                             </button>
                             
-                            <div className={`overflow-hidden transition-all duration-500 ease-in-out ${isFeaturesOpen ? 'max-h-[500px] mt-6 opacity-100' : 'max-h-0 opacity-0'}`}>
+                            <div className={`overflow-hidden transition-all duration-500 ease-in-out ${isFeaturesOpen ? 'max-h-[500px] mt-6 opacity-100 pb-4' : 'max-h-0 opacity-0'}`}>
                                 <ul className="space-y-3 px-2">
                                     <SmallCheckBullet text="Painel de Agendamento Online 24h" color="yellow" />
                                     <SmallCheckBullet text="Gestão de 1 Profissional (Agenda Única)" color="yellow" />
@@ -93,10 +97,6 @@ export const Pricing = () => {
                                 </ul>
                             </div>
                         </div>
-
-                        <a href={eliteUrl} className="relative w-full h-16 bg-brand-yellow text-slate-950 font-black rounded-2xl flex items-center justify-center gap-2 hover:bg-brand-yellow/90 hover:scale-[1.02] active:scale-[0.98] transition-all shadow-xl text-[11px] uppercase tracking-[0.1em] group/btn overflow-hidden">
-                            <span className="relative z-10">QUERO AUTOMATIZAR MEU NEGÓCIO</span>
-                        </a>
                     </div>
                 </div>
 
