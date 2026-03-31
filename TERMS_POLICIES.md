@@ -8,30 +8,26 @@ A CONTRATADA (Creative Print) disponibiliza ao CONTRATANTE acesso ao sistema CP 
 - Integração e Ativação de Tags NFC/QR Code (conforme bônus ou aquisição).
 
 ## 2. Modalidade de Contratação
-O serviço é contratado em uma das seguintes modalidades de compromisso:
-- Plano Semestral: Período de utilização e faturamento de 6 meses.
-- Plano Anual: Período de utilização e faturamento de 12 meses.
+O serviço é contratado na modalidade de compromisso anual, com uma duração mínima de 12 meses. O período mínimo contratado começa a partir da data da confirmação do primeiro pagamento.
 
 O plano escolhido no momento da contratação será o padrão para todo o ciclo de faturamento selecionado.
 
 ## 3. Forma de Pagamento e Valores
 O pagamento é realizado via cartão de crédito através da plataforma segura Stripe.
-A cobrança é mensal e automática, debitada no mesmo dia de cada mês durante o período do plano.
+O serviço é cobrado de forma recorrente, com pagamentos mensais automáticos. A assinatura permanece ativa e será renovada automaticamente até que o cliente solicite o cancelamento, respeitando o período mínimo contratado.
 
 Valores Vigentes:
-- Plano 6 Meses: ¥1.490 / mês (Cobrança recorrente por 6 meses).
-- Plano 12 Meses: ¥980 / mês (Cobrança recorrente por 12 meses).
+- Plano 12 Meses: ¥980 / mês (Anual).
 
 *Nota: Não há taxa de instalação ou ativação inicial.*
 
 ## 4. Compromisso e Cancelamento
-Ao assinar o serviço, o CONTRATANTE compromete-se com a manutenção do plano pelo período mínimo selecionado (6 ou 12 meses).
+Ao assinar o serviço, o CONTRATANTE compromete-se com a manutenção do plano pelo período mínimo de 12 meses.
 
 Regras de Cancelamento:
-- O cancelamento da renovação pode ser solicitado a qualquer momento pelo suporte ou painel administrativo.
-- Efeito Imediato: Ao confirmar o cancelamento, o acesso ao sistema é encerrado no mesmo instante.
-- Sem Reembolso: Não haverá devolução de valores referentes a parcelas já pagas ou períodos já decorridos.
-- Interrupção: As cobranças das parcelas futuras do período vigente serão interrompidas.
+- O cancelamento pode ser solicitado a qualquer momento pelo suporte ou painel administrativo.
+- **Caso o cancelamento ocorra antes de 12 meses**, o plano contratado será considerado até o final do período (12 meses), não havendo interrupção imediata das cobranças residuais do compromisso assumido.
+- **Sem Reembolso:** Não haverá devolução de valores referentes a parcelas já pagas ou períodos já decorridos.
 
 ## 5. Inadimplência
 Caso ocorra falha no processamento do pagamento mensal, o acesso ao sistema será suspenso automaticamente após as tentativas de cobrança sem sucesso. A reativação ocorrerá imediatamente após a regularização financeira.

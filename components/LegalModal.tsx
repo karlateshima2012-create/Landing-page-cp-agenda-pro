@@ -46,31 +46,25 @@ export const LegalModal: React.FC<LegalModalProps> = ({ isOpen, onClose }) => {
 
                             <div>
                                 <h4 className="text-white font-bold mb-2">2. Modalidade de Contratação</h4>
-                                <p>O serviço é contratado em uma das seguintes modalidades de compromisso:</p>
-                                <ul className="list-disc pl-5 mt-2 space-y-1">
-                                    <li><strong>Plano Semestral</strong>: duração mínima de 6 meses</li>
-                                    <li><strong>Plano Anual</strong>: duração mínima de 12 meses</li>
-                                </ul>
-                                <p className="mt-2">O plano escolhido no momento da contratação será aplicado durante todo o período contratado.</p>
+                                <p>O serviço é contratado na modalidade de compromisso anual, com uma duração mínima de 12 meses. O período mínimo contratado começa a partir da data da confirmação do primeiro pagamento.</p>
                             </div>
 
                             <div>
                                 <h4 className="text-white font-bold mb-2">3. Forma de Pagamento e Valores</h4>
-                                <p>O pagamento será realizado via cartão de crédito através da plataforma Stripe. A cobrança será mensal e automática, conforme o plano escolhido.</p>
-                                <p className="mt-2 text-brand-blue font-bold">Valores Vigentes:</p>
+                                <p>O serviço é cobrado de forma recorrente, com pagamentos mensais automáticos via Stripe. A assinatura permanece ativa e será renovada automaticamente até que o cliente solicite o cancelamento, respeitando o período mínimo contratado.</p>
+                                <p className="mt-2 text-brand-blue font-bold">Valor Vigente:</p>
                                 <ul className="list-disc pl-5 space-y-1">
-                                    <li><strong>Plano 6 Meses</strong>: ¥1.490/mês (semestral)</li>
                                     <li><strong>Plano 12 Meses</strong>: ¥980/mês (anual)</li>
                                 </ul>
                             </div>
 
                             <div>
                                 <h4 className="text-white font-bold mb-2">4. Compromisso e Cancelamento</h4>
-                                <p>Ao contratar o serviço, o CONTRATANTE concorda com o período mínimo selecionado (6 ou 12 meses).</p>
+                                <p>Ao contratar o serviço, o CONTRATANTE concorda com o período mínimo de 12 meses.</p>
                                 <p className="mt-2"><strong>Regras:</strong></p>
                                 <ul className="list-disc pl-5 space-y-1">
                                     <li>O cancelamento pode ser solicitado a qualquer momento.</li>
-                                    <li><strong>Em caso de cancelamento:</strong> o acesso ao sistema será encerrado imediatamente; não haverá reembolso de valores já pagos; as cobranças futuras do período vigente serão interrompidas.</li>
+                                    <li><strong>Em caso de cancelamento:</strong> Caso o cancelamento ocorra antes de 12 meses, o plano contratado será considerado até o final do período.</li>
                                 </ul>
                             </div>
 

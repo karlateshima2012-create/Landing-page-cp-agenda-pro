@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Badge } from '../Badge';
-import { MessageCircle, Check, Box, ShieldCheck, Zap, ArrowRight, Settings, Smartphone, Rocket } from 'lucide-react';
+import { MessageCircle, Check, Box, ShieldCheck, Zap, ArrowRight, Settings, Smartphone, Rocket, Crown } from 'lucide-react';
 
 export const Pricing = () => {
+    const [isFeaturesOpen, setIsFeaturesOpen] = useState(false);
     const whatsappUrl = "https://wa.me/8109011886491?text=";
-    const proUrl = `${whatsappUrl}${encodeURIComponent("Olá! Gostaria de saber mais sobre o Plano de 6 Meses da CP Agenda Pro.")}`;
     const eliteUrl = `${whatsappUrl}${encodeURIComponent("Olá! Gostaria de saber mais sobre o Plano de 12 Meses da CP Agenda Pro.")}`;
     const generalUrl = `${whatsappUrl}${encodeURIComponent("Olá! Gostaria de saber mais sobre os planos da CP Agenda Pro.")}`;
+
+    const monthlyPrice = 980;
+    const annualTotal = monthlyPrice * 12;
 
     return (
         <section id="pricing" className="py-24 bg-slate-950 relative overflow-hidden">
@@ -26,103 +29,80 @@ export const Pricing = () => {
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto mb-16 items-stretch px-0">
-                    {/* PLANO 6 MESES */}
-                    <div className="w-full relative p-8 md:p-10 rounded-[2rem] md:rounded-[2.5rem] border-2 bg-slate-900/60 border-slate-800 hover:border-brand-blue/40 transition-all duration-500 backdrop-blur-xl flex flex-col group overflow-hidden">
-                        <div className="absolute -top-10 -left-10 w-24 h-24 bg-brand-blue/10 rounded-full blur-[40px]"></div>
-
-                        <div className="mb-8 mt-4">
-                            <h3 className="text-3xl font-black text-white mb-1 uppercase tracking-tight font-black">PLANO 6 MESES</h3>
-                            <p className="text-brand-blue text-xs uppercase font-black tracking-widest opacity-80">ACESSO RÁPIDO E ESSENCIAL</p>
+                <div className="flex justify-center mb-16 px-4">
+                    {/* PLANO 12 MESES - CARD ÚNICO PREMIUM */}
+                    <div className="w-full max-w-[480px] relative p-8 md:p-10 rounded-[2rem] md:rounded-[2.5rem] border-2 bg-slate-900 border-brand-yellow/30 backdrop-blur-3xl flex flex-col shadow-[0_0_50px_rgba(255,242,0,0.1)] transition-all duration-500 overflow-visible">
+                        
+                        {/* Header Icons */}
+                        <div className="absolute top-8 left-8 flex items-center gap-2 text-brand-yellow/60">
+                            <Zap className="w-4 h-4 fill-brand-yellow/20" />
+                            <span className="text-[10px] font-black uppercase tracking-widest">MÁXIMA PERFORMANCE</span>
+                        </div>
+                        <div className="absolute top-8 right-8 text-brand-yellow/60">
+                            <Crown className="w-5 h-5" />
                         </div>
 
-                        <ul className="space-y-3 mb-10 flex-grow">
-                            <SmallCheckBullet text="Painel de Agendamento Online 24h" />
-                            <SmallCheckBullet text="Gestão de 1 Profissional (Agenda Única)" />
-                            <SmallCheckBullet text="Cadastro Ilimitado de Serviços" />
-                            <SmallCheckBullet text="Notificações Automáticas de Novas Reservas" />
-                            <SmallCheckBullet text="Bloqueio de Horários e Pausas" />
-                            <SmallCheckBullet text="Customização Total da Página de Agendamentos" />
-                            <SmallCheckBullet text="Confirmação via Sistema Integrado" />
-                            <SmallCheckBullet text="Suporte Premium Incluso" />
-                        </ul>
+                        {/* Recommended Badge */}
+                        <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20">
+                            <div className="bg-slate-950 text-brand-yellow font-black px-6 py-2 rounded-full shadow-2xl text-[10px] uppercase border border-brand-yellow/30 tracking-widest">
+                                RECOMENDADO
+                            </div>
+                        </div>
 
-                        <div className="bg-slate-950/40 border border-white/5 rounded-2xl p-6 mb-8 relative overflow-hidden">
+                        <div className="mb-8 mt-10 text-center">
+                            <h3 className="text-4xl font-black text-white mb-1 uppercase tracking-tight">PLANO 12 MESES</h3>
+                            <p className="text-brand-yellow text-[10px] uppercase font-black tracking-widest opacity-80">FOCO TOTAL NO CRESCIMENTO</p>
+                        </div>
+
+                        <div className="bg-slate-950/40 border border-white/5 rounded-2xl p-8 mb-8 relative overflow-hidden text-center">
                             <div className="space-y-4">
                                 <div className="space-y-1">
-                                    <div className="flex items-baseline gap-1">
-                                        <span className="text-white text-5xl font-black transition-all">
-                                            ¥1.490
-                                        </span>
-                                        <span className="text-brand-blue text-[10px] uppercase font-bold tracking-widest ml-2">POR MÊS</span>
-                                    </div>
-                                    <div className="flex items-center gap-2">
-                                        <span className="text-brand-gray text-[11px] uppercase opacity-70 tracking-wider">
-                                            Cobrança mensal automática durante 6 meses
-                                        </span>
+                                    <div className="flex flex-col items-center justify-center gap-1">
+                                        <div className="flex items-baseline gap-2">
+                                            <span className="text-white text-4xl md:text-5xl font-black">
+                                                ¥{monthlyPrice.toLocaleString()}
+                                            </span>
+                                            <span className="text-brand-yellow text-[10px] uppercase font-bold tracking-widest">/ MÊS</span>
+                                        </div>
+                                        <div className="text-brand-gray/60 text-[11px] font-medium tracking-wide">
+                                            Total de ¥{annualTotal.toLocaleString()} em 12 meses
+                                        </div>
                                     </div>
                                 </div>
 
-                                <div className="bg-brand-blue/10 text-brand-blue text-[10px] font-black uppercase py-1.5 px-3 rounded-full text-center border border-brand-blue/20">
-                                    ACESSO TOTAL + SUPORTE INCLUÍDO
+                                <div className="bg-brand-pink/10 text-brand-pink text-[10px] font-black uppercase py-2 px-4 rounded-full inline-block border border-brand-pink/20">
+                                    ECONOMIA DE ¥6.120 (35% OFF)
                                 </div>
                             </div>
                         </div>
 
-                        <a href={proUrl} className="relative w-full h-12 bg-brand-blue text-slate-950 font-black rounded-xl flex items-center justify-center gap-2 hover:scale-[1.03] transition-all text-[10px] uppercase tracking-widest active:scale-95 shadow-lg shadow-brand-blue/20 group/btn overflow-hidden">
-                            <span className="relative z-10">COMEÇAR COM PLANO 6 MESES</span>
-                            <div className="absolute inset-x-0 bottom-0 h-1 bg-white transform scale-x-0 group-hover/btn:scale-x-100 transition-transform duration-300"></div>
-                        </a>
-                    </div>
-
-                    {/* PLANO 12 MESES */}
-                    <div className="w-full relative p-8 md:p-10 rounded-[2rem] md:rounded-[2.5rem] border-2 bg-slate-900 border-brand-yellow/30 backdrop-blur-3xl flex flex-col shadow-[0_0_50px_rgba(255,242,0,0.1)] transition-all duration-500 overflow-visible">
-                        <div className="absolute -top-10 -right-10 w-24 h-24 bg-brand-yellow/10 rounded-full blur-[40px]"></div>
-                        <div className="absolute -top-5 left-12 z-20">
-                            <Badge variant="outline" className="bg-slate-950 text-brand-yellow font-black px-6 py-1.5 shadow-2xl text-[9px] uppercase border-2 border-brand-yellow">RECOMENDADO</Badge>
-                        </div>
-
-                        <div className="mb-8 mt-4">
-                            <h3 className="text-3xl font-black text-white mb-1 uppercase tracking-tight font-black">PLANO 12 MESES</h3>
-                            <p className="text-brand-yellow text-xs uppercase font-black tracking-widest">FOCO TOTAL NO CRESCIMENTO (BRASILEIROS NO JAPÃO)</p>
-                        </div>
-
-                        <ul className="space-y-3 mb-10 flex-grow">
-                            <SmallCheckBullet text="Painel de Agendamento Online 24h" color="yellow" />
-                            <SmallCheckBullet text="Gestão de 1 Profissional (Agenda Única)" color="yellow" />
-                            <SmallCheckBullet text="Cadastro Ilimitado de Serviços" color="yellow" />
-                            <SmallCheckBullet text="Notificações Automáticas de Novas Reservas" color="yellow" />
-                            <SmallCheckBullet text="Bloqueio de Horários e Pausas" color="yellow" />
-                            <SmallCheckBullet text="Customização Total da Página de Agendamentos" color="yellow" />
-                            <SmallCheckBullet text="Confirmação via Sistema Integrado" color="yellow" />
-                            <SmallCheckBullet text="Suporte Premium Incluso" color="yellow" />
-                        </ul>
-
-                        <div className="bg-slate-950/40 border border-white/5 rounded-2xl p-6 mb-8 relative overflow-hidden">
-                            <div className="space-y-4">
-                                <div className="space-y-1">
-                                    <div className="flex items-baseline gap-1">
-                                        <span className="text-white text-5xl font-black transition-all">
-                                            ¥980
-                                        </span>
-                                        <span className="text-brand-yellow text-[10px] uppercase font-bold tracking-widest ml-2">POR MÊS</span>
-                                    </div>
-                                    <div className="flex items-center gap-2">
-                                        <span className="text-brand-gray text-[11px] uppercase opacity-70 tracking-wider">
-                                            Cobrança mensal automática durante 12 meses
-                                        </span>
-                                    </div>
-                                </div>
-
-                                <div className="bg-brand-pink/10 text-brand-pink text-[10px] font-black uppercase py-1.5 px-3 rounded-full text-center border border-brand-pink/20">
-                                    ECONOMIA DE ¥6.120 (35% OFF) NO PERÍODO
-                                </div>
+                        {/* Accordion Features */}
+                        <div className="mb-8">
+                            <button 
+                                onClick={() => setIsFeaturesOpen(!isFeaturesOpen)}
+                                className="w-full flex items-center justify-between p-4 bg-white/5 rounded-xl border border-white/10 hover:bg-white/10 transition-all group"
+                            >
+                                <span className="text-white font-black text-[11px] uppercase tracking-widest">PRINCIPAIS RECURSOS</span>
+                                <ArrowRight className={`w-4 h-4 text-brand-yellow transition-transform duration-300 ${isFeaturesOpen ? 'rotate-90' : ''}`} />
+                            </button>
+                            
+                            <div className={`overflow-hidden transition-all duration-500 ease-in-out ${isFeaturesOpen ? 'max-h-[500px] mt-6 opacity-100' : 'max-h-0 opacity-0'}`}>
+                                <ul className="space-y-3 px-2">
+                                    <SmallCheckBullet text="Painel de Agendamento Online 24h" color="yellow" />
+                                    <SmallCheckBullet text="Gestão de 1 Profissional (Agenda Única)" color="yellow" />
+                                    <SmallCheckBullet text="Cadastro Ilimitado de Serviços" color="yellow" />
+                                    <SmallCheckBullet text="Notificações Automáticas de Novas Reservas" color="yellow" />
+                                    <SmallCheckBullet text="Bloqueio de Horários e Pausas" color="yellow" />
+                                    <SmallCheckBullet text="Customização Total da Página de Agendamentos" color="yellow" />
+                                    <SmallCheckBullet text="Confirmação via Sistema Integrado" color="yellow" />
+                                    <SmallCheckBullet text="Suporte Premium Incluso" color="yellow" />
+                                </ul>
                             </div>
                         </div>
 
-                        <a href={eliteUrl} className="relative w-full h-14 bg-brand-yellow text-slate-950 font-black rounded-xl flex items-center justify-center gap-2 hover:scale-[1.03] transition-all shadow-xl active:scale-95 text-[10px] uppercase tracking-widest leading-none group/btn overflow-hidden">
-                            <span className="relative z-10">COMEÇAR COM PLANO 12 MESES</span>
-                            <div className="absolute inset-x-0 bottom-0 h-1 bg-white transform scale-x-0 group-hover/btn:scale-x-100 transition-transform duration-300"></div>
+                        <a href={eliteUrl} className="relative w-full h-16 bg-brand-yellow text-slate-950 font-black rounded-2xl flex items-center justify-center gap-2 hover:scale-[1.02] active:scale-[0.98] transition-all shadow-[0_20px_40px_rgba(255,242,0,0.2)] text-[11px] uppercase tracking-[0.1em] group/btn overflow-hidden">
+                            <span className="relative z-10">QUERO AUTOMATIZAR MEU NEGÓCIO</span>
+                            <div className="absolute inset-0 bg-white/20 translate-y-full group-hover/btn:translate-y-0 transition-transform duration-300"></div>
                         </a>
                     </div>
                 </div>
@@ -141,7 +121,7 @@ export const Pricing = () => {
                                     Implementação profissional inclusa &bull; Sem taxa de instalação &bull; Ativação imediata
                                 </p>
                                 <p className="text-xs text-brand-gray/60 font-light">
-                                    Planos com duração mínima de 6 ou 12 meses. O cancelamento encerra o acesso ao sistema.
+                                    Plano com duração mínima de 12 meses. O cancelamento encerra o acesso ao sistema.
                                 </p>
                             </div>
                         </div>
