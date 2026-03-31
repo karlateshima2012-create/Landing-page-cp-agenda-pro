@@ -22,10 +22,10 @@ export const Pricing = () => {
                 <div className="text-center mb-12 px-4">
                     <Badge variant="outline" className="mb-6 uppercase tracking-[0.3em] font-black text-[10px] py-1 px-4 text-brand-yellow border-brand-yellow/50">PLANOS</Badge>
                     <h2 className="text-4xl md:text-6xl font-black text-white mb-6 tracking-tighter leading-[1.1]">
-                        Escolha o seu plano
+                        Investimento Recomendado
                     </h2>
                     <p className="text-brand-gray text-base md:text-lg font-light max-w-2xl mx-auto opacity-80">
-                        Sem taxa de ativação e sem cobranças ocultas.
+                        Sem taxa de instalação • Cobrança clara e transparente.
                     </p>
                 </div>
 
@@ -50,9 +50,9 @@ export const Pricing = () => {
                         </div>
 
                         <div className="mb-12 mt-10 text-center">
-                            <h3 className="text-4xl md:text-5xl font-black text-white mb-4 uppercase tracking-tighter">PLANO AUTOMÁTICO</h3>
+                            <h3 className="text-4xl md:text-5xl font-black text-white mb-4 uppercase tracking-tighter">PLANO AGENDA PRO</h3>
                             <p className="text-brand-gray text-sm md:text-base font-light max-w-[280px] mx-auto leading-relaxed opacity-80">
-                                A solução definitiva para escalar suas vendas e fidelizar clientes no automático, sem esforço manual.
+                                Seus clientes agendando 24h por dia, mesmo quando você está offline.
                             </p>
                         </div>
 
@@ -107,14 +107,20 @@ export const Pricing = () => {
                                 <h4 className="text-brand-blue font-black text-xs uppercase tracking-[0.3em] mb-4">
                                     PROFISSIONALISMO & SEGURANÇA
                                 </h4>
-                                <h4 className="text-white font-black text-lg mb-1">
-                                    Cancelamento disponível a qualquer momento
+                                <h4 className="text-white font-black text-lg mb-4">
+                                    PROFISSIONALISMO & SEGURANÇA
                                 </h4>
-                                <p className="text-lg text-brand-gray/80 font-light leading-relaxed mb-3">
-                                    Implementação profissional inclusa &bull; Sem taxa de instalação &bull; Ativação imediata
+                                <p className="text-lg text-brand-gray/80 font-light leading-relaxed mb-1">
+                                    Implementação profissional inclusa • Sem taxa de instalação
                                 </p>
-                                <p className="text-xs text-brand-gray/60 font-light">
-                                    Plano com duração mínima de 12 meses. O cancelamento encerra o acesso ao sistema.
+                                <p className="text-sm text-brand-blue font-bold mb-1">
+                                    Cobrança mensal automática via cartão (Stripe)
+                                </p>
+                                <p className="text-sm text-white/60 font-medium mb-6">
+                                    Plano com permanência mínima de 12 meses
+                                </p>
+                                <p className="text-[10px] text-brand-gray/40 font-light uppercase tracking-widest">
+                                    O cancelamento encerra o acesso ao sistema
                                 </p>
                             </div>
                         </div>
