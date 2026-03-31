@@ -8,7 +8,7 @@ export const Pricing = () => {
     const eliteUrl = `${whatsappUrl}${encodeURIComponent("Olá! Gostaria de saber mais sobre o Plano de 12 Meses da CP Agenda Pro.")}`;
     const generalUrl = `${whatsappUrl}${encodeURIComponent("Olá! Gostaria de saber mais sobre os planos da CP Agenda Pro.")}`;
 
-    const monthlyPrice = 980;
+    const monthlyPrice = 1280;
     const annualTotal = monthlyPrice * 12;
 
     return (
@@ -45,33 +45,27 @@ export const Pricing = () => {
                         {/* Recommended Badge */}
                         <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20">
                             <div className="bg-slate-950 text-brand-yellow font-black px-6 py-2 rounded-full shadow-2xl text-[10px] uppercase border border-brand-yellow/30 tracking-widest">
-                                RECOMENDADO
+                                MELHOR INVESTIMENTO
                             </div>
                         </div>
 
-                        <div className="mb-8 mt-10 text-center">
-                            <h3 className="text-4xl font-black text-white mb-1 uppercase tracking-tight">PLANO 12 MESES</h3>
-                            <p className="text-brand-yellow text-[10px] uppercase font-black tracking-widest opacity-80">FOCO TOTAL NO CRESCIMENTO</p>
+                        <div className="mb-12 mt-10 text-center">
+                            <h3 className="text-4xl md:text-5xl font-black text-white mb-4 uppercase tracking-tighter">PLANO AUTOMÁTICO</h3>
+                            <p className="text-brand-gray text-sm md:text-base font-light max-w-[280px] mx-auto leading-relaxed opacity-80">
+                                A solução definitiva para escalar suas vendas e fidelizar clientes no automático, sem esforço manual.
+                            </p>
                         </div>
 
-                        <div className="bg-slate-950/40 border border-white/5 rounded-2xl p-8 mb-8 relative overflow-hidden text-center">
-                            <div className="space-y-4">
-                                <div className="space-y-1">
-                                    <div className="flex flex-col items-center justify-center gap-1">
-                                        <div className="flex items-baseline gap-2">
-                                            <span className="text-white text-4xl md:text-5xl font-black">
-                                                ¥{monthlyPrice.toLocaleString()}
-                                            </span>
-                                            <span className="text-brand-yellow text-[10px] uppercase font-bold tracking-widest">/ MÊS</span>
-                                        </div>
-                                        <div className="text-brand-gray/60 text-[11px] font-medium tracking-wide">
-                                            Total de ¥{annualTotal.toLocaleString()} em 12 meses
-                                        </div>
-                                    </div>
+                        <div className="mb-10 text-center">
+                            <div className="flex flex-col items-center justify-center gap-1">
+                                <div className="flex items-baseline gap-2">
+                                    <span className="text-white text-5xl md:text-6xl font-black">
+                                        ¥{monthlyPrice.toLocaleString()}
+                                    </span>
+                                    <span className="text-brand-gray/60 text-xs uppercase font-bold tracking-widest">/MÊS</span>
                                 </div>
-
-                                <div className="bg-brand-pink/10 text-brand-pink text-[10px] font-black uppercase py-2 px-4 rounded-full inline-block border border-brand-pink/20">
-                                    ECONOMIA DE ¥6.120 (35% OFF)
+                                <div className="text-brand-gray/40 text-[11px] font-medium tracking-wide">
+                                    Total de ¥{annualTotal.toLocaleString()} em 12 meses
                                 </div>
                             </div>
                         </div>
@@ -100,9 +94,8 @@ export const Pricing = () => {
                             </div>
                         </div>
 
-                        <a href={eliteUrl} className="relative w-full h-16 bg-brand-yellow text-slate-950 font-black rounded-2xl flex items-center justify-center gap-2 hover:scale-[1.02] active:scale-[0.98] transition-all shadow-[0_20px_40px_rgba(255,242,0,0.2)] text-[11px] uppercase tracking-[0.1em] group/btn overflow-hidden">
+                        <a href={eliteUrl} className="relative w-full h-16 bg-brand-yellow text-slate-950 font-black rounded-2xl flex items-center justify-center gap-2 hover:bg-brand-yellow/90 hover:scale-[1.02] active:scale-[0.98] transition-all shadow-xl text-[11px] uppercase tracking-[0.1em] group/btn overflow-hidden">
                             <span className="relative z-10">QUERO AUTOMATIZAR MEU NEGÓCIO</span>
-                            <div className="absolute inset-0 bg-white/20 translate-y-full group-hover/btn:translate-y-0 transition-transform duration-300"></div>
                         </a>
                     </div>
                 </div>

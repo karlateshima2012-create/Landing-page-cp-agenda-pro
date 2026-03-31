@@ -17,7 +17,7 @@ O pagamento é realizado via cartão de crédito através da plataforma segura S
 O serviço é cobrado de forma recorrente, com pagamentos mensais automáticos. A assinatura permanece ativa e será renovada automaticamente até que o cliente solicite o cancelamento, respeitando o período mínimo contratado.
 
 Valores Vigentes:
-- Plano 12 Meses: ¥980 / mês (Anual).
+- Plano 12 Meses: ¥1.280 / mês (Anual).
 
 *Nota: Não há taxa de instalação ou ativação inicial.*
 
