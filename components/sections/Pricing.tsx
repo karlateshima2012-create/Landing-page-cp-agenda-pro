@@ -20,9 +20,9 @@ export const Pricing = () => {
             <div className="max-w-[1440px] mx-auto px-6 md:px-24 w-full">
                 {/* 1. Pricing Plans Header */}
                 <div className="text-center mb-12 px-4">
-                    <Badge variant="outline" className="mb-6 uppercase tracking-[0.3em] font-black text-[10px] py-1 px-4 text-brand-yellow border-brand-yellow/50">PLANOS</Badge>
+                    <Badge variant="outline" className="mb-6 uppercase tracking-[0.3em] font-black text-[10px] py-1 px-4 text-brand-yellow border-brand-yellow/50">INVESTIMENTO</Badge>
                     <h2 className="text-4xl md:text-6xl font-black text-white mb-6 tracking-tighter leading-[1.1]">
-                        Investimento Recomendado
+                        Solução completa para seus agendamentos
                     </h2>
                     <p className="text-brand-gray text-base md:text-lg font-light max-w-2xl mx-auto opacity-80">
                         Sem taxa de instalação • Cobrança clara e transparente.
@@ -40,13 +40,6 @@ export const Pricing = () => {
                         </div>
                         <div className="absolute top-8 right-8 text-brand-yellow/60">
                             <Crown className="w-5 h-5" />
-                        </div>
-
-                        {/* Recommended Badge */}
-                        <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20">
-                            <div className="bg-slate-950 text-brand-yellow font-black px-6 py-2 rounded-full shadow-2xl text-[10px] uppercase border border-brand-yellow/30 tracking-widest">
-                                MELHOR INVESTIMENTO
-                            </div>
                         </div>
 
                         <div className="mb-12 mt-10 text-center">
@@ -116,7 +109,7 @@ export const Pricing = () => {
                                 <p className="text-sm md:text-base text-brand-gray font-light opacity-80 mb-6">
                                     Plano com permanência mínima de 12 meses
                                 </p>
-                                <p className="text-[10px] text-brand-gray/40 font-light uppercase tracking-widest leading-none">
+                                <p className="text-xs md:text-sm text-brand-gray/60 font-light leading-none">
                                     O cancelamento encerra o acesso ao sistema
                                 </p>
                             </div>
