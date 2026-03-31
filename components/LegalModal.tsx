@@ -51,7 +51,7 @@ export const LegalModal: React.FC<LegalModalProps> = ({ isOpen, onClose }) => {
 
                             <div>
                                 <h4 className="text-white font-bold mb-2">3. Forma de Pagamento e Valores</h4>
-                                <p>O serviço é cobrado de forma recorrente, com pagamentos mensais automáticos via Stripe. A assinatura permanece ativa e será renovada automaticamente até que o cliente solicite o cancelamento, respeitando o período mínimo contratado.</p>
+                                <p>O serviço é cobrado de forma recorrente, com pagamentos mensais automáticos no cartão, com total segurança via Stripe. A assinatura permanece ativa e será renovada automaticamente até que o cliente solicite o cancelamento, respeitando o período mínimo contratado.</p>
                                 <p className="mt-2 text-brand-blue font-bold">Valor Vigente:</p>
                                 <ul className="list-disc pl-5 space-y-1">
                                     <li><strong>Plano 12 Meses</strong>: ¥1.280/mês (anual)</li>

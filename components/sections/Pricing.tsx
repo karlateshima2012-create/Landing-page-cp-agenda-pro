@@ -111,7 +111,7 @@ export const Pricing = () => {
                                     Implementação profissional inclusa • Sem taxa de instalação
                                 </p>
                                 <p className="text-sm md:text-base text-brand-gray font-light opacity-80 mb-1">
-                                    Cobrança mensal automática via cartão (Stripe)
+                                    Cobrança mensal automática no cartão, com total segurança via Stripe
                                 </p>
                                 <p className="text-sm md:text-base text-brand-gray font-light opacity-80 mb-6">
                                     Plano com permanência mínima de 12 meses

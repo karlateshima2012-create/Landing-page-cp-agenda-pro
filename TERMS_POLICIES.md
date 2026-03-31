@@ -13,8 +13,7 @@ O serviço é contratado na modalidade de compromisso anual, com uma duração m
 O plano escolhido no momento da contratação será o padrão para todo o ciclo de faturamento selecionado.
 
 ## 3. Forma de Pagamento e Valores
-O pagamento é realizado via cartão de crédito através da plataforma segura Stripe.
-O serviço é cobrado de forma recorrente, com pagamentos mensais automáticos. A assinatura permanece ativa e será renovada automaticamente até que o cliente solicite o cancelamento, respeitando o período mínimo contratado.
+O serviço é cobrado de forma recorrente, com pagamentos mensais automáticos no cartão, com total segurança via Stripe. A assinatura permanece ativa e será renovada automaticamente até que o cliente solicite o cancelamento, respeitando o período mínimo contratado.
 
 Valores Vigentes:
 - Plano 12 Meses: ¥1.280 / mês (Anual).
