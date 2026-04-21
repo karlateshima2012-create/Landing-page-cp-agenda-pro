@@ -2,15 +2,16 @@
 import React from 'react';
 import { Check } from 'lucide-react';
 
+
 const FeatureSection = ({ title, description, items, imageUrl }: {
     title: string,
     description?: string,
     items?: string[],
     imageUrl?: string
 }) => (
-    <section className="py-12 md:py-24 bg-slate-950 px-6">
-        <div className="max-w-7xl mx-auto">
-            <div className="relative w-full bg-slate-900/40 border-2 border-brand-blue/60 rounded-[2rem] md:rounded-[4rem] py-16 md:py-24 px-6 md:px-12 lg:px-16 backdrop-blur-3xl shadow-[0_80px_160px_-40px_rgba(0,0,0,0.95)] overflow-hidden group">
+    <section className="py-12 md:py-24 bg-slate-950">
+        <div className="max-w-[1440px] mx-auto relative z-10 px-6 md:px-16 lg:px-24">
+            <div className="relative w-full bg-slate-900/40 border-2 border-brand-blue/60 rounded-[2rem] md:rounded-[4rem] py-16 md:py-24 px-8 md:px-16 lg:px-24 backdrop-blur-3xl shadow-[0_80px_160px_-40px_rgba(0,0,0,0.95)] overflow-hidden group">
                 {/* Visual Effects */}
                 <div className="absolute inset-0 bg-gradient-to-br from-brand-blue/10 to-transparent opacity-50 pointer-events-none"></div>
                 <div className="absolute top-0 right-0 w-96 h-96 bg-brand-blue/10 blur-[100px] -z-10 rounded-full"></div>
@@ -62,6 +63,7 @@ const FeatureSection = ({ title, description, items, imageUrl }: {
         </div>
     </section>
 );
+
 
 export const FeaturesShowcase = () => (
     <div id="features" className="relative">
