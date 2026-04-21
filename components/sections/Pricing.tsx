@@ -101,35 +101,36 @@ export const Pricing = () => {
                         <div className="absolute top-1/2 right-0 -translate-y-1/2 w-96 h-96 bg-brand-blue/10 blur-[120px] rounded-full pointer-events-none"></div>
                         
                         <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-12">
+
                             <div className="flex-1 text-left">
-                                <h4 className="font-black text-2xl md:text-3xl lg:text-4xl text-white mb-10 leading-tight tracking-tight">
-                                    PROFISSIONALISMO & <span className="text-brand-blue">SEGURANÇA</span>
+                                <h4 className="text-3xl md:text-5xl font-black text-white mb-8 leading-tight tracking-tighter">
+                                    Profissionalismo & <span className="text-brand-blue">Segurança</span>
                                 </h4>
                                 
                                 <ul className="space-y-6 mb-12">
-                                    <li className="flex items-center gap-4 text-white/90">
+                                    <li className="flex items-center gap-4 text-white/90 group/item">
                                         <div className="w-8 h-8 rounded-full bg-brand-blue flex items-center justify-center flex-shrink-0 shadow-[0_0_15px_rgba(56,182,255,0.4)]">
                                             <Check className="w-5 h-5 text-slate-950" strokeWidth={3} />
                                         </div>
-                                        <span className="text-lg md:text-xl font-bold tracking-tight">Implementação profissional inclusa</span>
+                                        <span className="text-base font-light leading-relaxed transition-colors group-hover/item:text-white">Implementação profissional inclusa</span>
                                     </li>
-                                    <li className="flex items-center gap-4 text-white/90">
+                                    <li className="flex items-center gap-4 text-white/90 group/item">
                                         <div className="w-8 h-8 rounded-full bg-brand-blue flex items-center justify-center flex-shrink-0 shadow-[0_0_15px_rgba(56,182,255,0.4)]">
                                             <Check className="w-5 h-5 text-slate-950" strokeWidth={3} />
                                         </div>
-                                        <span className="text-lg md:text-xl font-bold tracking-tight">Sem taxa de instalação</span>
+                                        <span className="text-base font-light leading-relaxed transition-colors group-hover/item:text-white">Sem taxa de instalação</span>
                                     </li>
-                                    <li className="flex items-center gap-4 text-white/90">
+                                    <li className="flex items-center gap-4 text-white/90 group/item">
                                         <div className="w-8 h-8 rounded-full bg-brand-blue flex items-center justify-center flex-shrink-0 shadow-[0_0_15px_rgba(56,182,255,0.4)]">
                                             <Check className="w-5 h-5 text-slate-950" strokeWidth={3} />
                                         </div>
-                                        <span className="text-lg md:text-xl font-bold tracking-tight">Suporte assistido no primeiro acesso</span>
+                                        <span className="text-base font-light leading-relaxed transition-colors group-hover/item:text-white">Suporte assistido no primeiro acesso</span>
                                     </li>
-                                    <li className="flex items-center gap-4 text-white/90">
+                                    <li className="flex items-center gap-4 text-white/90 group/item">
                                         <div className="w-8 h-8 rounded-full bg-brand-blue flex items-center justify-center flex-shrink-0 shadow-[0_0_15px_rgba(56,182,255,0.4)]">
                                             <Check className="w-5 h-5 text-slate-950" strokeWidth={3} />
                                         </div>
-                                        <span className="text-lg md:text-xl font-bold tracking-tight">Configuração inicial da sua agenda</span>
+                                        <span className="text-base font-light leading-relaxed transition-colors group-hover/item:text-white">Configuração inicial da sua agenda</span>
                                     </li>
                                 </ul>
 
