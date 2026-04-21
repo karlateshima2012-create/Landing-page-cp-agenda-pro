@@ -10,10 +10,11 @@ export const Footer = () => {
 
     return (
         <footer className="bg-[#020408] pt-12 pb-8 px-6 relative">
-            {/* Smooth Neon Separator - Centers focused, edges invisible */}
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-[1440px] h-[1px] bg-gradient-to-r from-transparent via-brand-blue to-transparent"></div>
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[150px] md:w-[300px] h-[4px] bg-brand-blue/30 blur-[4px] rounded-full"></div>
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[50px] md:w-[100px] h-[2px] bg-brand-blue blur-[1px] rounded-full shadow-[0_0_15px_rgba(56,182,255,1)]"></div>
+            {/* Perfectly Smooth Neon Separator - All layers are full-width to avoid edge marks */}
+            <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-brand-blue/50 to-transparent"></div>
+            <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-brand-blue to-transparent blur-[1px]"></div>
+            <div className="absolute top-0 left-0 w-full h-[4px] bg-gradient-to-r from-transparent via-brand-blue/20 to-transparent blur-[3px]"></div>
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-20 bg-brand-blue/5 blur-[100px] -z-10 pointer-events-none"></div>
             
             <div className="max-w-7xl mx-auto">
                 {/* Row 1: Logo and Topo Button */}
