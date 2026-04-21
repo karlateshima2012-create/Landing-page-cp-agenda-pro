@@ -83,12 +83,13 @@ export const Pricing = () => {
                     </div>
                 </div>
 
+
                 {/* Summary Statement between cards */}
-                <div className="max-w-4xl mx-auto text-center pt-12 pb-24 md:pt-20 md:pb-32 px-6">
-                    <h2 className="text-3xl md:text-5xl lg:text-6xl font-black text-white mb-8 tracking-tighter leading-tight">
+                <div className="text-center pt-12 pb-24 md:pt-20 md:pb-32 px-6">
+                    <h2 className="text-4xl md:text-6xl font-black text-white mb-6 tracking-tighter leading-[1.1]">
                         Mais do que um sistema.
                     </h2>
-                    <p className="text-base md:text-xl lg:text-2xl text-brand-gray font-light leading-relaxed opacity-70">
+                    <p className="text-brand-gray text-base md:text-lg font-light max-w-2xl mx-auto opacity-80">
                         Uma base sólida, profissional e segura para o crescimento do seu negócio.
                     </p>
                 </div>
