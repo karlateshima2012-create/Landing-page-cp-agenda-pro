@@ -13,16 +13,17 @@ export const Navbar = () => {
                     className="h-10 md:h-12 w-auto object-contain flex-shrink-0" 
                 />
 
+
                 {/* Desktop Menu */}
                 <div className="hidden lg:flex gap-10 items-center text-[11px] font-black uppercase tracking-[0.15em] text-white/70">
-                    <a href="#solucoes" className="hover:text-brand-pink transition-colors">SOLUÇÕES</a>
+                    <a href="#solucoes" className="hover:text-brand-pink transition-colors">SOLUÇÃO</a>
                     <a href="#features" className="hover:text-brand-blue transition-colors">FUNCIONALIDADES</a>
                     <a href="#pricing" className="hover:text-brand-yellow transition-colors">PLANOS</a>
                 </div>
 
                 <div className="hidden lg:block">
                     <a
-                        href="#login"
+                        href="https://cpagendapro.creativeprintjp.com/"
                         className="inline-flex items-center justify-center relative bg-brand-blue hover:bg-brand-blue/90 text-slate-950 text-[10px] sm:text-xs font-black uppercase tracking-wider px-6 md:px-8 h-12 rounded-lg transition-all active:scale-95 shadow-lg shadow-brand-blue/20 group overflow-hidden"
                     >
                         <span className="relative z-10">LOGIN</span>
@@ -42,11 +43,11 @@ export const Navbar = () => {
             {/* Mobile Menu Overlay */}
             {isMenuOpen && (
                 <div className="lg:hidden absolute top-20 left-0 right-0 bg-slate-950 border-b border-white/10 p-8 flex flex-col gap-6 items-center text-center animate-fade-in">
-                    <a href="#solucoes" onClick={() => setIsMenuOpen(false)} className="text-sm font-black uppercase tracking-widest text-white/70 hover:text-brand-pink">SOLUÇÕES</a>
+                    <a href="#solucoes" onClick={() => setIsMenuOpen(false)} className="text-sm font-black uppercase tracking-widest text-white/70 hover:text-brand-pink">SOLUÇÃO</a>
                     <a href="#features" onClick={() => setIsMenuOpen(false)} className="text-sm font-black uppercase tracking-widest text-white/70 hover:text-brand-blue">FUNCIONALIDADES</a>
                     <a href="#pricing" onClick={() => setIsMenuOpen(false)} className="text-sm font-black uppercase tracking-widest text-white/70 hover:text-brand-yellow">PLANOS</a>
                     <a
-                        href="#login"
+                        href="https://cpagendapro.creativeprintjp.com/"
                         onClick={() => setIsMenuOpen(false)}
                         className="w-full bg-brand-blue text-slate-950 text-xs font-black uppercase tracking-wider h-14 rounded-xl flex items-center justify-center active:scale-95 shadow-lg shadow-brand-blue/20"
                     >
