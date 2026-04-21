@@ -83,53 +83,69 @@ export const Pricing = () => {
                     </div>
                 </div>
 
+
                 <div className="max-w-5xl mx-auto mb-16 relative">
-                    <div className="flex flex-col md:flex-row items-center justify-between gap-10 md:gap-20 p-10 rounded-4xl relative overflow-hidden">
-                        <div className="flex-grow space-y-3 text-center md:text-left relative z-10">
-                            <div>
-                                <h4 className="font-black text-[11px] lg:text-xs uppercase tracking-[0.4em] text-brand-blue mb-6">
-                                    PROFISSIONALISMO & SEGURANÇA
+                    <div className="w-full bg-[#080C16] border-2 border-brand-blue/30 rounded-[2.5rem] md:rounded-[4rem] p-10 md:p-16 lg:p-20 relative overflow-hidden group shadow-2xl">
+                        {/* Background Glow */}
+                        <div className="absolute top-1/2 right-0 -translate-y-1/2 w-96 h-96 bg-brand-blue/10 blur-[120px] rounded-full pointer-events-none"></div>
+                        
+                        <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-12">
+                            <div className="flex-1 text-left">
+                                <h4 className="font-black text-2xl md:text-3xl lg:text-4xl text-white mb-10 leading-tight tracking-tight">
+                                    PROFISSIONALISMO & <span className="text-brand-blue">SEGURANÇA</span>
                                 </h4>
-                                <ul className="space-y-3 text-white/90">
-                                    <li className="flex items-center gap-3 font-bold text-base md:text-lg">
-                                        <div className="w-1.5 h-1.5 bg-brand-blue rounded-full"></div>
-                                        Implementação profissional inclusa
+                                
+                                <ul className="space-y-6 mb-12">
+                                    <li className="flex items-center gap-4 text-white/90">
+                                        <div className="w-8 h-8 rounded-full bg-brand-blue flex items-center justify-center flex-shrink-0 shadow-[0_0_15px_rgba(56,182,255,0.4)]">
+                                            <Check className="w-5 h-5 text-slate-950" strokeWidth={3} />
+                                        </div>
+                                        <span className="text-lg md:text-xl font-bold tracking-tight">Implementação profissional inclusa</span>
                                     </li>
-                                    <li className="flex items-center gap-3 font-bold text-base md:text-lg">
-                                        <div className="w-1.5 h-1.5 bg-brand-blue rounded-full"></div>
-                                        Sem taxa de instalação
+                                    <li className="flex items-center gap-4 text-white/90">
+                                        <div className="w-8 h-8 rounded-full bg-brand-blue flex items-center justify-center flex-shrink-0 shadow-[0_0_15px_rgba(56,182,255,0.4)]">
+                                            <Check className="w-5 h-5 text-slate-950" strokeWidth={3} />
+                                        </div>
+                                        <span className="text-lg md:text-xl font-bold tracking-tight">Sem taxa de instalação</span>
                                     </li>
-                                    <li className="flex items-center gap-3 font-bold text-base md:text-lg">
-                                        <div className="w-1.5 h-1.5 bg-brand-blue rounded-full"></div>
-                                        Suporte assistido no primeiro acesso
+                                    <li className="flex items-center gap-4 text-white/90">
+                                        <div className="w-8 h-8 rounded-full bg-brand-blue flex items-center justify-center flex-shrink-0 shadow-[0_0_15px_rgba(56,182,255,0.4)]">
+                                            <Check className="w-5 h-5 text-slate-950" strokeWidth={3} />
+                                        </div>
+                                        <span className="text-lg md:text-xl font-bold tracking-tight">Suporte assistido no primeiro acesso</span>
                                     </li>
-                                    <li className="flex items-center gap-3 font-bold text-base md:text-lg">
-                                        <div className="w-1.5 h-1.5 bg-brand-blue rounded-full"></div>
-                                        Configuração inicial da sua agenda
+                                    <li className="flex items-center gap-4 text-white/90">
+                                        <div className="w-8 h-8 rounded-full bg-brand-blue flex items-center justify-center flex-shrink-0 shadow-[0_0_15px_rgba(56,182,255,0.4)]">
+                                            <Check className="w-5 h-5 text-slate-950" strokeWidth={3} />
+                                        </div>
+                                        <span className="text-lg md:text-xl font-bold tracking-tight">Configuração inicial da sua agenda</span>
                                     </li>
                                 </ul>
-                            </div>
-                        </div>
 
-                        <div className="flex-shrink-0 relative group z-10">
-                            {/* Brilho Azul Claro atrás do ícone */}
-                            <div className="absolute inset-0 bg-brand-blue/20 blur-[50px] rounded-full scale-150 -z-10 group-hover:bg-brand-blue/30 transition-all duration-700"></div>
-                            <ShieldCheck className="w-20 h-20 md:w-24 md:h-24 text-brand-blue/60 relative z-10" strokeWidth={1} />
+                                <a 
+                                    href={generalUrl}
+                                    className="inline-flex items-center justify-center h-16 px-10 bg-brand-blue text-slate-950 font-black text-xs md:text-sm uppercase tracking-widest rounded-2xl hover:bg-white transition-all hover:scale-105 active:scale-95 shadow-xl shadow-brand-blue/10"
+                                >
+                                    COMEÇAR AGORA PELO WHATSAPP
+                                </a>
+                            </div>
+
+                            <div className="flex-shrink-0 relative hidden lg:block opacity-40">
+                                <ShieldCheck className="w-64 h-64 text-brand-blue stroke-[1px]" />
+                                <div className="absolute inset-0 flex items-center justify-center">
+                                    <Check className="w-24 h-24 text-brand-blue/50" strokeWidth={1} />
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            {/* Final CTA */}
-            <div className="text-center pb-12 relative z-10">
-                <a href={generalUrl} className="relative bg-white hover:bg-slate-100 text-slate-950 font-black text-xs h-12 px-10 rounded-lg inline-flex items-center justify-center transition-all shadow-[0_0_25px_rgba(56,182,255,0.35)] hover:scale-105 active:scale-95 uppercase tracking-wider group overflow-hidden">
-                    <span className="relative z-10">Começar agora pelo WhatsApp</span>
-                    <div className="absolute inset-x-0 bottom-0 h-1 bg-brand-blue transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
-                </a>
-            </div>
+            {/* Removed the extra CTA as it's now inside the card */}
         </section>
     );
 };
+
 
 const SmallCheckBullet = ({ text, color = 'blue' }: { text: string, color?: 'blue' | 'yellow' }) => (
     <li className="flex items-center gap-3 text-slate-300">
