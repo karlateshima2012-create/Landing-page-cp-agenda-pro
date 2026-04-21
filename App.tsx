@@ -4,7 +4,6 @@ import { Navbar } from './components/sections/Navbar';
 import { Hero } from './components/sections/Hero';
 import { QuickFeatures } from './components/sections/QuickFeatures';
 import { FeaturesShowcase } from './components/sections/Features';
-import { TargetAudience } from './components/sections/TargetAudience';
 import { Pricing } from './components/sections/Pricing';
 import { FAQSection } from './components/sections/FAQ';
 
@@ -21,8 +20,6 @@ export default function App() {
       <div className="relative z-20">
         <QuickFeatures />
       </div>
-
-      <TargetAudience />
 
       <div className="bg-slate-950">
         <FeaturesShowcase />
