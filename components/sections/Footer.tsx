@@ -10,9 +10,10 @@ export const Footer = () => {
 
     return (
         <footer className="bg-[#020408] pt-12 pb-8 px-6 relative">
-            {/* Divider Line with Neon Effect */}
-            <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-brand-blue to-transparent shadow-[0_0_20px_rgba(56,182,255,0.8)] opacity-50"></div>
-            <div className="absolute top-0 left-0 w-full h-[1px] bg-brand-blue/30"></div>
+            {/* Neon Separator Line - Tapered & Thicker in Center */}
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[1px] bg-gradient-to-r from-transparent via-brand-blue to-transparent opacity-30"></div>
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[40%] md:w-[30%] h-[2px] bg-brand-blue shadow-[0_0_25px_rgba(56,182,255,1)]"></div>
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[60%] md:w-[50%] h-[1px] bg-gradient-to-r from-transparent via-brand-blue to-transparent shadow-[0_0_15px_rgba(56,182,255,0.6)]"></div>
             
             <div className="max-w-7xl mx-auto">
                 {/* Row 1: Logo and Topo Button */}
