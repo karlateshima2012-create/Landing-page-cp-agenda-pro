@@ -9,7 +9,11 @@ export const Footer = () => {
     const [isLegalOpen, setIsLegalOpen] = useState(false);
 
     return (
-        <footer className="bg-[#020408] pt-16 pb-12 px-6 relative border-t border-white/5">
+        <footer className="bg-[#020408] pt-16 pb-12 px-6 relative">
+            {/* Neon Separator Line */}
+            <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-brand-blue to-transparent shadow-[0_0_20px_rgba(56,182,255,0.8)] opacity-50"></div>
+            <div className="absolute top-0 left-0 w-full h-[1px] bg-brand-blue/30"></div>
+            
             <div className="max-w-7xl mx-auto">
                 {/* Row 1: Logo and Topo Button */}
                 <div className="flex justify-between items-center mb-12">
