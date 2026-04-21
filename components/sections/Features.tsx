@@ -84,40 +84,6 @@ export const FeaturesShowcase = () => (
                 "Fim das mensagens fora de hora pedindo horário"
             ]}
         />
-        <FeatureSection
-            reverse
-            colorClass="bg-brand-pink text-white"
-            glowClass="btn-glow-pink"
-            icon={<CreditCard className="w-8 h-8" />}
-            badge="GESTÃO ÚNICA"
-            title="Um profissional, um sistema, produtividade infinita"
-            cardBg="bg-[#0E1123]"
-            imageUrl="https://midias.creativeprintjp.com/wp-content/uploads/2026/03/Design-sem-nome-1.png"
-            items={[
-                "Gestão simplificada para 1 profissional (Agenda Única)",
-                "Cadastro ilimitado de serviços e procedimentos",
-                "Definição de tempos específicos para cada serviço",
-                "Interface limpa e intuitiva para o dia a dia",
-                "Organização total da sua rotina de trabalho",
-                "Profissionalismo que encanta o seu cliente"
-            ]}
-        />
-        <FeatureSection
-            colorClass="bg-brand-yellow text-slate-950"
-            glowClass="btn-glow-yellow"
-            icon={<TrendingUp className="w-8 h-8" />}
-            badge="CONTROLE TOTAL"
-            title="Domine seus horários com flexibilidade total"
-            cardBg="bg-[#0F1A2E]"
-            imageUrl="https://midias.creativeprintjp.com/wp-content/uploads/2026/03/Design-sem-nome.png"
-            items={[
-                "Notificações de novas reservas para o gestor",
-                "Bloqueio de horários para compromissos pessoais",
-                "Pausas e intervalos personalizados e fáceis de configurar",
-                "Visualização clara da sua ocupação diária e semanal",
-                "Gestão de feriados e horários especiais",
-                "Controle absoluto sobre o seu tempo e descanso"
-            ]}
-        />
+
     </div>
 );
