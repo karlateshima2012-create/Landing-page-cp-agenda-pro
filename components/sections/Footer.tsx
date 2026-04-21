@@ -8,7 +8,7 @@ export const Footer = () => {
     const [isLegalOpen, setIsLegalOpen] = useState(false);
 
     return (
-        <footer className="bg-slate-900/50 pt-4 pb-4 px-6 relative">
+        <footer className="bg-[#020408] pt-12 pb-8 px-6 relative border-t border-white/5">
             <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 mb-4">
                 <div className="md:col-span-3 space-y-4">
                     <div className="flex justify-between items-end md:items-start md:flex-col w-full md:w-auto pt-2 md:pt-0 pr-6 md:pr-0">

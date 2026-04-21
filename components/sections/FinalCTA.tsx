@@ -2,7 +2,7 @@ import React from 'react';
 import { Starfield } from '../Starfield';
 
 export const FinalCTA = () => (
-    <section className="relative min-h-[60vh] flex flex-col items-center justify-center pt-40 pb-40 px-4 md:px-8 lg:px-12 overflow-hidden bg-slate-950 animate-fade-in text-center">
+    <section className="relative min-h-[60vh] flex flex-col items-center justify-center pt-40 pb-40 px-4 md:px-8 lg:px-12 overflow-hidden bg-[#020408] animate-fade-in text-center">
         <Starfield />
 
         <div className="w-[90%] md:w-full max-w-5xl mx-auto relative z-10">
@@ -28,6 +28,6 @@ export const FinalCTA = () => (
         </div>
 
         {/* Global Atmosphere (Total dark with subtle transition) */}
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-950 -z-10"></div>
+        <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-[#020408] to-transparent -z-10"></div>
     </section>
 );
