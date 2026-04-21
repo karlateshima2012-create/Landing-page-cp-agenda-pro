@@ -83,6 +83,16 @@ export const Pricing = () => {
                     </div>
                 </div>
 
+                {/* Summary Statement between cards */}
+                <div className="max-w-4xl mx-auto text-center pt-12 pb-24 md:pt-20 md:pb-32 px-6">
+                    <h2 className="text-3xl md:text-5xl lg:text-6xl font-black text-white mb-8 tracking-tighter leading-tight">
+                        Mais do que um sistema.
+                    </h2>
+                    <p className="text-base md:text-xl lg:text-2xl text-brand-gray font-light leading-relaxed opacity-70">
+                        Uma base sólida, profissional e segura para o crescimento do seu negócio.
+                    </p>
+                </div>
+
 
                 <div className="max-w-5xl mx-auto mb-16 relative">
                     <div className="w-full bg-[#080C16] border-2 border-brand-blue/30 rounded-[2.5rem] md:rounded-[4rem] p-10 md:p-16 lg:p-20 relative overflow-hidden group shadow-2xl">
@@ -138,17 +148,6 @@ export const Pricing = () => {
                             </div>
                         </div>
                     </div>
-
-                </div>
-
-                {/* Closing Statement */}
-                <div className="max-w-4xl mx-auto text-center mt-20 md:mt-32 px-6">
-                    <h2 className="text-3xl md:text-5xl lg:text-6xl font-black text-white mb-8 tracking-tighter leading-tight">
-                        Mais do que um sistema.
-                    </h2>
-                    <p className="text-base md:text-xl lg:text-2xl text-brand-gray font-light leading-relaxed opacity-70">
-                        Uma base sólida, profissional e segura para o crescimento do seu negócio.
-                    </p>
                 </div>
             </div>
         </section>
