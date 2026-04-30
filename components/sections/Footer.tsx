@@ -34,7 +34,7 @@ export const Footer = () => {
                 <div className="flex flex-wrap gap-8 md:gap-12 mb-6 text-[11px] font-black uppercase tracking-[0.2em] text-white/50">
                     <a href="#solucoes" className="hover:text-white transition-colors">SOLUÇÃO</a>
                     <a href="#features" className="hover:text-white transition-colors">FUNCIONALIDADES</a>
-                    <a href="#pricing" className="hover:text-white transition-colors">PLANOS</a>
+                    <a href="#pricing" className="hover:text-white transition-colors">INVESTIMENTO</a>
                     <button
                         onClick={() => setIsLegalOpen(true)}
                         className="hover:text-white transition-colors text-left uppercase"
