@@ -16,7 +16,7 @@ const QuickCard = ({ title, description, badge, colorClass }: { title: string, d
 );
 
 export const QuickFeatures = () => (
-    <section className="relative py-12 px-6 md:px-16 lg:px-24 z-20">
+    <section id="features" className="relative py-12 px-6 md:px-16 lg:px-24 z-20">
         <div className="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
             <QuickCard
                 badge="Agendamento"

@@ -66,7 +66,7 @@ const FeatureSection = ({ title, description, items, imageUrl }: {
 
 
 export const FeaturesShowcase = () => (
-    <div id="features" className="relative">
+    <div id="solucoes" className="relative">
         <FeatureSection
             title="Sua agenda aberta 24h por dia, sem precisar atender o telefone"
             imageUrl="https://midias.creativeprintjp.com/wp-content/uploads/2026/03/Gemini_Generated_Image_1oj8xx1oj8xx1oj8.png"
