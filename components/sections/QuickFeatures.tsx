@@ -21,7 +21,7 @@ export const QuickFeatures = () => (
             <QuickCard
                 badge="Agendamento"
                 title="SISTEMA ONLINE 24 HORAS"
-                description="Seu negócio nunca fecha. Permita que seus clientes consultem horários e reservem serviços sozinhos, direto pelo celular, a qualquer hora do dia ou da noite."
+                description="Permita que seus clientes consultem horários e reservem serviços sozinhos, direto pelo celular, a qualquer hora do dia ou da noite."
                 colorClass="text-brand-blue bg-brand-blue"
             />
             <QuickCard
