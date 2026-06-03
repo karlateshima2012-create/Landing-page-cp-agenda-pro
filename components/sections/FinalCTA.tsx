@@ -3,6 +3,10 @@ import { Starfield } from '../Starfield';
 
 export const FinalCTA = () => (
     <section className="relative min-h-[60vh] flex flex-col items-center justify-center pt-40 pb-40 px-4 md:px-8 lg:px-12 overflow-hidden bg-[#020408] animate-fade-in text-center">
+        {/* Top visual separator */}
+        <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-brand-pink/50 to-transparent"></div>
+        <div className="absolute top-0 inset-x-0 h-32 bg-gradient-to-b from-brand-pink/5 to-transparent pointer-events-none"></div>
+        
         <Starfield />
 
         <div className="w-[90%] md:w-full max-w-5xl mx-auto relative z-10">
