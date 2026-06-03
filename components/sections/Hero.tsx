@@ -25,7 +25,7 @@ export const Hero = () => (
                     rel="noopener noreferrer"
                     className="relative bg-brand-pink hover:bg-brand-pink/90 text-white font-black text-xs h-12 px-10 rounded-lg flex items-center justify-center gap-3 transition-all btn-glow-pink hover:scale-105 active:scale-95 uppercase tracking-wider group overflow-hidden"
                 >
-                    <span className="relative z-10">VER DEMONSTRAÇÃO</span>
+                    <span className="relative z-10">INICIAR TESTE GRÁTIS</span>
                     <div className="absolute inset-x-0 bottom-0 h-1 bg-brand-pink transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
                 </a>
             </div>

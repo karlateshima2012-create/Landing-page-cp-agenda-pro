@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Badge } from '../Badge';
-import { MessageCircle, Check, Box, ShieldCheck, Zap, ArrowRight, Settings, Smartphone, Rocket, Crown } from 'lucide-react';
+import { Check, Zap, Crown } from 'lucide-react';
 
 
 export const Pricing = () => {
@@ -100,58 +100,6 @@ export const Pricing = () => {
                     >
                         INICIAR TESTE GRÁTIS
                     </a>
-                </div>
-
-
-                <div className="max-w-5xl mx-auto mb-16 relative">
-                    <div className="w-full bg-[#080C16] border-2 border-brand-pink/30 rounded-[2.5rem] md:rounded-[4rem] p-10 md:p-16 lg:p-20 relative overflow-hidden group shadow-2xl">
-                        {/* Background Glow */}
-                        <div className="absolute top-1/2 right-0 -translate-y-1/2 w-96 h-96 bg-brand-pink/10 blur-[120px] rounded-full pointer-events-none"></div>
-                        
-                        <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-12">
-
-                            <div className="flex-1 text-left">
-                                <h4 className="text-3xl md:text-5xl font-black text-white mb-8 leading-tight tracking-tighter uppercase">
-                                    COMO <span className="text-brand-pink">COMEÇAR</span>
-                                </h4>
-                                
-                                <ul className="space-y-6 mb-12">
-                                    <li className="flex items-center gap-4 text-white/90 group/item">
-                                        <div className="w-8 h-8 rounded-full bg-brand-pink flex items-center justify-center flex-shrink-0 shadow-[0_0_15px_rgba(229,21,122,0.4)]">
-                                            <Check className="w-5 h-5 text-slate-950" strokeWidth={3} />
-                                        </div>
-                                        <span className="text-base font-light leading-relaxed transition-colors group-hover/item:text-white">Clique em INICIAR TESTE GRÁTIS e agende o melhor horario para voce</span>
-                                    </li>
-                                    <li className="flex items-center gap-4 text-white/90 group/item">
-                                        <div className="w-8 h-8 rounded-full bg-brand-pink flex items-center justify-center flex-shrink-0 shadow-[0_0_15px_rgba(229,21,122,0.4)]">
-                                            <Check className="w-5 h-5 text-slate-950" strokeWidth={3} />
-                                        </div>
-                                        <span className="text-base font-light leading-relaxed transition-colors group-hover/item:text-white">Nós configuramos juntos a sua agenda e a sua pagina personalizada</span>
-                                    </li>
-                                    <li className="flex items-center gap-4 text-white/90 group/item">
-                                        <div className="w-8 h-8 rounded-full bg-brand-pink flex items-center justify-center flex-shrink-0 shadow-[0_0_15px_rgba(229,21,122,0.4)]">
-                                            <Check className="w-5 h-5 text-slate-950" strokeWidth={3} />
-                                        </div>
-                                        <span className="text-base font-light leading-relaxed transition-colors group-hover/item:text-white">Deixamos tudo pronto para receber os primeiros agendamentos.</span>
-                                    </li>
-                                </ul>
-
-                                <a 
-                                    href={generalUrl}
-                                    className="inline-flex items-center justify-center h-16 px-10 bg-brand-pink text-slate-950 font-black text-xs md:text-sm uppercase tracking-widest rounded-2xl hover:bg-white transition-all hover:scale-105 active:scale-95 shadow-xl shadow-brand-pink/10"
-                                >
-                                    INICIAR TESTE GRÁTIS
-                                </a>
-                            </div>
-
-                            <div className="flex-shrink-0 relative hidden lg:block opacity-40">
-                                <ShieldCheck className="w-64 h-64 text-brand-pink stroke-[1px]" />
-                                <div className="absolute inset-0 flex items-center justify-center">
-                                    <Check className="w-24 h-24 text-brand-pink/50" strokeWidth={1} />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
