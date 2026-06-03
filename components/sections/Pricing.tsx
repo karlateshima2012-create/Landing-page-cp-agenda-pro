@@ -89,10 +89,10 @@ export const Pricing = () => {
                 {/* Summary Statement between cards */}
                 <div className="text-center pt-12 pb-24 md:pt-20 md:pb-32 px-6">
                     <h2 className="text-4xl md:text-6xl font-black text-white mb-6 tracking-tighter leading-[1.1]">
-                        Mais do que um sistema.
+                        Teste Grátis por 30 Dias
                     </h2>
                     <p className="text-lg md:text-xl text-slate-300 font-light leading-relaxed max-w-2xl mx-auto">
-                        Uma base sólida, profissional e segura para o crescimento do seu negócio.
+                        Use o sistema completo e veja como ele funciona na prática. O Pagamento após o período de teste poderá ser feito por transferência bancária, PayPay ou cartão de crédito.
                     </p>
                 </div>
 
