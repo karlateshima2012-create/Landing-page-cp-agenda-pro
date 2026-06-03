@@ -16,10 +16,10 @@ export const FinalCTA = () => (
 
             <div className="flex justify-center items-center">
                 <a
-                    href="https://wa.me/8109011886491?text=Olá! Gostaria de iniciar meu teste grátis no CP Agenda."
+                    href="https://cpagendapro.creativeprintjp.com/?p=41"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="relative bg-white hover:bg-slate-100 text-slate-950 font-black text-xs h-12 px-10 rounded-lg flex items-center justify-center gap-3 transition-all shadow-[0_0_25px_rgba(56,182,255,0.35)] hover:scale-105 active:scale-95 uppercase tracking-wider group overflow-hidden"
+                    className="relative bg-brand-pink hover:bg-brand-pink/90 text-white font-black text-xs h-12 px-10 rounded-lg flex items-center justify-center gap-3 transition-all btn-glow-pink hover:scale-105 active:scale-95 uppercase tracking-wider group overflow-hidden"
                 >
                     <span className="relative z-10">INICIAR TESTE GRÁTIS</span>
                     <div className="absolute inset-x-0 bottom-0 h-1 bg-brand-pink transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>

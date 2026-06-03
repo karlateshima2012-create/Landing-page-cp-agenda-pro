@@ -20,7 +20,7 @@ export const Hero = () => (
 
             <div className="flex justify-center items-center">
                 <a
-                    href="https://wa.me/8109011886491?text=Olá! Gostaria de ver uma demonstração do CP Agenda."
+                    href="https://cpagendapro.creativeprintjp.com/?p=41"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="relative bg-brand-pink hover:bg-brand-pink/90 text-white font-black text-xs h-12 px-10 rounded-lg flex items-center justify-center gap-3 transition-all btn-glow-pink hover:scale-105 active:scale-95 uppercase tracking-wider group overflow-hidden"

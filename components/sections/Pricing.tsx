@@ -97,11 +97,14 @@ export const Pricing = () => {
                         <p>Deixamos tudo pronto para receber seus primeiros agendamentos.</p>
                         <p>Após o período de teste, o pagamento poderá ser realizado por transferência bancária, PayPay ou cartão de crédito.</p>
                     </div>
-                    <a 
-                        href={generalUrl}
-                        className="inline-flex items-center justify-center h-16 px-10 bg-brand-pink text-slate-950 font-black text-xs md:text-sm uppercase tracking-widest rounded-2xl hover:bg-white transition-all hover:scale-105 active:scale-95 shadow-xl shadow-brand-pink/10"
+                    <a
+                        href="https://cpagendapro.creativeprintjp.com/?p=41"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="relative bg-brand-pink hover:bg-brand-pink/90 text-white font-black text-xs h-12 px-10 rounded-lg flex items-center justify-center gap-3 transition-all btn-glow-pink hover:scale-105 active:scale-95 uppercase tracking-wider group overflow-hidden"
                     >
-                        INICIAR TESTE GRÁTIS
+                        <span className="relative z-10">INICIAR TESTE GRÁTIS</span>
+                        <div className="absolute inset-x-0 bottom-0 h-1 bg-brand-pink transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
                     </a>
                 </div>
             </div>
