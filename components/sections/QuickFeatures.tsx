@@ -6,7 +6,7 @@ const QuickCard = ({ title, description, badge, colorClass }: { title: string, d
         <div className={`inline-block px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-widest mb-6 ${colorClass} bg-opacity-20`}>
             {badge}
         </div>
-        <h3 className="text-2xl md:text-3xl font-black text-white mb-4 group-hover:text-brand-pink transition-colors">
+        <h3 className="text-xl md:text-2xl font-black text-white mb-4 group-hover:text-brand-pink transition-colors">
             {title}
         </h3>
         <p className="text-lg md:text-xl text-slate-300 font-light leading-relaxed">
