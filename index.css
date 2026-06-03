@@ -113,13 +113,13 @@ html {
 }
 
 .gradient-text {
-    background: linear-gradient(90deg, #38b6ff 0%, #E5157A 100%);
+    background: linear-gradient(90deg, #E5157A 0%, #FFFFFF 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.btn-glow-blue {
+.btn-glow-pink {
     box-shadow: 0 0 20px rgba(56, 182, 255, 0.4);
 }
 
@@ -127,7 +127,7 @@ html {
     box-shadow: 0 0 20px rgba(229, 21, 122, 0.4);
 }
 
-.btn-glow-yellow {
+.btn-glow-pink {
     box-shadow: 0 0 20px rgba(255, 242, 0, 0.4);
 }
 

@@ -2,11 +2,11 @@
 import React from 'react';
 
 const QuickCard = ({ title, description, badge, colorClass }: { title: string, description: string, badge: string, colorClass: string }) => (
-    <div className="bg-slate-900 border-2 border-slate-800 p-8 rounded-[1.6rem] backdrop-blur-xl shadow-2xl transition-all hover:bg-slate-800/80 hover:border-brand-blue/40 group animate-fade-in-up">
+    <div className="bg-slate-900 border-2 border-slate-800 p-8 rounded-[1.6rem] backdrop-blur-xl shadow-2xl transition-all hover:bg-slate-800/80 hover:border-brand-pink/40 group animate-fade-in-up">
         <div className={`inline-block px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-widest mb-6 ${colorClass} bg-opacity-20`}>
             {badge}
         </div>
-        <h3 className="text-2xl md:text-3xl font-black text-white mb-4 group-hover:text-brand-blue transition-colors">
+        <h3 className="text-2xl md:text-3xl font-black text-white mb-4 group-hover:text-brand-pink transition-colors">
             {title}
         </h3>
         <p className="text-base text-brand-gray/80 leading-relaxed font-light">
@@ -22,7 +22,7 @@ export const QuickFeatures = () => (
                 badge="Agendamento"
                 title="SISTEMA ONLINE 24 HORAS"
                 description="Permita que seus clientes consultem horários e reservem serviços sozinhos, direto pelo celular, a qualquer hora do dia ou da noite."
-                colorClass="text-brand-blue bg-brand-blue"
+                colorClass="text-brand-pink bg-brand-pink"
             />
             <QuickCard
                 badge="Produtividade"
@@ -34,7 +34,7 @@ export const QuickFeatures = () => (
                 badge="Eficiência"
                 title="NOTIFICAÇÕES AUTOMÁTICAS"
                 description="Notificações imediatas de novos agendamentos para confirmar cada reserva e manter o controle total da agenda com praticidade."
-                colorClass="text-brand-yellow bg-brand-yellow"
+                colorClass="text-brand-pink bg-brand-pink"
             />
         </div>
     </section>

@@ -6,13 +6,13 @@ import { CheckCircle2, Zap, Clock } from 'lucide-react';
 export const TrustHighlights = () => {
     const steps = [
         {
-            icon: <Zap className="w-10 h-10 text-brand-yellow" />,
+            icon: <Zap className="w-10 h-10 text-brand-pink" />,
             title: "Passo 01: Escolha sua Economia",
             description: "Defina o investimento ideal para o seu momento. Sem taxas de setup ou letras miúdas.",
             color: "yellow"
         },
         {
-            icon: <Clock className="w-10 h-10 text-brand-blue" />,
+            icon: <Clock className="w-10 h-10 text-brand-pink" />,
             title: "Passo 02: Personalização Express",
             description: "Customize sua marca, horários e serviços em minutos. Você tem o controle total.",
             color: "blue"
@@ -28,7 +28,7 @@ export const TrustHighlights = () => {
     return (
         <section id="how-it-works" className="py-32 bg-slate-950 relative overflow-hidden">
             {/* Background Atmosphere - Radiant Glow */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-screen h-[1000px] bg-gradient-to-r from-brand-blue/10 via-brand-pink/5 to-brand-yellow/10 blur-[180px] -z-10 opacity-50"></div>
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-screen h-[1000px] bg-gradient-to-r from-brand-pink/10 via-brand-pink/5 to-brand-pink/10 blur-[180px] -z-10 opacity-50"></div>
 
             <div className="max-w-[1440px] mx-auto px-4 sm:px-8 md:px-12 lg:px-20 relative z-10">
                 <div className="text-center mb-24">
@@ -36,7 +36,7 @@ export const TrustHighlights = () => {
                         Fluxo de Sucesso
                     </Badge>
                     <h2 className="text-4xl md:text-6xl font-black text-white tracking-tighter mb-8 italic">
-                        De 0 a <span className="text-brand-blue not-italic">Total Automação</span>
+                        De 0 a <span className="text-brand-pink not-italic">Total Automação</span>
                     </h2>
                     <p className="text-brand-gray/60 text-lg md:text-xl max-w-2xl mx-auto font-light leading-relaxed">
                         Esqueça a burocracia. Criamos um caminho simples para você focar no que realmente importa: <span className="text-white font-medium">seus clientes.</span>
@@ -65,7 +65,7 @@ export const TrustHighlights = () => {
                                     </div>
                                 </div>
 
-                                <h4 className="text-2xl font-black text-white mb-5 tracking-tight group-hover:text-brand-blue transition-colors duration-300">
+                                <h4 className="text-2xl font-black text-white mb-5 tracking-tight group-hover:text-brand-pink transition-colors duration-300">
                                     {step.title}
                                 </h4>
                                 <p className="text-brand-gray/80 text-lg font-light leading-relaxed">

@@ -63,7 +63,7 @@ export const FAQSection = () => {
                     {FAQS.map(faq => (
                         <div
                             key={faq.id}
-                            className="bg-slate-900/40 border border-white/5 rounded-2xl overflow-hidden transition-all hover:border-brand-blue/30 group backdrop-blur-md"
+                            className="bg-slate-900/40 border border-white/5 rounded-2xl overflow-hidden transition-all hover:border-brand-pink/30 group backdrop-blur-md"
                         >
                             <button
                                 onClick={() => setOpenId(openId === faq.id ? null : faq.id)}
@@ -72,7 +72,7 @@ export const FAQSection = () => {
                                 <h4 className="text-base font-bold text-white leading-tight">
                                     {faq.question}
                                 </h4>
-                                <div className="text-white/40 group-hover:text-brand-blue transition-colors">
+                                <div className="text-white/40 group-hover:text-brand-pink transition-colors">
                                     {openId === faq.id ? <ChevronUp className="w-6 h-6" /> : <ChevronDown className="w-6 h-6" />}
                                 </div>
                             </button>

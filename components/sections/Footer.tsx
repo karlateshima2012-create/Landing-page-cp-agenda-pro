@@ -11,10 +11,10 @@ export const Footer = () => {
     return (
         <footer className="bg-[#020408] pt-12 pb-8 px-6 relative">
             {/* Perfectly Smooth Neon Separator - All layers are full-width to avoid edge marks */}
-            <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-brand-blue/50 to-transparent"></div>
-            <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-brand-blue to-transparent blur-[1px]"></div>
-            <div className="absolute top-0 left-0 w-full h-[4px] bg-gradient-to-r from-transparent via-brand-blue/20 to-transparent blur-[3px]"></div>
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-20 bg-brand-blue/5 blur-[100px] -z-10 pointer-events-none"></div>
+            <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-brand-pink/50 to-transparent"></div>
+            <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-brand-pink to-transparent blur-[1px]"></div>
+            <div className="absolute top-0 left-0 w-full h-[4px] bg-gradient-to-r from-transparent via-brand-pink/20 to-transparent blur-[3px]"></div>
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-20 bg-brand-pink/5 blur-[100px] -z-10 pointer-events-none"></div>
             
             <div className="max-w-7xl mx-auto">
                 {/* Row 1: Logo and Topo Button */}
@@ -23,7 +23,7 @@ export const Footer = () => {
                     
                     <button
                         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-                        className="flex items-center gap-2 px-6 h-10 rounded-full border border-brand-blue/30 bg-brand-blue/5 text-brand-blue hover:bg-brand-blue/10 transition-all group"
+                        className="flex items-center gap-2 px-6 h-10 rounded-full border border-brand-pink/30 bg-brand-pink/5 text-brand-pink hover:bg-brand-pink/10 transition-all group"
                     >
                         <ArrowUp className="w-4 h-4 transition-transform group-hover:-translate-y-1" />
                         <span className="text-[10px] font-black uppercase tracking-[0.2em]">Topo</span>

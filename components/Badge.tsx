@@ -10,9 +10,9 @@ interface BadgeProps {
 
 export const Badge: React.FC<BadgeProps> = ({ children, icon, variant = 'outline', className = "" }) => {
   const variants = {
-    blue: 'bg-brand-blue/10 text-brand-blue border-brand-blue/30',
+    blue: 'bg-brand-pink/10 text-brand-pink border-brand-pink/30',
     magenta: 'bg-brand-pink/10 text-brand-pink border-brand-pink/30',
-    yellow: 'bg-brand-yellow/10 text-brand-yellow border-brand-yellow/30',
+    yellow: 'bg-brand-pink/10 text-brand-pink border-brand-pink/30',
     outline: 'border-slate-800 text-brand-gray bg-slate-900/50'
   };
 

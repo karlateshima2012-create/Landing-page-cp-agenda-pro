@@ -13,7 +13,7 @@ import { FloatingCTA } from './components/sections/FloatingCTA';
 
 export default function App() {
   return (
-    <div className="min-h-screen selection:bg-brand-blue/30 selection:text-white bg-slate-950 overflow-x-hidden">
+    <div className="min-h-screen selection:bg-brand-pink/30 selection:text-white bg-slate-950 overflow-x-hidden">
       <Navbar />
       <Hero />
 
@@ -32,10 +32,10 @@ export default function App() {
       {/* Unified Bottom Area: FAQ + Final CTA */}
       <div className="relative bg-[#020408] overflow-hidden">
         {/* Atmospheric Gradients for Unification */}
-        <div className="absolute inset-x-0 top-0 h-full bg-gradient-to-b from-transparent via-brand-blue/10 to-transparent pointer-events-none z-10"></div>
+        <div className="absolute inset-x-0 top-0 h-full bg-gradient-to-b from-transparent via-brand-pink/10 to-transparent pointer-events-none z-10"></div>
 
         {/* Central Ambient Glow */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-screen h-[1200px] bg-brand-blue/10 blur-[200px] -z-10 pointer-events-none"></div>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-screen h-[1200px] bg-brand-pink/10 blur-[200px] -z-10 pointer-events-none"></div>
 
         <FAQSection />
         <FinalCTA />
@@ -48,7 +48,7 @@ export default function App() {
 
       {/* Ambient Orbs */}
       <div className="fixed top-0 left-0 w-full h-full pointer-events-none -z-20 overflow-hidden">
-        <div className="absolute top-[10%] left-[-10%] w-[500px] h-[500px] bg-brand-blue/5 rounded-full blur-[120px]"></div>
+        <div className="absolute top-[10%] left-[-10%] w-[500px] h-[500px] bg-brand-pink/5 rounded-full blur-[120px]"></div>
         <div className="absolute bottom-[20%] right-[-10%] w-[600px] h-[600px] bg-brand-pink/5 rounded-full blur-[120px]"></div>
       </div>
 

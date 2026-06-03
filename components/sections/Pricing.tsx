@@ -13,13 +13,13 @@ export const Pricing = () => {
     return (
         <section id="pricing" className="py-24 bg-slate-950 relative overflow-hidden">
             {/* Ambient Background Glows */}
-            <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-brand-blue/10 rounded-full blur-[120px] -z-10 animate-pulse"></div>
+            <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-brand-pink/10 rounded-full blur-[120px] -z-10 animate-pulse"></div>
             <div className="absolute bottom-0 right-1/4 w-[600px] h-[600px] bg-brand-pink/10 rounded-full blur-[120px] -z-10 animate-pulse"></div>
 
             <div className="max-w-[1440px] mx-auto px-6 md:px-24 w-full">
                 {/* 1. Pricing Plans Header */}
                 <div className="text-center mb-12 px-4">
-                    <Badge variant="outline" className="mb-6 uppercase tracking-[0.3em] font-black text-[10px] py-1 px-4 text-brand-yellow border-brand-yellow/50">INVESTIMENTO</Badge>
+                    <Badge variant="outline" className="mb-6 uppercase tracking-[0.3em] font-black text-[10px] py-1 px-4 text-brand-pink border-brand-pink/50">INVESTIMENTO</Badge>
                     <h2 className="text-4xl md:text-6xl font-black text-white mb-6 tracking-tighter leading-[1.1]">
                         Solução completa para seus agendamentos
                     </h2>
@@ -30,14 +30,14 @@ export const Pricing = () => {
 
                 <div className="flex justify-center mb-16 px-4">
                     {/* PLANO 12 MESES - CARD ÚNICO PREMIUM */}
-                    <div className="w-full max-w-[480px] relative p-8 md:p-10 rounded-[2rem] md:rounded-[2.5rem] border-2 bg-slate-900 border-brand-yellow/30 backdrop-blur-3xl flex flex-col shadow-[0_0_50px_rgba(255,242,0,0.1)] transition-all duration-500 overflow-visible">
+                    <div className="w-full max-w-[480px] relative p-8 md:p-10 rounded-[2rem] md:rounded-[2.5rem] border-2 bg-slate-900 border-brand-pink/30 backdrop-blur-3xl flex flex-col shadow-[0_0_50px_rgba(255,242,0,0.1)] transition-all duration-500 overflow-visible">
                         
                         {/* Header Icons */}
-                        <div className="absolute top-8 left-8 flex items-center gap-2 text-brand-yellow/60">
-                            <Zap className="w-4 h-4 fill-brand-yellow/20" />
+                        <div className="absolute top-8 left-8 flex items-center gap-2 text-brand-pink/60">
+                            <Zap className="w-4 h-4 fill-brand-pink/20" />
                             <span className="text-[10px] font-black uppercase tracking-widest">MÁXIMA PERFORMANCE</span>
                         </div>
-                        <div className="absolute top-8 right-8 text-brand-yellow/60">
+                        <div className="absolute top-8 right-8 text-brand-pink/60">
                             <Crown className="w-5 h-5" />
                         </div>
 
@@ -59,7 +59,7 @@ export const Pricing = () => {
                             </div>
                         </div>
 
-                        <a href={eliteUrl} className="relative w-full h-16 bg-brand-yellow text-slate-950 font-black rounded-2xl flex items-center justify-center gap-2 hover:bg-brand-yellow/90 hover:scale-[1.02] active:scale-[0.98] transition-all shadow-xl text-[11px] uppercase tracking-[0.1em] group/btn overflow-hidden mb-8">
+                        <a href={eliteUrl} className="relative w-full h-16 bg-brand-pink text-slate-950 font-black rounded-2xl flex items-center justify-center gap-2 hover:bg-brand-pink/90 hover:scale-[1.02] active:scale-[0.98] transition-all shadow-xl text-[11px] uppercase tracking-[0.1em] group/btn overflow-hidden mb-8">
                             <span className="relative z-10">QUERO COMEÇAR MEU AGENDAMENTO</span>
                         </a>
 
@@ -96,38 +96,38 @@ export const Pricing = () => {
 
 
                 <div className="max-w-5xl mx-auto mb-16 relative">
-                    <div className="w-full bg-[#080C16] border-2 border-brand-blue/30 rounded-[2.5rem] md:rounded-[4rem] p-10 md:p-16 lg:p-20 relative overflow-hidden group shadow-2xl">
+                    <div className="w-full bg-[#080C16] border-2 border-brand-pink/30 rounded-[2.5rem] md:rounded-[4rem] p-10 md:p-16 lg:p-20 relative overflow-hidden group shadow-2xl">
                         {/* Background Glow */}
-                        <div className="absolute top-1/2 right-0 -translate-y-1/2 w-96 h-96 bg-brand-blue/10 blur-[120px] rounded-full pointer-events-none"></div>
+                        <div className="absolute top-1/2 right-0 -translate-y-1/2 w-96 h-96 bg-brand-pink/10 blur-[120px] rounded-full pointer-events-none"></div>
                         
                         <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-12">
 
                             <div className="flex-1 text-left">
                                 <h4 className="text-3xl md:text-5xl font-black text-white mb-8 leading-tight tracking-tighter">
-                                    Profissionalismo & <span className="text-brand-blue">Segurança</span>
+                                    Profissionalismo & <span className="text-brand-pink">Segurança</span>
                                 </h4>
                                 
                                 <ul className="space-y-6 mb-12">
                                     <li className="flex items-center gap-4 text-white/90 group/item">
-                                        <div className="w-8 h-8 rounded-full bg-brand-blue flex items-center justify-center flex-shrink-0 shadow-[0_0_15px_rgba(56,182,255,0.4)]">
+                                        <div className="w-8 h-8 rounded-full bg-brand-pink flex items-center justify-center flex-shrink-0 shadow-[0_0_15px_rgba(229,21,122,0.4)]">
                                             <Check className="w-5 h-5 text-slate-950" strokeWidth={3} />
                                         </div>
                                         <span className="text-base font-light leading-relaxed transition-colors group-hover/item:text-white">Implementação profissional inclusa</span>
                                     </li>
                                     <li className="flex items-center gap-4 text-white/90 group/item">
-                                        <div className="w-8 h-8 rounded-full bg-brand-blue flex items-center justify-center flex-shrink-0 shadow-[0_0_15px_rgba(56,182,255,0.4)]">
+                                        <div className="w-8 h-8 rounded-full bg-brand-pink flex items-center justify-center flex-shrink-0 shadow-[0_0_15px_rgba(229,21,122,0.4)]">
                                             <Check className="w-5 h-5 text-slate-950" strokeWidth={3} />
                                         </div>
                                         <span className="text-base font-light leading-relaxed transition-colors group-hover/item:text-white">Sem taxa de instalação</span>
                                     </li>
                                     <li className="flex items-center gap-4 text-white/90 group/item">
-                                        <div className="w-8 h-8 rounded-full bg-brand-blue flex items-center justify-center flex-shrink-0 shadow-[0_0_15px_rgba(56,182,255,0.4)]">
+                                        <div className="w-8 h-8 rounded-full bg-brand-pink flex items-center justify-center flex-shrink-0 shadow-[0_0_15px_rgba(229,21,122,0.4)]">
                                             <Check className="w-5 h-5 text-slate-950" strokeWidth={3} />
                                         </div>
                                         <span className="text-base font-light leading-relaxed transition-colors group-hover/item:text-white">Suporte assistido no primeiro acesso</span>
                                     </li>
                                     <li className="flex items-center gap-4 text-white/90 group/item">
-                                        <div className="w-8 h-8 rounded-full bg-brand-blue flex items-center justify-center flex-shrink-0 shadow-[0_0_15px_rgba(56,182,255,0.4)]">
+                                        <div className="w-8 h-8 rounded-full bg-brand-pink flex items-center justify-center flex-shrink-0 shadow-[0_0_15px_rgba(229,21,122,0.4)]">
                                             <Check className="w-5 h-5 text-slate-950" strokeWidth={3} />
                                         </div>
                                         <span className="text-base font-light leading-relaxed transition-colors group-hover/item:text-white">Configuração inicial da sua agenda</span>
@@ -136,16 +136,16 @@ export const Pricing = () => {
 
                                 <a 
                                     href={generalUrl}
-                                    className="inline-flex items-center justify-center h-16 px-10 bg-brand-blue text-slate-950 font-black text-xs md:text-sm uppercase tracking-widest rounded-2xl hover:bg-white transition-all hover:scale-105 active:scale-95 shadow-xl shadow-brand-blue/10"
+                                    className="inline-flex items-center justify-center h-16 px-10 bg-brand-pink text-slate-950 font-black text-xs md:text-sm uppercase tracking-widest rounded-2xl hover:bg-white transition-all hover:scale-105 active:scale-95 shadow-xl shadow-brand-pink/10"
                                 >
                                     COMEÇAR AGORA PELO WHATSAPP
                                 </a>
                             </div>
 
                             <div className="flex-shrink-0 relative hidden lg:block opacity-40">
-                                <ShieldCheck className="w-64 h-64 text-brand-blue stroke-[1px]" />
+                                <ShieldCheck className="w-64 h-64 text-brand-pink stroke-[1px]" />
                                 <div className="absolute inset-0 flex items-center justify-center">
-                                    <Check className="w-24 h-24 text-brand-blue/50" strokeWidth={1} />
+                                    <Check className="w-24 h-24 text-brand-pink/50" strokeWidth={1} />
                                 </div>
                             </div>
                         </div>
@@ -159,7 +159,7 @@ export const Pricing = () => {
 
 const SmallCheckBullet = ({ text, color = 'blue' }: { text: string, color?: 'blue' | 'yellow' }) => (
     <li className="flex items-center gap-3 text-slate-300">
-        <div className={`w-4 h-4 rounded-full flex items-center justify-center flex-shrink-0 ${color === 'yellow' ? 'bg-brand-yellow text-slate-950' : 'bg-brand-blue text-slate-950'}`}>
+        <div className={`w-4 h-4 rounded-full flex items-center justify-center flex-shrink-0 ${color === 'yellow' ? 'bg-brand-pink text-slate-950' : 'bg-brand-pink text-slate-950'}`}>
             <Check strokeWidth={4} className="w-2.5 h-2.5" />
         </div>
         <span className="text-[13px] md:text-sm font-bold leading-tight uppercase">{text}</span>
