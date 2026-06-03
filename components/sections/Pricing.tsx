@@ -42,10 +42,7 @@ export const Pricing = () => {
                         </div>
 
                         <div className="mb-12 mt-10 text-center">
-                            <h3 className="text-4xl md:text-5xl font-black text-white mb-4 uppercase tracking-tighter">PLANO AGENDA PRO</h3>
-                            <p className="text-lg md:text-xl text-slate-300 font-light leading-relaxed max-w-[280px] mx-auto">
-                                Seus clientes agendando 24h por dia, mesmo quando você está offline.
-                            </p>
+                            <h3 className="text-4xl md:text-5xl font-black text-white mb-4 uppercase tracking-tighter">PLANO AGENDA MENSAL</h3>
                         </div>
 
                         <div className="mb-10 text-center">
@@ -59,9 +56,7 @@ export const Pricing = () => {
                             </div>
                         </div>
 
-                        <a href={eliteUrl} className="relative w-full h-16 bg-brand-pink text-slate-950 font-black rounded-2xl flex items-center justify-center gap-2 hover:bg-brand-pink/90 hover:scale-[1.02] active:scale-[0.98] transition-all shadow-xl text-[11px] uppercase tracking-[0.1em] group/btn overflow-hidden mb-8">
-                            <span className="relative z-10">QUERO COMEÇAR MEU AGENDAMENTO</span>
-                        </a>
+
 
                         {/* Feature List (No Accordion) */}
                         <div className="mt-auto pt-8 border-t border-white/10">
@@ -76,8 +71,7 @@ export const Pricing = () => {
                                 <SmallCheckBullet text="Notificações Automáticas de Novas Reservas" color="yellow" />
                                 <SmallCheckBullet text="Bloqueio de Horários e Pausas" color="yellow" />
                                 <SmallCheckBullet text="Customização Total da Página de Agendamentos" color="yellow" />
-                                <SmallCheckBullet text="Confirmação via Sistema Integrado" color="yellow" />
-                                <SmallCheckBullet text="Suporte Premium Incluso" color="yellow" />
+
                             </ul>
                         </div>
                     </div>
