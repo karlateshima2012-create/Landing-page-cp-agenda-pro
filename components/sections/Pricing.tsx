@@ -8,7 +8,10 @@ export const Pricing = () => {
     const eliteUrl = `${whatsappUrl}${encodeURIComponent("Olá! Gostaria de saber mais sobre o Plano de 12 Meses da CP Agenda Pro.")}`;
     const generalUrl = `${whatsappUrl}${encodeURIComponent("Olá! Gostaria de saber mais sobre os planos da CP Agenda Pro.")}`;
 
-    const monthlyPrice = 1280;
+    const [isAnnual, setIsAnnual] = useState(false);
+    const price = isAnnual ? 12800 : 1280;
+    const planName = isAnnual ? "PLANO AGENDA ANUAL" : "PLANO AGENDA MENSAL";
+    const period = isAnnual ? "/ANO" : "/MÊS";
 
     return (
         <section id="pricing" className="py-24 bg-slate-950 relative overflow-hidden">
@@ -21,16 +24,12 @@ export const Pricing = () => {
                 <div className="text-center mb-12 px-4">
                     <Badge variant="outline" className="mb-6 uppercase tracking-[0.3em] font-black text-[10px] py-1 px-4 text-brand-pink border-brand-pink/50">INVESTIMENTO</Badge>
                     <h2 className="text-4xl md:text-6xl font-black text-white mb-6 tracking-tighter leading-[1.1]">
-                        Solução completa para seus agendamentos
+                        Conheça nossos Planos
                     </h2>
-                    <p className="text-lg md:text-xl text-slate-300 font-light leading-relaxed max-w-2xl mx-auto">
-                        Sem taxa de instalação • Cobrança clara e transparente.
-                    </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-16 px-4">
-                    {/* PLANO MENSAL */}
-                    <div className="w-full relative p-8 md:p-10 rounded-[2rem] md:rounded-[2.5rem] border-2 bg-slate-900 border-brand-pink/30 backdrop-blur-3xl flex flex-col shadow-[0_0_50px_rgba(255,242,0,0.1)] transition-all duration-500 overflow-visible">
+                <div className="flex justify-center mb-16 px-4">
+                    <div className="w-full max-w-[480px] relative p-8 md:p-10 rounded-[2rem] md:rounded-[2.5rem] border-2 bg-slate-900 border-brand-pink/30 backdrop-blur-3xl flex flex-col shadow-[0_0_50px_rgba(255,242,0,0.1)] transition-all duration-500 overflow-visible">
                         
                         {/* Header Icons */}
                         <div className="absolute top-8 left-8 flex items-center gap-2 text-brand-pink/60">
@@ -41,61 +40,29 @@ export const Pricing = () => {
                             <Crown className="w-5 h-5" />
                         </div>
 
-                        <div className="mb-12 mt-10 text-center">
-                            <h3 className="text-xl md:text-2xl font-black text-brand-pink mb-4 uppercase tracking-tighter">PLANO AGENDA MENSAL</h3>
+                        <div className="mb-8 mt-10 text-center">
+                            <h3 className="text-xl md:text-2xl font-black text-brand-pink mb-4 uppercase tracking-tighter">{planName}</h3>
+                        </div>
+
+                        {/* Toggle */}
+                        <div className="mb-8 text-center flex items-center justify-center gap-3">
+                            <span className={`text-sm font-bold transition-colors ${!isAnnual ? 'text-white' : 'text-slate-500'}`}>Mensal</span>
+                            <button 
+                                onClick={() => setIsAnnual(!isAnnual)}
+                                className="relative w-14 h-7 rounded-full bg-slate-800 border border-brand-pink/30 p-1 cursor-pointer transition-colors focus:outline-none"
+                            >
+                                <div className={`w-5 h-5 rounded-full bg-brand-pink shadow-[0_0_10px_rgba(229,21,122,0.5)] transition-transform duration-300 ${isAnnual ? 'translate-x-7' : 'translate-x-0'}`} />
+                            </button>
+                            <span className={`text-sm font-bold transition-colors ${isAnnual ? 'text-brand-pink' : 'text-slate-500'}`}>Anual</span>
                         </div>
 
                         <div className="mb-10 text-center">
                             <div className="flex flex-col items-center justify-center gap-1">
                                 <div className="flex items-baseline gap-2">
                                     <span className="text-white text-5xl md:text-6xl font-black">
-                                        ¥{monthlyPrice.toLocaleString()}
+                                        ¥{price.toLocaleString()}
                                     </span>
-                                    <span className="text-brand-gray/60 text-xs uppercase font-bold tracking-widest">/MÊS</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        {/* Feature List (No Accordion) */}
-                        <div className="mt-auto pt-8 border-t border-white/10">
-                            <div className="w-full flex items-center justify-between mb-6">
-                                <span className="text-white font-black text-[11px] uppercase tracking-widest leading-none">PRINCIPAIS RECURSOS</span>
-                            </div>
-                            
-                            <ul className="space-y-4 px-2">
-                                <SmallCheckBullet text="Painel de Agendamento Online 24h" color="yellow" />
-                                <SmallCheckBullet text="Gestão de 1 Profissional (Agenda Única)" color="yellow" />
-                                <SmallCheckBullet text="Cadastro Ilimitado de Serviços" color="yellow" />
-                                <SmallCheckBullet text="Notificações Automáticas de Novas Reservas" color="yellow" />
-                                <SmallCheckBullet text="Bloqueio de Horários e Pausas" color="yellow" />
-                                <SmallCheckBullet text="Customização Total da Página de Agendamentos" color="yellow" />
-                            </ul>
-                        </div>
-                    </div>
-
-                    {/* PLANO ANUAL */}
-                    <div className="w-full relative p-8 md:p-10 rounded-[2rem] md:rounded-[2.5rem] border-2 bg-slate-900 border-brand-pink/30 backdrop-blur-3xl flex flex-col shadow-[0_0_50px_rgba(255,242,0,0.1)] transition-all duration-500 overflow-visible">
-                        
-                        {/* Header Icons */}
-                        <div className="absolute top-8 left-8 flex items-center gap-2 text-brand-pink/60">
-                            <Zap className="w-4 h-4 fill-brand-pink/20" />
-                            <span className="text-[10px] font-black uppercase tracking-widest">MÁXIMA PERFORMANCE</span>
-                        </div>
-                        <div className="absolute top-8 right-8 text-brand-pink/60">
-                            <Crown className="w-5 h-5" />
-                        </div>
-
-                        <div className="mb-12 mt-10 text-center">
-                            <h3 className="text-xl md:text-2xl font-black text-brand-pink mb-4 uppercase tracking-tighter">PLANO AGENDA ANUAL</h3>
-                        </div>
-
-                        <div className="mb-10 text-center">
-                            <div className="flex flex-col items-center justify-center gap-1">
-                                <div className="flex items-baseline gap-2">
-                                    <span className="text-white text-5xl md:text-6xl font-black">
-                                        ¥12.800
-                                    </span>
-                                    <span className="text-brand-gray/60 text-xs uppercase font-bold tracking-widest">/ANO</span>
+                                    <span className="text-brand-gray/60 text-xs uppercase font-bold tracking-widest">{period}</span>
                                 </div>
                             </div>
                         </div>
