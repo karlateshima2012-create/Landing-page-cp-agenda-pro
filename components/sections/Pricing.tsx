@@ -28,12 +28,12 @@ export const Pricing = () => {
                     </h2>
                 </div>
 
-                <div className="flex justify-center mb-16 px-4">
+                <div className="flex justify-center mb-16 px-4 relative z-10">
+                    {/* Pulsing light behind the card, top left */}
+                    <div className="absolute -top-20 left-[10%] md:left-[30%] w-[400px] h-[400px] bg-brand-pink rounded-full blur-[120px] opacity-30 animate-[pulse_4s_cubic-bezier(0.4,0,0.6,1)_infinite] pointer-events-none -z-10"></div>
+                    
                     <div className="w-full max-w-[480px] relative p-8 md:p-10 rounded-[2rem] md:rounded-[2.5rem] border-2 bg-slate-900 border-brand-pink/30 backdrop-blur-3xl flex flex-col shadow-[0_0_50px_rgba(229,21,122,0.1)] transition-all duration-500 overflow-visible">
                         
-                        {/* Edge Pulsing Light */}
-                        <div className="absolute top-1/2 -left-20 -translate-y-1/2 w-[250px] h-[250px] bg-brand-pink rounded-full blur-[100px] opacity-30 animate-[pulse_4s_cubic-bezier(0.4,0,0.6,1)_infinite] -z-10 pointer-events-none"></div>
-
                         {/* Header Icons */}
                         <div className="absolute top-8 left-8 flex items-center gap-2 text-brand-pink/60">
                             <Zap className="w-4 h-4 fill-brand-pink/20" />
@@ -90,10 +90,9 @@ export const Pricing = () => {
 
 
                 {/* Summary Statement between cards */}
-                <div className="relative text-center pt-12 pb-24 md:pt-20 md:pb-32 px-6">
-                    {/* Pulsing Lights for Trial Section */}
-                    <div className="absolute top-0 -left-10 w-[300px] h-[300px] bg-brand-pink rounded-full blur-[120px] opacity-25 animate-[pulse_4s_cubic-bezier(0.4,0,0.6,1)_infinite] -z-10 pointer-events-none"></div>
-                    <div className="absolute bottom-0 -right-10 w-[300px] h-[300px] bg-brand-pink rounded-full blur-[120px] opacity-25 animate-[pulse_4s_cubic-bezier(0.4,0,0.6,1)_infinite] -z-10 pointer-events-none"></div>
+                <div className="relative text-center pt-12 pb-24 md:pt-20 md:pb-32 px-6 z-10">
+                    {/* Pulsing Lights for Trial Section - Bottom Right */}
+                    <div className="absolute -bottom-10 -right-10 w-[400px] h-[400px] bg-brand-pink rounded-full blur-[120px] opacity-30 animate-[pulse_4s_cubic-bezier(0.4,0,0.6,1)_infinite] pointer-events-none -z-10"></div>
                     
                     <h2 className="text-4xl md:text-6xl font-black text-white mb-6 tracking-tighter leading-[1.1]">
                         Teste Grátis por 30 Dias
