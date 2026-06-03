@@ -10,11 +10,11 @@ export const Hero = () => (
         <div className="w-[90%] md:w-full max-w-5xl mx-auto relative z-10">
 
 
-            <h1 className="text-4xl md:text-6xl font-black text-slate-900 mb-8 leading-[1.1] tracking-tighter max-w-4xl mx-auto">
+            <h1 className="text-4xl md:text-6xl font-black text-white mb-8 leading-[1.1] tracking-tighter max-w-4xl mx-auto">
                 Com o CP Agenda seus clientes podem <span className="gradient-text">agendar online a qualquer hora.</span>
             </h1>
 
-            <p className="text-lg md:text-xl text-slate-600 font-light leading-relaxed max-w-3xl mx-auto mb-12">
+            <p className="text-lg md:text-xl text-slate-300 font-light leading-relaxed max-w-3xl mx-auto mb-12">
                 Tenha uma página de agendamento profissional e acompanhe horários, serviços e atendimentos em um único lugar.
             </p>
 
