@@ -33,7 +33,7 @@ export const Pricing = () => {
                 {/* 1. Pricing Plans Header */}
                 <div className="text-center mb-12 px-4 relative z-10">
                     <Badge variant="outline" className="mb-6 uppercase tracking-[0.3em] font-black text-[10px] py-1 px-4 text-brand-pink border-brand-pink/50">INVESTIMENTO</Badge>
-                    <h2 className="text-4xl md:text-6xl font-black text-white mb-6 tracking-tighter leading-[1.1]">
+                    <h2 className="text-4xl md:text-5xl font-black text-white mb-6 tracking-tighter leading-[1.1]">
                         Conheça nossos Planos
                     </h2>
                 </div>

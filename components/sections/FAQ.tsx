@@ -56,7 +56,7 @@ export const FAQSection = () => {
             <div className="max-w-6xl mx-auto relative z-30 px-6 md:px-16 lg:px-24">
 
                 <div className="text-center mb-16">
-                    <h2 className="text-4xl md:text-5xl font-black text-white tracking-tighter">Dúvidas Comuns</h2>
+                    <h2 className="text-4xl md:text-5xl font-black text-white tracking-tighter">Dúvidas Frequentes</h2>
                 </div>
 
                 <div className="max-w-3xl mx-auto space-y-2">
