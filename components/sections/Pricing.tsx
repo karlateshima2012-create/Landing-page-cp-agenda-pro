@@ -106,7 +106,7 @@ export const Pricing = () => {
 
                             <div className="flex-1 text-left">
                                 <h4 className="text-3xl md:text-5xl font-black text-white mb-8 leading-tight tracking-tighter">
-                                    Profissionalismo & <span className="text-brand-pink">Segurança</span>
+                                    Como <span className="text-brand-pink">Começar</span>
                                 </h4>
                                 
                                 <ul className="space-y-6 mb-12">
@@ -114,25 +114,19 @@ export const Pricing = () => {
                                         <div className="w-8 h-8 rounded-full bg-brand-pink flex items-center justify-center flex-shrink-0 shadow-[0_0_15px_rgba(229,21,122,0.4)]">
                                             <Check className="w-5 h-5 text-slate-950" strokeWidth={3} />
                                         </div>
-                                        <span className="text-base font-light leading-relaxed transition-colors group-hover/item:text-white">Implementação profissional inclusa</span>
+                                        <span className="text-base font-light leading-relaxed transition-colors group-hover/item:text-white">Agende o melhor horário para você.</span>
                                     </li>
                                     <li className="flex items-center gap-4 text-white/90 group/item">
                                         <div className="w-8 h-8 rounded-full bg-brand-pink flex items-center justify-center flex-shrink-0 shadow-[0_0_15px_rgba(229,21,122,0.4)]">
                                             <Check className="w-5 h-5 text-slate-950" strokeWidth={3} />
                                         </div>
-                                        <span className="text-base font-light leading-relaxed transition-colors group-hover/item:text-white">Sem taxa de instalação</span>
+                                        <span className="text-base font-light leading-relaxed transition-colors group-hover/item:text-white">Nós configuramos juntos a sua agenda e sua página personalizada.</span>
                                     </li>
                                     <li className="flex items-center gap-4 text-white/90 group/item">
                                         <div className="w-8 h-8 rounded-full bg-brand-pink flex items-center justify-center flex-shrink-0 shadow-[0_0_15px_rgba(229,21,122,0.4)]">
                                             <Check className="w-5 h-5 text-slate-950" strokeWidth={3} />
                                         </div>
-                                        <span className="text-base font-light leading-relaxed transition-colors group-hover/item:text-white">Suporte assistido no primeiro acesso</span>
-                                    </li>
-                                    <li className="flex items-center gap-4 text-white/90 group/item">
-                                        <div className="w-8 h-8 rounded-full bg-brand-pink flex items-center justify-center flex-shrink-0 shadow-[0_0_15px_rgba(229,21,122,0.4)]">
-                                            <Check className="w-5 h-5 text-slate-950" strokeWidth={3} />
-                                        </div>
-                                        <span className="text-base font-light leading-relaxed transition-colors group-hover/item:text-white">Configuração inicial da sua agenda</span>
+                                        <span className="text-base font-light leading-relaxed transition-colors group-hover/item:text-white">Deixamos tudo pronto para receber seus primeiros agendamentos.</span>
                                     </li>
                                 </ul>
 
@@ -140,7 +134,7 @@ export const Pricing = () => {
                                     href={generalUrl}
                                     className="inline-flex items-center justify-center h-16 px-10 bg-brand-pink text-slate-950 font-black text-xs md:text-sm uppercase tracking-widest rounded-2xl hover:bg-white transition-all hover:scale-105 active:scale-95 shadow-xl shadow-brand-pink/10"
                                 >
-                                    COMEÇAR AGORA PELO WHATSAPP
+                                    CONFIGURAR MINHA AGENDA
                                 </a>
                             </div>
 
