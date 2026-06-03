@@ -91,9 +91,12 @@ export const Pricing = () => {
                     <h2 className="text-4xl md:text-6xl font-black text-white mb-6 tracking-tighter leading-[1.1]">
                         Teste Grátis por 30 Dias
                     </h2>
-                    <p className="text-lg md:text-xl text-slate-300 font-light leading-relaxed max-w-2xl mx-auto mb-10">
-                        Use o sistema completo e veja como ele funciona na prática. O Pagamento após o período de teste poderá ser feito por transferência bancária, PayPay ou cartão de crédito.
-                    </p>
+                    <div className="text-lg md:text-xl text-slate-300 font-light leading-relaxed max-w-3xl mx-auto mb-10 space-y-4">
+                        <p>Use o sistema completo e veja como ele funciona na prática.</p>
+                        <p>Clique em INICIAR TESTE GRÁTIS, escolha o melhor horário para você e nós configuramos juntos a sua agenda e sua página personalizada.</p>
+                        <p>Deixamos tudo pronto para receber seus primeiros agendamentos.</p>
+                        <p>Após o período de teste, o pagamento poderá ser realizado por transferência bancária, PayPay ou cartão de crédito.</p>
+                    </div>
                     <a 
                         href={generalUrl}
                         className="inline-flex items-center justify-center h-16 px-10 bg-brand-pink text-slate-950 font-black text-xs md:text-sm uppercase tracking-widest rounded-2xl hover:bg-white transition-all hover:scale-105 active:scale-95 shadow-xl shadow-brand-pink/10"
