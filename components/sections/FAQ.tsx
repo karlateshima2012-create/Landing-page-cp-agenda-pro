@@ -63,7 +63,7 @@ export const FAQSection = () => {
                     {FAQS.map(faq => (
                         <div
                             key={faq.id}
-                            className="bg-slate-900/40 border border-white/5 rounded-2xl overflow-hidden transition-all hover:border-brand-pink/30 group backdrop-blur-md"
+                            className="bg-slate-900 border-2 border-slate-800 rounded-2xl overflow-hidden transition-all hover:bg-slate-800/80 hover:border-brand-pink/40 group backdrop-blur-xl"
                         >
                             <button
                                 onClick={() => setOpenId(openId === faq.id ? null : faq.id)}
