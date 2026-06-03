@@ -91,8 +91,8 @@ export const Pricing = () => {
 
                 {/* Summary Statement between cards */}
                 <div className="relative text-center pt-12 pb-24 md:pt-20 md:pb-32 px-6 z-10">
-                    {/* Pulsing Lights for Trial Section - Bottom Right */}
-                    <div className="absolute -bottom-10 -right-10 w-[400px] h-[400px] bg-brand-pink rounded-full blur-[120px] opacity-30 animate-[pulse_4s_cubic-bezier(0.4,0,0.6,1)_infinite] pointer-events-none -z-10"></div>
+                    {/* Pulsing Lights for Trial Section - Top Right */}
+                    <div className="absolute top-0 right-0 md:top-10 md:-right-10 w-[250px] h-[250px] md:w-[300px] md:h-[300px] bg-brand-pink rounded-full blur-[80px] md:blur-[100px] opacity-30 animate-[pulse_4s_cubic-bezier(0.4,0,0.6,1)_infinite] pointer-events-none -z-10"></div>
                     
                     <h2 className="text-4xl md:text-6xl font-black text-white mb-6 tracking-tighter leading-[1.1]">
                         Teste Grátis por 30 Dias
