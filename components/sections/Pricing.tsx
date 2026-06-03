@@ -1,17 +1,27 @@
 import React, { useState } from 'react';
 import { Badge } from '../Badge';
 import { Check, Zap, Crown } from 'lucide-react';
+import { useGeo } from '../GeoContext';
 
+const BR_WA_URL = `https://wa.me/8109011886491?text=${encodeURIComponent("Estou falando do Brasil quero saber mais sobre o CP Agenda")}`;
+const JP_URL = "https://cpagendapro.creativeprintjp.com/?p=41";
 
 export const Pricing = () => {
-    const whatsappUrl = "https://wa.me/8109011886491?text=";
-    const eliteUrl = `${whatsappUrl}${encodeURIComponent("Olá! Gostaria de saber mais sobre o Plano de 12 Meses da CP Agenda Pro.")}`;
-    const generalUrl = `${whatsappUrl}${encodeURIComponent("Olá! Gostaria de saber mais sobre os planos da CP Agenda Pro.")}`;
-
+    const { isBrazil } = useGeo();
     const [isAnnual, setIsAnnual] = useState(false);
-    const price = isAnnual ? 12800 : 1280;
+
+    const price = isBrazil
+        ? (isAnnual ? 390 : 39)
+        : (isAnnual ? 12800 : 1280);
+
+    const currencySymbol = isBrazil ? 'R$' : '¥';
     const planName = isAnnual ? "PLANO AGENDA ANUAL" : "PLANO AGENDA MENSAL";
     const period = isAnnual ? "/ANO" : "/MÊS";
+    const ctaUrl = isBrazil ? BR_WA_URL : JP_URL;
+
+    const paymentNote = isBrazil
+        ? "Após o período de teste, o pagamento poderá ser realizado via Pix."
+        : "Após o período de teste, o pagamento poderá ser realizado por transferência bancária, PayPay ou cartão de crédito.";
 
     return (
         <section id="pricing" className="py-24 bg-slate-950 relative overflow-hidden">
@@ -21,7 +31,7 @@ export const Pricing = () => {
 
             <div className="max-w-[1440px] mx-auto px-6 md:px-24 w-full">
                 {/* 1. Pricing Plans Header */}
-                <div className="text-center mb-12 px-4">
+                <div className="text-center mb-12 px-4 relative z-10">
                     <Badge variant="outline" className="mb-6 uppercase tracking-[0.3em] font-black text-[10px] py-1 px-4 text-brand-pink border-brand-pink/50">INVESTIMENTO</Badge>
                     <h2 className="text-4xl md:text-6xl font-black text-white mb-6 tracking-tighter leading-[1.1]">
                         Conheça nossos Planos
@@ -31,9 +41,9 @@ export const Pricing = () => {
                 <div className="flex justify-center mb-16 px-4 relative z-10">
                     {/* Pulsing light behind the card, top left */}
                     <div className="absolute -top-20 left-[10%] md:left-[30%] w-[400px] h-[400px] bg-brand-pink rounded-full blur-[120px] opacity-30 animate-[pulse_4s_cubic-bezier(0.4,0,0.6,1)_infinite] pointer-events-none -z-10"></div>
-                    
+
                     <div className="w-full max-w-[480px] relative p-8 md:p-10 rounded-[2rem] md:rounded-[2.5rem] border-2 bg-slate-900 border-brand-pink/30 backdrop-blur-3xl flex flex-col shadow-[0_0_50px_rgba(229,21,122,0.1)] transition-all duration-500 overflow-visible">
-                        
+
                         {/* Header Icons */}
                         <div className="absolute top-8 left-8 flex items-center gap-2 text-brand-pink/60">
                             <Zap className="w-4 h-4 fill-brand-pink/20" />
@@ -50,7 +60,7 @@ export const Pricing = () => {
                         {/* Toggle */}
                         <div className="mb-8 text-center flex items-center justify-center gap-3">
                             <span className={`text-sm font-bold transition-colors ${!isAnnual ? 'text-white' : 'text-slate-500'}`}>Mensal</span>
-                            <button 
+                            <button
                                 onClick={() => setIsAnnual(!isAnnual)}
                                 className="relative w-14 h-7 rounded-full bg-slate-800 border border-brand-pink/30 p-1 cursor-pointer transition-colors focus:outline-none"
                             >
@@ -63,7 +73,7 @@ export const Pricing = () => {
                             <div className="flex flex-col items-center justify-center gap-1">
                                 <div className="flex items-baseline gap-2">
                                     <span className="text-white text-5xl md:text-6xl font-black">
-                                        ¥{price.toLocaleString()}
+                                        {currencySymbol}{price.toLocaleString()}
                                     </span>
                                     <span className="text-brand-gray/60 text-xs uppercase font-bold tracking-widest">{period}</span>
                                 </div>
@@ -75,7 +85,7 @@ export const Pricing = () => {
                             <div className="w-full flex items-center justify-between mb-6">
                                 <span className="text-white font-black text-[11px] uppercase tracking-widest leading-none">PRINCIPAIS RECURSOS</span>
                             </div>
-                            
+
                             <ul className="space-y-4 px-2">
                                 <SmallCheckBullet text="Painel de Agendamento Online 24h" color="yellow" />
                                 <SmallCheckBullet text="Gestão de 1 Profissional (Agenda Única)" color="yellow" />
@@ -93,7 +103,7 @@ export const Pricing = () => {
                 <div className="relative text-center pt-12 pb-24 md:pt-20 md:pb-32 px-6 z-10">
                     {/* Pulsing Lights for Trial Section - Top Right */}
                     <div className="absolute top-0 right-0 md:top-10 md:-right-10 w-[250px] h-[250px] md:w-[300px] md:h-[300px] bg-brand-pink rounded-full blur-[80px] md:blur-[100px] opacity-30 animate-[pulse_4s_cubic-bezier(0.4,0,0.6,1)_infinite] pointer-events-none -z-10"></div>
-                    
+
                     <h2 className="text-4xl md:text-6xl font-black text-white mb-6 tracking-tighter leading-[1.1]">
                         Teste Grátis por 30 Dias
                     </h2>
@@ -101,11 +111,11 @@ export const Pricing = () => {
                         <p>Use o sistema completo e veja como ele funciona na prática.</p>
                         <p>Clique em INICIAR TESTE GRÁTIS, escolha o melhor horário para você e nós configuramos juntos a sua agenda e sua página personalizada.</p>
                         <p>Deixamos tudo pronto para receber seus primeiros agendamentos.</p>
-                        <p>Após o período de teste, o pagamento poderá ser realizado por transferência bancária, PayPay ou cartão de crédito.</p>
+                        <p>{paymentNote}</p>
                     </div>
                     <div className="flex justify-center items-center">
                         <a
-                            href="https://cpagendapro.creativeprintjp.com/?p=41"
+                            href={ctaUrl}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="relative bg-brand-pink hover:bg-brand-pink/90 text-white font-black text-xs h-12 px-10 rounded-lg inline-flex items-center justify-center gap-3 transition-all btn-glow-pink hover:scale-105 active:scale-95 uppercase tracking-wider group overflow-hidden"
@@ -129,7 +139,4 @@ const SmallCheckBullet = ({ text, color = 'blue' }: { text: string, color?: 'blu
         <span className="text-[13px] md:text-sm font-bold leading-tight uppercase">{text}</span>
     </li>
 );
-
-const FeatureTile = () => null; // Removed as no longer used
-const StepCardMinimal = () => null; // Removed as no longer used
 
