@@ -3,7 +3,7 @@ import React from 'react';
 import { Navbar } from './components/sections/Navbar';
 import { Hero } from './components/sections/Hero';
 import { QuickFeatures } from './components/sections/QuickFeatures';
-import { FeaturesShowcase } from './components/sections/Features';
+
 import { Pricing } from './components/sections/Pricing';
 import { FAQSection } from './components/sections/FAQ';
 
@@ -21,9 +21,7 @@ export default function App() {
         <QuickFeatures />
       </div>
 
-      <div className="bg-slate-950">
-        <FeaturesShowcase />
-      </div>
+
 
       <Pricing />
 
