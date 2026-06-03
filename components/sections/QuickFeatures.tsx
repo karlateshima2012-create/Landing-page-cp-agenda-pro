@@ -20,20 +20,20 @@ export const QuickFeatures = () => (
         <div className="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
             <QuickCard
                 badge="Agendamento"
-                title="SISTEMA ONLINE 24 HORAS"
-                description="Permita que seus clientes consultem horários e reservem serviços sozinhos, direto pelo celular, a qualquer hora do dia ou da noite."
+                title="LINK EXCLUSIVO PARA AGENDAMENTO"
+                description="Compartilhe seu link e permita que seus clientes agendem online."
                 colorClass="text-brand-pink bg-brand-pink"
             />
             <QuickCard
                 badge="Produtividade"
                 title="GESTÃO TOTAL DO SEU TEMPO"
-                description="Gestão de profissional com agenda única, cadastro ilimitado de serviços e total controle sobre seus bloqueios de horários e pausas personalizadas."
+                description="Defina seus dias, horários disponíveis e períodos de atendimento."
                 colorClass="text-brand-pink bg-brand-pink"
             />
             <QuickCard
                 badge="Eficiência"
-                title="NOTIFICAÇÕES AUTOMÁTICAS"
-                description="Notificações imediatas de novos agendamentos para confirmar cada reserva e manter o controle total da agenda com praticidade."
+                title="SISTEMA ONLINE 24H"
+                description="Acompanhe seus horários, serviços e agendamentos em um único lugar."
                 colorClass="text-brand-pink bg-brand-pink"
             />
         </div>
