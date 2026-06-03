@@ -42,7 +42,7 @@ export const Pricing = () => {
                         </div>
 
                         <div className="mb-12 mt-10 text-center">
-                            <h3 className="text-4xl md:text-5xl font-black text-white mb-4 uppercase tracking-tighter">PLANO AGENDA MENSAL</h3>
+                            <h3 className="text-xl md:text-2xl font-black text-brand-pink mb-4 uppercase tracking-tighter">PLANO AGENDA MENSAL</h3>
                         </div>
 
                         <div className="mb-10 text-center">
