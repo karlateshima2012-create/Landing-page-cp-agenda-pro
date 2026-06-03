@@ -8,15 +8,30 @@ const GeoContext = createContext<GeoContextType>({ isBrazil: false });
 
 export const useGeo = () => useContext(GeoContext);
 
-const detectBrazil = async (): Promise<boolean> => {
-    // Primary: api.country.is — sem limite, sem chave, CORS liberado
+const detectBrazilSync = (): boolean => {
+    // 1. Idioma
+    const lang = navigator.language || '';
+    if (lang.toLowerCase().startsWith('pt')) return true;
+
+    // 2. Fuso horário
+    try {
+        const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+        // Clientes são primariamente JP ou BR. Se for America/*, assumimos Brasil.
+        if (tz && tz.startsWith('America/')) return true;
+    } catch {}
+
+    return false;
+};
+
+const detectBrazilAsync = async (): Promise<boolean> => {
+    // Primary: api.country.is
     try {
         const r = await fetch('https://api.country.is/');
         const d = await r.json();
         if (d.country) return d.country === 'BR';
     } catch {}
 
-    // Fallback: cloudflare trace (retorna texto simples, muito confiável)
+    // Fallback: cloudflare trace
     try {
         const r = await fetch('https://cloudflare.com/cdn-cgi/trace');
         const text = await r.text();
@@ -24,17 +39,21 @@ const detectBrazil = async (): Promise<boolean> => {
         if (match) return match[1] === 'BR';
     } catch {}
 
-    // Último recurso: idioma do navegador
-    const lang = navigator.language || '';
-    return lang.toLowerCase().startsWith('pt');
+    return detectBrazilSync();
 };
 
 export const GeoProvider = ({ children }: { children: React.ReactNode }) => {
-    const [isBrazil, setIsBrazil] = useState(false);
+    // Inicializa com a detecção síncrona (idioma/fuso) para evitar flash de conteúdo
+    const [isBrazil, setIsBrazil] = useState<boolean>(detectBrazilSync());
 
     useEffect(() => {
-        detectBrazil().then(result => setIsBrazil(result));
-    }, []);
+        // Tenta confirmar com a API de IP em background
+        detectBrazilAsync().then(result => {
+            if (result !== isBrazil) {
+                setIsBrazil(result);
+            }
+        });
+    }, [isBrazil]);
 
     return <GeoContext.Provider value={{ isBrazil }}>{children}</GeoContext.Provider>;
 };
