@@ -26,7 +26,7 @@ export const TrustHighlights = () => {
     ];
 
     return (
-        <section id="how-it-works" className="py-32 bg-slate-950 relative overflow-hidden">
+        <section id="how-it-works" className="py-16 md:py-20 bg-slate-950 relative overflow-hidden">
             {/* Background Atmosphere - Radiant Glow */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-screen h-[1000px] bg-gradient-to-r from-brand-pink/10 via-brand-pink/5 to-brand-pink/10 blur-[180px] -z-10 opacity-50"></div>
 

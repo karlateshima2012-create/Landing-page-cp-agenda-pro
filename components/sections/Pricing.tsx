@@ -24,7 +24,7 @@ export const Pricing = () => {
         : "Após o período de teste, o pagamento poderá ser realizado por transferência bancária, PayPay ou cartão de crédito.";
 
     return (
-        <section id="pricing" className="py-24 bg-slate-950 relative overflow-hidden">
+        <section id="pricing" className="py-16 md:py-20 bg-slate-950 relative overflow-hidden">
             {/* Ambient Background Glows */}
             <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-brand-pink/10 rounded-full blur-[120px] -z-10 animate-pulse"></div>
             <div className="absolute bottom-0 right-1/4 w-[600px] h-[600px] bg-brand-pink/10 rounded-full blur-[120px] -z-10 animate-pulse"></div>

@@ -10,7 +10,7 @@ export const FinalCTA = () => {
     const ctaUrl = isBrazil ? BR_WA_URL : JP_URL;
 
     return (
-        <section className="relative min-h-[60vh] flex flex-col items-center justify-center pt-40 pb-40 px-4 md:px-8 lg:px-12 overflow-hidden bg-[#020408] animate-fade-in text-center">
+        <section className="relative min-h-[60vh] flex flex-col items-center justify-center pt-20 pb-24 md:pt-24 md:pb-32 px-4 md:px-8 lg:px-12 overflow-hidden bg-[#020408] animate-fade-in text-center">
 
             <Starfield />
 
