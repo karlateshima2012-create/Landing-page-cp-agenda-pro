@@ -19,7 +19,7 @@ export const Footer = () => {
             <div className="max-w-7xl mx-auto">
                 {/* Row 1: Logo and Topo Button */}
                 <div className="flex justify-between items-center mb-8">
-                    <Logo className="scale-[0.65] md:scale-[0.8] origin-left" />
+                    <Logo className="scale-[0.55] md:scale-[0.7] origin-left" />
                     
                     <button
                         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}

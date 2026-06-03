@@ -10,15 +10,27 @@ export const Navbar = () => {
                 <img 
                     src="/nova-logo-cp.png" 
                     alt="Creative Print Logo" 
-                    className="h-10 md:h-12 w-auto object-contain flex-shrink-0" 
+                    className="h-12 md:h-14 w-auto object-contain flex-shrink-0 relative z-10" 
                 />
 
 
-                {/* Desktop Menu */}
+                {/* Desktop Menu - Centered */}
                 <div className="hidden lg:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 gap-10 items-center text-[11px] font-black uppercase tracking-[0.15em] text-white/70">
                     <a href="#features" className="hover:text-brand-pink transition-colors">FUNCIONALIDADES</a>
                     <a href="#pricing" className="hover:text-brand-pink transition-colors">INVESTIMENTO</a>
                     <a href="#faq" className="hover:text-brand-pink transition-colors">FAQ</a>
+                </div>
+
+                {/* Desktop CTA */}
+                <div className="hidden lg:block relative z-10">
+                    <a
+                        href="https://cpagendapro.creativeprintjp.com/?p=41"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center justify-center bg-white/80 hover:bg-white text-slate-950 text-[10px] font-black uppercase tracking-wider px-6 h-10 rounded-lg transition-all active:scale-95 shadow-lg shadow-white/5"
+                    >
+                        INICIAR TESTE GRÁTIS
+                    </a>
                 </div>
 
 
@@ -37,7 +49,16 @@ export const Navbar = () => {
                     <a href="#features" onClick={() => setIsMenuOpen(false)} className="text-sm font-black uppercase tracking-widest text-white/70 hover:text-brand-pink">FUNCIONALIDADES</a>
                     <a href="#pricing" onClick={() => setIsMenuOpen(false)} className="text-sm font-black uppercase tracking-widest text-white/70 hover:text-brand-pink">INVESTIMENTO</a>
                     <a href="#faq" onClick={() => setIsMenuOpen(false)} className="text-sm font-black uppercase tracking-widest text-white/70 hover:text-brand-pink">FAQ</a>
-
+                    
+                    <a
+                        href="https://cpagendapro.creativeprintjp.com/?p=41"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={() => setIsMenuOpen(false)}
+                        className="w-full bg-white/80 text-slate-950 text-xs font-black uppercase tracking-wider h-14 rounded-xl flex items-center justify-center active:scale-95 mt-4"
+                    >
+                        INICIAR TESTE GRÁTIS
+                    </a>
                 </div>
             )}
         </nav>
