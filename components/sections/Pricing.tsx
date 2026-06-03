@@ -23,7 +23,7 @@ export const Pricing = () => {
                     <h2 className="text-4xl md:text-6xl font-black text-white mb-6 tracking-tighter leading-[1.1]">
                         Solução completa para seus agendamentos
                     </h2>
-                    <p className="text-brand-gray text-base md:text-lg font-light max-w-2xl mx-auto opacity-80">
+                    <p className="text-lg md:text-xl text-slate-300 font-light leading-relaxed max-w-2xl mx-auto">
                         Sem taxa de instalação • Cobrança clara e transparente.
                     </p>
                 </div>
@@ -43,7 +43,7 @@ export const Pricing = () => {
 
                         <div className="mb-12 mt-10 text-center">
                             <h3 className="text-4xl md:text-5xl font-black text-white mb-4 uppercase tracking-tighter">PLANO AGENDA PRO</h3>
-                            <p className="text-brand-gray text-sm md:text-base font-light max-w-[280px] mx-auto leading-relaxed opacity-80">
+                            <p className="text-lg md:text-xl text-slate-300 font-light leading-relaxed max-w-[280px] mx-auto">
                                 Seus clientes agendando 24h por dia, mesmo quando você está offline.
                             </p>
                         </div>
@@ -89,7 +89,7 @@ export const Pricing = () => {
                     <h2 className="text-4xl md:text-6xl font-black text-white mb-6 tracking-tighter leading-[1.1]">
                         Mais do que um sistema.
                     </h2>
-                    <p className="text-brand-gray text-base md:text-lg font-light max-w-2xl mx-auto opacity-80">
+                    <p className="text-lg md:text-xl text-slate-300 font-light leading-relaxed max-w-2xl mx-auto">
                         Uma base sólida, profissional e segura para o crescimento do seu negócio.
                     </p>
                 </div>

@@ -79,7 +79,7 @@ export const FAQSection = () => {
 
                             <div className={`px-5 md:px-6 transition-all duration-300 ${openId === faq.id ? 'max-h-[500px] pb-6 opacity-100' : 'max-h-0 opacity-0 pointer-events-none'}`}>
                                 <div className="pt-4 border-t border-white/5">
-                                    <p className="text-brand-gray/80 text-base md:text-lg leading-relaxed font-light whitespace-pre-line">
+                                    <p className="text-lg md:text-xl text-slate-300 font-light leading-relaxed whitespace-pre-line">
                                         {faq.answer}
                                     </p>
                                 </div>

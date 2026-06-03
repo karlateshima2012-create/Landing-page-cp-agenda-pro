@@ -38,7 +38,7 @@ export const TrustHighlights = () => {
                     <h2 className="text-4xl md:text-6xl font-black text-white tracking-tighter mb-8 italic">
                         De 0 a <span className="text-brand-pink not-italic">Total Automação</span>
                     </h2>
-                    <p className="text-brand-gray/60 text-lg md:text-xl max-w-2xl mx-auto font-light leading-relaxed">
+                    <p className="text-lg md:text-xl text-slate-300 font-light leading-relaxed max-w-2xl mx-auto">
                         Esqueça a burocracia. Criamos um caminho simples para você focar no que realmente importa: <span className="text-white font-medium">seus clientes.</span>
                     </p>
                 </div>
@@ -68,7 +68,7 @@ export const TrustHighlights = () => {
                                 <h4 className="text-2xl font-black text-white mb-5 tracking-tight group-hover:text-brand-pink transition-colors duration-300">
                                     {step.title}
                                 </h4>
-                                <p className="text-brand-gray/80 text-lg font-light leading-relaxed">
+                                <p className="text-lg md:text-xl text-slate-300 font-light leading-relaxed">
                                     {step.description}
                                 </p>
                             </div>

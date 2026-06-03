@@ -27,7 +27,7 @@ const FeatureSection = ({ title, description, items, imageUrl }: {
                         </h2>
                         
                         {description && (
-                            <p className="text-lg text-brand-gray/80 leading-relaxed font-light mb-10 max-w-xl">
+                            <p className="text-lg md:text-xl text-slate-300 font-light leading-relaxed mb-10 max-w-xl">
                                 {description}
                             </p>
                         )}
