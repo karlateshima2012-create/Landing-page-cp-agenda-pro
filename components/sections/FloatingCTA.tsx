@@ -18,7 +18,7 @@ export const FloatingCTA = () => {
     return (
         <div className={`fixed bottom-8 right-8 z-50 transition-all duration-500 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0 pointer-events-none'}`}>
             <a
-                href="https://wa.me/8109011886491?text=Olá! Gostaria de saber mais sobre o CP Gestão."
+                href="https://wa.me/8109011886491?text=Olá! Gostaria de saber mais sobre o CP Agenda."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-16 h-16 bg-[#25D366] rounded-full flex items-center justify-center animate-whatsapp-pulse hover:animate-none transition-all group"
