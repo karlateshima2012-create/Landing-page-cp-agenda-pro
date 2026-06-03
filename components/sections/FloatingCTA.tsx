@@ -1,8 +1,13 @@
 
 import React, { useState, useEffect } from 'react';
+import { useGeo } from '../GeoContext';
+
+const BR_WA_URL = `https://wa.me/8109011886491?text=${encodeURIComponent("Estou falando do Brasil quero saber mais sobre o CP Agenda")}`;
+const JP_WA_URL = `https://wa.me/8109011886491?text=${encodeURIComponent("Olá! Gostaria de saber mais sobre o CP Agenda.")}`;
 
 export const FloatingCTA = () => {
     const [isVisible, setIsVisible] = useState(false);
+    const { isBrazil } = useGeo();
 
     useEffect(() => {
         const toggleVisibility = () => {
@@ -18,7 +23,7 @@ export const FloatingCTA = () => {
     return (
         <div className={`fixed bottom-8 right-8 z-50 transition-all duration-500 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0 pointer-events-none'}`}>
             <a
-                href="https://wa.me/8109011886491?text=Olá! Gostaria de saber mais sobre o CP Agenda."
+                href={isBrazil ? BR_WA_URL : JP_WA_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-16 h-16 bg-[#25D366] rounded-full flex items-center justify-center animate-whatsapp-pulse hover:animate-none transition-all group"
