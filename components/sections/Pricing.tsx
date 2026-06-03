@@ -28,9 +28,9 @@ export const Pricing = () => {
                     </p>
                 </div>
 
-                <div className="flex justify-center mb-16 px-4">
-                    {/* PLANO 12 MESES - CARD ÚNICO PREMIUM */}
-                    <div className="w-full max-w-[480px] relative p-8 md:p-10 rounded-[2rem] md:rounded-[2.5rem] border-2 bg-slate-900 border-brand-pink/30 backdrop-blur-3xl flex flex-col shadow-[0_0_50px_rgba(255,242,0,0.1)] transition-all duration-500 overflow-visible">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-16 px-4">
+                    {/* PLANO MENSAL */}
+                    <div className="w-full relative p-8 md:p-10 rounded-[2rem] md:rounded-[2.5rem] border-2 bg-slate-900 border-brand-pink/30 backdrop-blur-3xl flex flex-col shadow-[0_0_50px_rgba(255,242,0,0.1)] transition-all duration-500 overflow-visible">
                         
                         {/* Header Icons */}
                         <div className="absolute top-8 left-8 flex items-center gap-2 text-brand-pink/60">
@@ -56,7 +56,49 @@ export const Pricing = () => {
                             </div>
                         </div>
 
+                        {/* Feature List (No Accordion) */}
+                        <div className="mt-auto pt-8 border-t border-white/10">
+                            <div className="w-full flex items-center justify-between mb-6">
+                                <span className="text-white font-black text-[11px] uppercase tracking-widest leading-none">PRINCIPAIS RECURSOS</span>
+                            </div>
+                            
+                            <ul className="space-y-4 px-2">
+                                <SmallCheckBullet text="Painel de Agendamento Online 24h" color="yellow" />
+                                <SmallCheckBullet text="Gestão de 1 Profissional (Agenda Única)" color="yellow" />
+                                <SmallCheckBullet text="Cadastro Ilimitado de Serviços" color="yellow" />
+                                <SmallCheckBullet text="Notificações Automáticas de Novas Reservas" color="yellow" />
+                                <SmallCheckBullet text="Bloqueio de Horários e Pausas" color="yellow" />
+                                <SmallCheckBullet text="Customização Total da Página de Agendamentos" color="yellow" />
+                            </ul>
+                        </div>
+                    </div>
 
+                    {/* PLANO ANUAL */}
+                    <div className="w-full relative p-8 md:p-10 rounded-[2rem] md:rounded-[2.5rem] border-2 bg-slate-900 border-brand-pink/30 backdrop-blur-3xl flex flex-col shadow-[0_0_50px_rgba(255,242,0,0.1)] transition-all duration-500 overflow-visible">
+                        
+                        {/* Header Icons */}
+                        <div className="absolute top-8 left-8 flex items-center gap-2 text-brand-pink/60">
+                            <Zap className="w-4 h-4 fill-brand-pink/20" />
+                            <span className="text-[10px] font-black uppercase tracking-widest">MÁXIMA PERFORMANCE</span>
+                        </div>
+                        <div className="absolute top-8 right-8 text-brand-pink/60">
+                            <Crown className="w-5 h-5" />
+                        </div>
+
+                        <div className="mb-12 mt-10 text-center">
+                            <h3 className="text-xl md:text-2xl font-black text-brand-pink mb-4 uppercase tracking-tighter">PLANO AGENDA ANUAL</h3>
+                        </div>
+
+                        <div className="mb-10 text-center">
+                            <div className="flex flex-col items-center justify-center gap-1">
+                                <div className="flex items-baseline gap-2">
+                                    <span className="text-white text-5xl md:text-6xl font-black">
+                                        ¥12.800
+                                    </span>
+                                    <span className="text-brand-gray/60 text-xs uppercase font-bold tracking-widest">/ANO</span>
+                                </div>
+                            </div>
+                        </div>
 
                         {/* Feature List (No Accordion) */}
                         <div className="mt-auto pt-8 border-t border-white/10">
@@ -71,7 +113,6 @@ export const Pricing = () => {
                                 <SmallCheckBullet text="Notificações Automáticas de Novas Reservas" color="yellow" />
                                 <SmallCheckBullet text="Bloqueio de Horários e Pausas" color="yellow" />
                                 <SmallCheckBullet text="Customização Total da Página de Agendamentos" color="yellow" />
-
                             </ul>
                         </div>
                     </div>
