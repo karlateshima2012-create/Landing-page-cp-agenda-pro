@@ -32,7 +32,7 @@ export const Hero = () => (
         </div>
 
         {/* Efeito de Luz Pulsante - Top Left (Exact Specs from Guide) */}
-        <div className="absolute -top-20 -left-20 w-[400px] h-[400px] bg-[#38b6ff] rounded-full blur-[120px] opacity-25 animate-[pulse_4s_cubic-bezier(0.4,0,0.6,1)_infinite] -z-10 pointer-events-none"></div>
+        <div className="absolute -top-20 -left-20 w-[400px] h-[400px] bg-brand-pink rounded-full blur-[120px] opacity-25 animate-[pulse_4s_cubic-bezier(0.4,0,0.6,1)_infinite] -z-10 pointer-events-none"></div>
 
         {/* Global Atmosphere */}
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-950 -z-10"></div>
