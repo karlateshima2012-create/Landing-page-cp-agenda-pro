@@ -19,11 +19,13 @@ export const Footer = () => {
             <div className="max-w-7xl mx-auto">
                 {/* Row 1: Logo and Topo Button */}
                 <div className="flex justify-between items-center mb-8">
-                    <Logo className="scale-[0.55] md:scale-[0.7] origin-left" />
+                    <div className="w-[180px] md:w-[250px]">
+                        <Logo className="scale-[0.55] md:scale-[0.7] origin-left" />
+                    </div>
                     
                     <button
                         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-                        className="flex items-center gap-2 px-6 h-10 rounded-full border border-brand-pink/30 bg-brand-pink/5 text-brand-pink hover:bg-brand-pink/10 transition-all group"
+                        className="flex shrink-0 items-center gap-2 px-4 md:px-6 h-10 rounded-full border border-brand-pink/30 bg-brand-pink/5 text-brand-pink hover:bg-brand-pink/10 transition-all group"
                     >
                         <ArrowUp className="w-4 h-4 transition-transform group-hover:-translate-y-1" />
                         <span className="text-[10px] font-black uppercase tracking-[0.2em]">Topo</span>

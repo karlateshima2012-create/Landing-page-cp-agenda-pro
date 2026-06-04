@@ -12,7 +12,7 @@ export const Hero = () => {
     const ctaUrl = isBrazil ? BR_WA_URL : JP_URL;
 
     return (
-        <section className="relative min-h-[90vh] flex flex-col items-center justify-center pt-32 pb-16 md:pt-36 md:pb-20 px-4 md:px-8 lg:px-12 overflow-hidden bg-slate-950 animate-fade-in text-center">
+        <section className="relative min-h-[75vh] flex flex-col items-center justify-center pt-32 pb-8 md:pt-36 md:pb-10 px-4 md:px-8 lg:px-12 overflow-hidden bg-slate-950 animate-fade-in text-center">
             <Starfield />
 
             <div className="w-[90%] md:w-full max-w-5xl mx-auto relative z-10">

@@ -81,15 +81,47 @@ Se você quiser subir uma alteração no site, tudo que você precisa fazer é:
 
 ---
 
-## 🚑 5. Fallback: Deploy Manual (Caso de Emergência)
+## 🚑 5. Fallback: Deploy Manual (Caso de Emergência ou GitHub Bloqueado)
 
-Se o GitHub estiver fora do ar ou o Firewall da Hostinger fechar novamente a porta para integrações externas, você pode fazer o deploy diretamente do seu terminal local (já que seu IP pessoal não sofre bloqueio do Firewall da VPS):
+Se o GitHub Actions estiver fora do ar (com a bolinha vermelha) devido ao Firewall da Hostinger, você ou **qualquer Agente de IA** poderá usar a solução de entrega expressa ("motoboy particular") direto pelo terminal local.
+
+**ATENÇÃO AGENTES DE IA:** Sempre utilizem o script de segurança `safe_deploy.sh` em vez de comandos soltos. Nossos servidores estão em Produção e precisamos garantir que nenhum erro quebre a Landing Page.
+
+### 🛡️ O Script de Segurança (`safe_deploy.sh`)
+Criamos um script que automatiza o envio, mas com uma forte camada de segurança:
+1. Ele utiliza a regra bash `set -e`, que obriga o processo a parar imediatamente caso algum passo dê errado.
+2. Ele executa o `npm run build`. O compilador do Vite atua como nosso porteiro de segurança: se houver qualquer erro de sintaxe ou tag não fechada no código, o build falha, o script é interrompido e **nada quebrado é enviado para a VPS**.
+3. Se aprovado no build, ele faz o envio forçado via `scp` direto da sua máquina para a VPS.
+
+**Para novos projetos ou Agentes de IA:**
+Se este arquivo for copiado para um novo projeto, basta criar um arquivo chamado `safe_deploy.sh` na raiz, colar o código abaixo (alterando o IP e o caminho de destino) e rodar `chmod +x safe_deploy.sh`.
 
 ```bash
-# 1. Gere o Build de produção localmente
-npm run build
+#!/bin/bash
+# Script de Deploy Seguro para a VPS (Hostinger)
 
-# 2. Envie a pasta dist inteira forçadamente por SSH para a VPS
-scp -P 22 -r dist/* root@76.13.209.192:/var/www/saibamaiscpagendapro/
+# A flag -e faz com que o script seja abortado imediatamente se qualquer erro ocorrer
+set -e
+
+echo "🚀 INICIANDO DEPLOY SEGURO PARA PRODUÇÃO..."
+
+echo "[1/3] Limpando cache e arquivos antigos..."
+rm -rf dist/
+
+echo "[2/3] Compilando e verificando o código (Vite & TypeScript)..."
+npm run build
+echo "✅ Build verificado e gerado com sucesso! Nenhum erro crítico encontrado."
+
+echo "[3/3] Iniciando transferência segura para a VPS via SSH (SCP)..."
+# Substitua root@SEU_IP e o caminho /var/www/suapasta pelo diretório correto do seu projeto
+scp -P 22 -o BatchMode=yes -r dist/* root@76.13.209.192:/var/www/saibamaiscpagendapro/
+
+echo "🎉 DEPLOY FINALIZADO COM SUCESSO!"
 ```
-*(Isso atualizará o site instantaneamente, contornando o GitHub).*
+
+### Como Executar:
+No terminal da sua máquina, basta rodar:
+```bash
+./safe_deploy.sh
+```
+*(Isso fará todo o processo de checagem, build e upload instantaneamente, contornando o GitHub com total segurança).*
